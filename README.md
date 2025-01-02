@@ -16,8 +16,7 @@ step 2) Copy folders under installStuff folder to bin/release folder.
 step 3) click clApp.exe under bin/release folder and CutLeader will be launched as following.  
 
 
-
-![屏幕截图 2025-01-02 202537](https://github.com/user-attachments/assets/3f1fd9d6-74a7-4e63-95f2-bd4fc8357b73)
+![屏幕截图 2025-01-02 202537](https://github.com/user-attachments/assets/2591516e-68c2-4026-bace-7720cf7b6fd8)
 
 ## How to get help
 You can familiarize yourself with the system by reading the documents in the doc directory, and you can also contact support@cutleader.com to get help.
