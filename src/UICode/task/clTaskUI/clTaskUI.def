@@ -1,0 +1,6 @@
+; ClTask.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ClTaskUI"
+
+EXPORTS
+    ; Explicit exports can go here

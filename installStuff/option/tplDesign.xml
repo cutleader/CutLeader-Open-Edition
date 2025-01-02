@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Params>
+    <TemplateParam>
+        <Width>793</Width>
+        <Height>1122</Height>
+        <LeftMargin>22</LeftMargin>
+        <RightMargin>22</RightMargin>
+        <TopMargin>22</TopMargin>
+        <BottomMargin>22</BottomMargin>
+        <TextJustType>1</TextJustType>
+        <FontName>Times New Roman</FontName>
+        <FontSize>120</FontSize>
+        <FontBold>0</FontBold>
+        <FontItalic>0</FontItalic>
+        <FontUnderline>0</FontUnderline>
+        <FontStrikeout>0</FontStrikeout>
+        <FontColor>0</FontColor>
+        <Charset>0</Charset>
+    </TemplateParam>
+    <DisplayParam>
+        <Unit>0</Unit>
+        <ShowMargin>1</ShowMargin>
+        <MarginColor>16711935</MarginColor>
+        <ShowGrid>1</ShowGrid>
+        <GridColor>12632256</GridColor>
+    </DisplayParam>
+    <DesignParam>
+        <SnapToGrid>1</SnapToGrid>
+        <GridCellSizeX>20</GridCellSizeX>
+        <GridCellSizeY>20</GridCellSizeY>
+    </DesignParam>
+</Params>

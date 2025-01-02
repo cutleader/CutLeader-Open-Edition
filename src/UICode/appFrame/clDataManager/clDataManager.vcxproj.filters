@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\data">
+      <UniqueIdentifier>{508b9b8e-bca7-4e9e-bf16-95d13871f0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\storage">
+      <UniqueIdentifier>{c2165a3e-46ff-4bf0-90aa-0f9c5417c0bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\business">
+      <UniqueIdentifier>{e4c56f0d-05d6-4c25-8c47-6caac8652d5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{eed07ea3-07d9-4def-a6d0-64c4a1015be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Dlg">
+      <UniqueIdentifier>{1a4ab96b-014e-4350-a5ff-9147c5658083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Page">
+      <UniqueIdentifier>{754480bc-4d83-4a35-83f3-0e1f3860e6a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clDataManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DependNode.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="DependNodeList.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="RecentData.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="RecentDataList.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="RecentDataLoader.cpp">
+      <Filter>Source Files\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="RecentDataWriter.cpp">
+      <Filter>Source Files\storage</Filter>
+    </ClCompile>
+    <ClCompile Include="DataItemTracker.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="DependNodeMgr.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCenterHelper.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCenterDlg.cpp">
+      <Filter>Source Files\Gui\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="DependMsgDlg.cpp">
+      <Filter>Source Files\Gui\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="DependViewDlg.cpp">
+      <Filter>Source Files\Gui\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="PartRepairDlg.cpp">
+      <Filter>Source Files\Gui\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="FolderContentPage.cpp">
+      <Filter>Source Files\Gui\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemListPage.cpp">
+      <Filter>Source Files\Gui\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="PartInfoPage.cpp">
+      <Filter>Source Files\Gui\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskInfoPage.cpp">
+      <Filter>Source Files\Gui\Page</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clDataManager.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clDataManager.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clDataManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clDataManagerCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataItemTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DependMsgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DependNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DependNodeList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DependNodeMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DependViewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FolderContentPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemListPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\secure\common\LicData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\secure\common\LicManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartRepairDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecentData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecentDataList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecentDataLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RecentDataWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCenterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCenterHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clDataManager.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

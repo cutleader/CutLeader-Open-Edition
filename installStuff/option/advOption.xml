@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AdvOption>
+	<SimulateInfo>
+		<SeqSimuSize>6</SeqSimuSize>
+		<StartCutSimuSize>10</StartCutSimuSize>
+		<MicroJointSimuSize>5</MicroJointSimuSize>
+	</SimulateInfo>
+	<DebugUIInfo>
+		<ShowPartPmtOffset>0</ShowPartPmtOffset>
+		<ShowPartInstTop>0</ShowPartInstTop>
+		<ShowCutNode>0</ShowCutNode>
+	</DebugUIInfo>
+</AdvOption>

@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{244f252f-55cd-488a-98a4-dc34e33f2f65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Task">
+      <UniqueIdentifier>{ab4a9b2b-2e51-48dd-8441-48e9e60df26d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Part">
+      <UniqueIdentifier>{cb31bb86-3288-4d77-ab90-d1d3920f37a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business">
+      <UniqueIdentifier>{6c931f00-6c40-432e-b37a-bc6ba6744046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{9d698456-4888-4370-9a4c-72cea2c5329a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\basic">
+      <UniqueIdentifier>{e2bd8d9f-4dc4-4c5b-b5f1-4c1ef1a18581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\bar">
+      <UniqueIdentifier>{5855d9c8-4669-42bb-be99-6012c12bf286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Part\tool bar">
+      <UniqueIdentifier>{dad6fcfd-be2e-41d8-8f7f-8626fba4819a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Task\tool bar">
+      <UniqueIdentifier>{b01c3574-13b4-4235-b805-26689ebf5c7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CLFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLeaderDoc.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="PartDocument.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="PartFrame.cpp">
+      <Filter>Source Files\Gui\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="BarManager.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="DocManager.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="PartCommonFunctionPanel.cpp">
+      <Filter>Source Files\Gui\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskCommonFunctionPanel.cpp">
+      <Filter>Source Files\Gui\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskView.cpp">
+      <Filter>Source Files\Gui\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskFrame.cpp">
+      <Filter>Source Files\Gui\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskDocument.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultParamDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="ForegroundCamConnector.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files\Gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="CLeaderView.cpp">
+      <Filter>Source Files\Gui\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusBar.cpp">
+      <Filter>Source Files\Gui\bar</Filter>
+    </ClCompile>
+    <ClCompile Include="RibbonBar.cpp">
+      <Filter>Source Files\Gui\bar</Filter>
+    </ClCompile>
+    <ClCompile Include="Return2ForegroundCamBar.cpp">
+      <Filter>Source Files\Gui\bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartView.cpp">
+      <Filter>Source Files\Gui\Part</Filter>
+    </ClCompile>
+    <ClCompile Include="LeavePartInplaceEditBar.cpp">
+      <Filter>Source Files\Gui\bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartInplaceEditManager.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawPartGeometryToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartFunctionToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="EditCanvasGeometryToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCanvasGeometryToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasFunctionToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignCanvasLoopToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerFeatureToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="EditPartLayoutToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="LeadLineToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetFunctionToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="StartCutPtToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetSubView.cpp">
+      <Filter>Source Files\Gui\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="PartModeStartCutPtToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartModeMicroJointToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartModeCornerFeatureToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartModeAlignLoopToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartModeEditGeometryToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSequenceToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualSequenceToolBar.cpp">
+      <Filter>Source Files\Gui\Task\tool bar</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetViewHelper.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="PartModeLeadLineToolBar.cpp">
+      <Filter>Source Files\Gui\Part\tool bar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clFrame.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clFrame.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BarManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLeaderDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLeaderView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CLFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clFrameCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DocManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RibbonBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskCommonFunctionPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartCommonFunctionPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetSubView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ForegroundCamConnector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Return2ForegroundCamBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeavePartInplaceEditBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartInplaceEditManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasFunctionToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetFunctionToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartFunctionToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCanvasGeometryToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignCanvasLoopToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditCanvasGeometryToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPartGeometryToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartCutPtToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeadLineToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerFeatureToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditPartLayoutToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartModeStartCutPtToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartModeMicroJointToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartModeCornerFeatureToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartModeAlignLoopToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartModeEditGeometryToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSequenceToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualSequenceToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetViewHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartModeLeadLineToolBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clFrame.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+; clPostProcessorUI.def : Declares the module parameters for the DLL.
+
+LIBRARY      "clPostProcessorUI"
+
+EXPORTS
+    ; Explicit exports can go here

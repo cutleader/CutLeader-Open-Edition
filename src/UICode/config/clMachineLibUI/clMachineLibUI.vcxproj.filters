@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{a3f714ce-8bba-4100-919b-e536b3db643b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\machine condition">
+      <UniqueIdentifier>{637e079f-0048-44b0-adea-53e09448f53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\nc param">
+      <UniqueIdentifier>{e8a53df8-c53e-4a2c-a7e1-8b3b7a31f330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\machine param">
+      <UniqueIdentifier>{68bac4f0-5b3c-4a56-a9ae-0d13b330cf2b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clMachineLibUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineInfoDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineInfoPage.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineLibTree.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineListPage.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="ConditionEditPage.cpp">
+      <Filter>Source Files\Gui\machine condition</Filter>
+    </ClCompile>
+    <ClCompile Include="ConditionNameDlg.cpp">
+      <Filter>Source Files\Gui\machine condition</Filter>
+    </ClCompile>
+    <ClCompile Include="NCConfigTypeNameDlg.cpp">
+      <Filter>Source Files\Gui\nc param</Filter>
+    </ClCompile>
+    <ClCompile Include="NCConfigTypeEditPage.cpp">
+      <Filter>Source Files\Gui\nc param</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineParamPage.cpp">
+      <Filter>Source Files\Gui\machine param</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineLibHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clMachineLibUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clMachineLibUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clMachineLibUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clMachineLibUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionNameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineLibTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineListPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineParamPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NCConfigTypeEditPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NCConfigTypeNameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineLibHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clMachineLibUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\action">
+      <UniqueIdentifier>{dd55596e-4d55-47c2-ba4a-bb6763696425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\micro joint">
+      <UniqueIdentifier>{fc8096da-6437-4aa6-bc05-2ddb9ce2087a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\looptool">
+      <UniqueIdentifier>{e06efdb2-04f1-4c2a-aab7-45447ea71427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\corner">
+      <UniqueIdentifier>{3a873541-8dfa-49db-85d3-9b358ce98c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\start cut data">
+      <UniqueIdentifier>{6cfa22f9-83c9-49a8-bece-3bc3e385b5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{1e9c548c-6697-4412-bede-4fbec71a9980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Panel">
+      <UniqueIdentifier>{0a234251-df5c-4c14-aa68-c276674c27dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Dialog">
+      <UniqueIdentifier>{fea210d4-2c68-4614-ba97-cb7a3a5a8ab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\Layout">
+      <UniqueIdentifier>{1eca1cb3-a44e-41be-97ea-88521892837a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\action bar">
+      <UniqueIdentifier>{e1e10e8b-719a-4dc6-8c9d-9b8d79d315c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\business">
+      <UniqueIdentifier>{b320c47e-cb8e-443a-9f0b-49cd77ffea81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{948d495e-abd8-4040-bdf2-6bd5e69eeba4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clPartLayoutUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceMeasureAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="PartInstanceSelectAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementEditAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementSelectAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="IPartPlacementTransformAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementMoveBase.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementPreSelectAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementTransformAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointAddAction.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointDeleteAction2.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointEditAction2.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointPreSelectAction2.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopToolEditAction3.cpp">
+      <Filter>Source Files\action\looptool</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerPreSelectAction2.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CutDirectionAdjustAction.cpp">
+      <Filter>Source Files\action\start cut data</Filter>
+    </ClCompile>
+    <ClCompile Include="StartCutPtAdjustAction.cpp">
+      <Filter>Source Files\action\start cut data</Filter>
+    </ClCompile>
+    <ClCompile Include="StartCutPtPreSelectAction2.cpp">
+      <Filter>Source Files\action\start cut data</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopInstanceSelectAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDxfDwg2SheetDlg.cpp">
+      <Filter>Source Files\Gui\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PartAddDlg.cpp">
+      <Filter>Source Files\Gui\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PartGridGapDlg.cpp">
+      <Filter>Source Files\Gui\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PartLayoutPropertyBar.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementAddPanel.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementPropertyBar.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementTree.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementTreeNodeData.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementViewBar.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartTopologyBar.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartTopologyTree.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPartPlacementFromDatacenterAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPartPlacementFromDxfdwgAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementMoveAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementCopyAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementDeleteAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementRotateAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementExplodeAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="PartPlacementGridAction.cpp">
+      <Filter>Source Files\action\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeLoopToolDlg.cpp">
+      <Filter>Source Files\Gui\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeLoopToolPane.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeLoopToolActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectPartOrLoopActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartDistanceDetectActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerAddAction2.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerDeleteAction2.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerEditAction2.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopToolEditAction2.cpp">
+      <Filter>Source Files\action\looptool</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopLeadEditAction2.cpp">
+      <Filter>Source Files\action\start cut data</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatePartGridActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="PartLayoutHelper.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="PartLayoutEditor.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="WrongToolSizeLoopInstances.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSideAdjustAction.cpp">
+      <Filter>Source Files\action\start cut data</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopInstancePropertyBar.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="SpreadSamePartActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clPartLayoutUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clPartLayoutUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChangeLoopToolActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clPartLayoutUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clPartLayoutUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerAddAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerDeleteAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerEditAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerPreSelectAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutDirectionAdjustAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceMeasureAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPartPlacementTransformAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopInstanceSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopLeadEditAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopToolEditAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopToolEditAction3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointDeleteAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointEditAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointPreSelectAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartAddDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartGridGapDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartInstanceSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartLayoutEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartLayoutHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartLayoutPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementAddPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementMoveBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementPreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementTransformAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementTreeNodeData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementViewBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartTopologyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartTopologyTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectPartOrLoopActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartCutPtAdjustAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartCutPtPreSelectAction2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WrongToolSizeLoopInstances.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDxfDwg2SheetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPartPlacementFromDatacenterAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPartPlacementFromDxfdwgAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementMoveAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementCopyAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementRotateAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementExplodeAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartPlacementGridAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeLoopToolDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeLoopToolPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartDistanceDetectActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePartGridActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSideAdjustAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopInstancePropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpreadSamePartActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clPartLayoutUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

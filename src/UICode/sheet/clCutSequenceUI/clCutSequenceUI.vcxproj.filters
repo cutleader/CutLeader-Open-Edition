@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\action">
+      <UniqueIdentifier>{990ee851-3467-489a-b41d-d66f0fda86e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\bridge">
+      <UniqueIdentifier>{14fb9f18-42eb-4423-94f0-c7bf591cf6ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\chain">
+      <UniqueIdentifier>{0df58091-dab7-452a-984a-23d9e0b380c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\rem cutLine">
+      <UniqueIdentifier>{38699160-a04c-4955-9e46-e83bc95eacc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\loop seq">
+      <UniqueIdentifier>{caf126f1-427e-4d07-b1e6-074aed05e243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\move pt">
+      <UniqueIdentifier>{d3c4b83d-4866-4a76-8033-3db2cda92bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\grid seq">
+      <UniqueIdentifier>{c6289c80-563b-4ee0-a599-9f63429aec79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\fly cut">
+      <UniqueIdentifier>{42345e6c-702c-47c4-9f63-ec4c7800f991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\action\simulate">
+      <UniqueIdentifier>{681692c7-904e-4bf8-b4dc-d644dbce46cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{ef917d22-2f81-4147-bf3f-3e1a54f1b6c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\action bar">
+      <UniqueIdentifier>{6beb4668-7fb2-48ed-a7e5-abd1229199c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\business">
+      <UniqueIdentifier>{8fe74373-5b50-4218-997d-dd24e59c1c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\dialog">
+      <UniqueIdentifier>{dc973b3d-0c2a-4ad2-85d7-c55fe90abed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data">
+      <UniqueIdentifier>{60f2704d-96f7-41f7-a351-3f73e9704570}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clCutSequenceUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CutNodeViewBar.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequenceGrid.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequencePane.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequenceTree.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceTreeNodeData.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequenceDeleteAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequenceOrderChangeActionA.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequenceOrderChangeActionB.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequencePreSelectAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSequenceSelectAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="HoleSequenceReplaceAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceEditActionBase.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeSequenceAddAction.cpp">
+      <Filter>Source Files\action\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeSequenceBreakAction.cpp">
+      <Filter>Source Files\action\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="StartBridgeNodeChangeAction.cpp">
+      <Filter>Source Files\action\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainCutSequenceAddAction.cpp">
+      <Filter>Source Files\action\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainNodeDeleteAction.cpp">
+      <Filter>Source Files\action\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainNodeInsertAction.cpp">
+      <Filter>Source Files\action\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetInstructionAddAction.cpp">
+      <Filter>Source Files\action\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetInstructionDeleteAction.cpp">
+      <Filter>Source Files\action\chain</Filter>
+    </ClCompile>
+    <ClCompile Include="RemnantCutlineAddAction.cpp">
+      <Filter>Source Files\action\rem cutLine</Filter>
+    </ClCompile>
+    <ClCompile Include="RemnantCutlineAutoAction.cpp">
+      <Filter>Source Files\action\rem cutLine</Filter>
+    </ClCompile>
+    <ClCompile Include="RemnantCutlineDeleteAction.cpp">
+      <Filter>Source Files\action\rem cutLine</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopSequenceAddAction.cpp">
+      <Filter>Source Files\action\loop seq</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopSequenceInsertAction.cpp">
+      <Filter>Source Files\action\loop seq</Filter>
+    </ClCompile>
+    <ClCompile Include="MovePtAddAction.cpp">
+      <Filter>Source Files\action\move pt</Filter>
+    </ClCompile>
+    <ClCompile Include="MovePtDeleteAction.cpp">
+      <Filter>Source Files\action\move pt</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCutSequenceAddAction.cpp">
+      <Filter>Source Files\action\grid seq</Filter>
+    </ClCompile>
+    <ClCompile Include="CutNodeSimulator.cpp">
+      <Filter>Source Files\action\simulate</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceViewAction.cpp">
+      <Filter>Source Files\action\simulate</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyCutSequenceAddAction.cpp">
+      <Filter>Source Files\action\fly cut</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplyPartActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertPositionActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateRemCutLineActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceEditor.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceHelper.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceSortDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="SheetReferencePointDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasReferencePointDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PartLayoutData.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceData.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clCutSequenceUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clCutSequenceUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BridgeSequenceAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BridgeSequenceBreakAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainCutSequenceAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainNodeDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainNodeInsertAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clCutSequenceUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clCutSequenceUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutNodeSimulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutNodeViewBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequenceDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequenceGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequenceOrderChangeActionA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequenceOrderChangeActionB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequencePane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequencePreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequenceSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSequenceTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCutSequenceAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HoleSequenceReplaceAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopSequenceAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopSequenceInsertAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MovePtAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MovePtDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemnantCutlineAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemnantCutlineAutoAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RemnantCutlineDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetInstructionAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetInstructionDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceEditActionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceSortDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceTreeNodeData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceViewAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartBridgeNodeChangeAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyCutSequenceAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplyPartActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertPositionActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenerateRemCutLineActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasReferencePointDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SheetReferencePointDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartLayoutData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clCutSequenceUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

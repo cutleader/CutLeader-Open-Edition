@@ -1,0 +1,71 @@
+﻿#pragma once
+
+#include "CutFeatureEditBase.h"
+#include <vector>
+
+DECLARE_CUTLEADER_CLASS(ICorner)
+DECLARE_CUTLEADER_CLASS(CornerList)
+
+BEGIN_CUTLEADER_NAMESPACE()
+
+// 一些动作的基类，这些动作支持点选和框选角特征。
+// 注：
+//   1) 通过选择“角点”来选择“角特征”。
+class ClCutFeatureUI_Export CornerPreSelectAction : public CutFeatureEditBase
+{
+protected:
+	enum PRE_SELECT_STATE
+	{
+		// 还没有开始选择。
+		PRE_SELECT_NO_INPUT			= 0,
+
+		// 鼠标左键按下。
+		PRE_SELECT_LEFT_BTN_DOWN	= 1,
+
+		// 鼠标左键抬起。
+		PRE_SELECT_LEFT_BTN_UP		= 2,
+	};
+
+public:
+    CornerPreSelectAction(PatternListPtr pPatList, PatternLoopListPtr pPatternLoopList, LoopTopologyItemListPtr pLoopTopologyItems,
+		LoopCutFeatureListPtr pLoopFeatureList, GlViewPortPtr pViewPort);
+	~CornerPreSelectAction(void);
+
+public:  // implement IInteract interface.
+	BOOL LButtonDown(double& dPtX, double& dPtY);
+	BOOL LButtonUp(double& dPtX, double& dPtY);
+	BOOL MovePoint(double& dPtX, double& dPtY);
+	BOOL OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags);
+
+public: // implement IAction interface.
+	BOOL DrawBeforeFinish();
+
+public:
+	// 得到选中的角特征。
+	CornerListPtr GetSelectCornerList();
+
+private:
+	// 计算出选中的“角特征”。
+	std::vector<std::pair<ICornerPtr, Point2D> > CalcSelectCornerPt();
+
+protected:
+	// 离光标最近的角特征点。
+	Point2DPtr m_pActiveCornerPt;
+
+	// 选中的“角特征点”及对应的角特征对象。
+	std::vector<std::pair<ICornerPtr, Point2D> > m_selCornerPtPairs;
+
+	// 选择状态。
+	PRE_SELECT_STATE m_preSelectState;
+
+	// 选择框的数据。
+	/*
+		LeftTopPointX;
+		LeftTopPointY;
+		RightBottomPointX;
+		RightBottomPointY;
+	*/
+	double m_data[4];
+};
+
+END_CUTLEADER_NAMESPACE()

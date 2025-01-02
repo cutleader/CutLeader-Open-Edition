@@ -1,0 +1,6 @@
+; clMachineLibUI.def : Declares the module parameters for the DLL.
+
+LIBRARY      "clMachineLibUI"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{de30342d-6364-4ce3-b78f-50fd03517906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command">
+      <UniqueIdentifier>{1ef64504-b65a-42d0-853b-4452c820528a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action">
+      <UniqueIdentifier>{d07176fe-ae83-4349-9375-edfae9cb0089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business">
+      <UniqueIdentifier>{1839b503-1ee3-46b5-af22-20b18fcceb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action\Std pattern">
+      <UniqueIdentifier>{b6200a88-84da-4959-9be0-29839bc1939d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action\Array pattern">
+      <UniqueIdentifier>{1502d8ce-75e5-42de-923b-d0f9fafecd75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action\Transform">
+      <UniqueIdentifier>{074566f0-fcf8-4fd1-8e44-dc1f43af8d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action\Select">
+      <UniqueIdentifier>{2f5863d7-905c-4d0f-88a1-5d4dbb9b859e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action\Line arc pattern">
+      <UniqueIdentifier>{152cd685-5685-4c1d-8640-a45627b687e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Action\Basic">
+      <UniqueIdentifier>{71e5ea11-67b3-4e23-bb3b-6b618f630119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\action bar">
+      <UniqueIdentifier>{cf05edbe-ca7a-4dce-9e30-83e847a1ce80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\dialog">
+      <UniqueIdentifier>{95804071-277b-483d-9826-232c159f98b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clGeometryFeatureUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternCopyAction.cpp">
+      <Filter>Source Files\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternDeleteAction.cpp">
+      <Filter>Source Files\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternExplodeAction.cpp">
+      <Filter>Source Files\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternLoopOffsetAction.cpp">
+      <Filter>Source Files\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternPropertyBar.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEditCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="TextAddCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryFeatureEditor.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="TextDrawAction.cpp">
+      <Filter>Source Files\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="OBroundPatEditor.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundCornerHolePatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleDPatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="DoubleDPatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipsePatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="RadSlotPatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="RectHolePatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcArrayPatternEditAction.cpp">
+      <Filter>Source Files\Action\Array pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayPatternEditActionBase.cpp">
+      <Filter>Source Files\Action\Array pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleArrayPatternEditAction.cpp">
+      <Filter>Source Files\Action\Array pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="GridArrayPatternEditAction.cpp">
+      <Filter>Source Files\Action\Array pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternMoveAction.cpp">
+      <Filter>Source Files\Action\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternRotateAction.cpp">
+      <Filter>Source Files\Action\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternTransformActionBase.cpp">
+      <Filter>Source Files\Action\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleHolePatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternLoopSelectAction.cpp">
+      <Filter>Source Files\Action\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternPreSelectAction.cpp">
+      <Filter>Source Files\Action\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternSelectAction.cpp">
+      <Filter>Source Files\Action\Select</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcPattern3PtEditAction.cpp">
+      <Filter>Source Files\Action\Line arc pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="ArcPatternEditAction.cpp">
+      <Filter>Source Files\Action\Line arc pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiLinePatternEditor.cpp">
+      <Filter>Source Files\Action\Line arc pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="RectLinesDrawAction.cpp">
+      <Filter>Source Files\Action\Line arc pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundCornerLineArcsDrawAction.cpp">
+      <Filter>Source Files\Action\Line arc pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="CirclePatternEditAction.cpp">
+      <Filter>Source Files\Action\Std pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="LineArrayPatternEditAction.cpp">
+      <Filter>Source Files\Action\Array pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="IPatternEditAction.cpp">
+      <Filter>Source Files\Action\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="IPatternGripEditAction.cpp">
+      <Filter>Source Files\Action\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="IPatternTransformAction.cpp">
+      <Filter>Source Files\Action\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternEditActionBase.cpp">
+      <Filter>Source Files\Action\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternGripEditActionBase.cpp">
+      <Filter>Source Files\Action\Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternLoopAlignAction.cpp">
+      <Filter>Source Files\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternLoopAlignCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="LinePatternEditAction.cpp">
+      <Filter>Source Files\Action\Line arc pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="TextParamActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeLoopSizeDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryOptimizeDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternLoopOffsetDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clGeometryFeatureUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clGeometryFeatureUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArcArrayPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcPattern3PtEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArcPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayPatternEditActionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleArrayPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CirclePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clGeometryFeatureUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clGeometryFeatureUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleDPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipsePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryFeatureEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryOptimizeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridArrayPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPatternGripEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPatternTransformAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LineArrayPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiLinePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OBroundPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternCopyAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternEditActionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternExplodeAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternGripEditActionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternLoopOffsetAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternLoopOffsetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternLoopSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternMoveAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternPreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternRotateAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternTransformActionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RadSlotPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RectHolePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RectLinesDrawAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundCornerHolePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundCornerLineArcsDrawAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleDPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleHolePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextParamActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextAddCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextEditCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextDrawAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternLoopAlignAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternLoopAlignCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeLoopSizeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clGeometryFeatureUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

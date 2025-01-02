@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\static">
+      <UniqueIdentifier>{02ad2ac7-98da-41b1-a2ff-07b915b590b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{8b624660-b3df-4c83-8eae-089c17b463f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\dlg">
+      <UniqueIdentifier>{8e065f74-e8a9-4924-bbc3-16f13ad3b31c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\page">
+      <UniqueIdentifier>{c3483b77-8f06-44da-9490-0caed4eaa7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business">
+      <UniqueIdentifier>{0a3c5ffd-fc42-4000-a063-a3eea418b294}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clExpertLibUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeCutParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ChainCutParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionAvoidParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ComCutParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultParamConfigSelectDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="FlyCutParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCutParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MachineSelectDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="NestAdvancedParamDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamConfigDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamConfigNameDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamConfigSelectDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolDxfMapDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolManagementDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerAssignPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpertLibItemInfoPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="LeadInOutPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointAssignmentPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="NCConfigPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="NestConfigItemPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamConfigPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="PierceLocationPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="SequenceSetPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolAssignPage.cpp">
+      <Filter>Source Files\Gui\page</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerDrawStatic.cpp">
+      <Filter>Source Files\static</Filter>
+    </ClCompile>
+    <ClCompile Include="LeadDrawStatic.cpp">
+      <Filter>Source Files\static</Filter>
+    </ClCompile>
+    <ClCompile Include="PierceDrawStatic.cpp">
+      <Filter>Source Files\static</Filter>
+    </ClCompile>
+    <ClCompile Include="CamConfigSelectDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpertLibHelper.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpertLibTree.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="ReferencePointDlg.cpp">
+      <Filter>Source Files\Gui\dlg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clExpertLibUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clExpertLibUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BridgeCutParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChainCutParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clExpertLibUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clExpertLibUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionAvoidParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComCutParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionParamNameInCyc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerAssignPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerConfigItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerDrawStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultParamConfigSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpertLibItemInfoPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpertLibTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlyCutParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCutParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeadDrawStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeadInOutPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MachineSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointAssignmentPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NCConfigPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NestAdvancedParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NestConfigItemPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NestParamPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamConfigDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamConfigNameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamConfigPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamConfigSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PierceDrawStatic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PierceLocationPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SequenceSetPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolAssignPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolDxfMapDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolManagementDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CamConfigSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SenFengNumEditInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpertLibHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReferencePointDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clExpertLibUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

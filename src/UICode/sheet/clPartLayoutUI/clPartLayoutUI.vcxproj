@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17C359FC-7DBE-465F-BD53-C2D3B609A852}</ProjectGuid>
+    <RootNamespace>clPartLayout</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clPartLayoutUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clPartLayoutUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\resource\clResource;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\config\clExpertLib;..\..\..\..\inc\part\clPart;..\..\..\..\inc\config\clOption;..\..\..\..\inc\part\clCutFeature;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\config\clMachineLib;..\..\..\..\inc\config\clMaterialLib;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\part\clCutFeatureUI;..\..\..\..\inc\sheet\clPartLayout;..\..\basic\clBaseDataUI;..\..\KrnlLib;..\..\KrnlLib\inc;..\..\config\clExpertLibUI;..\..\resource;..\..\..\..\inc\importExport\clDxfDwg;..\..\sheet\clCanvasGeometryUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;ClPartLayoutUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clGeometryFeature.lib;clExpertLib.lib;clPart.lib;clOption.lib;clCutFeature.lib;clDbWrapper.lib;clUtility.lib;clDrawWrapper.lib;clGeometryBase.lib;clUILib.lib;clMachineLib.lib;clMaterialLib.lib;clPartLayout.lib;clDxfDwg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\debug\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\debug;..\..\..\..\3rdparty\vld-2.5.1\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\clPartLayoutUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\resource\clResource;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\config\clExpertLib;..\..\..\..\inc\part\clPart;..\..\..\..\inc\config\clOption;..\..\..\..\inc\part\clCutFeature;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\config\clMachineLib;..\..\..\..\inc\config\clMaterialLib;..\..\part\clCutFeatureUI;..\..\..\..\inc\sheet\clPartLayout;..\..\basic\clBaseDataUI;..\..\KrnlLib;..\..\config\clExpertLibUI;..\..\resource;..\..\..\..\inc\importExport\clDxfDwg;..\..\sheet\clCanvasGeometryUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;ClPartLayoutUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clGeometryFeature.lib;clExpertLib.lib;clPart.lib;clOption.lib;clCutFeature.lib;clDbWrapper.lib;clUtility.lib;clDrawWrapper.lib;clGeometryBase.lib;clUILib.lib;clMachineLib.lib;clMaterialLib.lib;clPartLayout.lib;clDxfDwg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\release\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\clPartLayoutUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ChangeLoopToolActionBar.cpp" />
+    <ClCompile Include="ChangeLoopToolDlg.cpp" />
+    <ClCompile Include="ChangeLoopToolPane.cpp" />
+    <ClCompile Include="clPartLayoutUI.cpp" />
+    <ClCompile Include="CornerAddAction2.cpp" />
+    <ClCompile Include="CornerDeleteAction2.cpp" />
+    <ClCompile Include="CornerEditAction2.cpp" />
+    <ClCompile Include="CornerPreSelectAction2.cpp" />
+    <ClCompile Include="CreatePartGridActionBar.cpp" />
+    <ClCompile Include="CutDirectionAdjustAction.cpp" />
+    <ClCompile Include="CutSideAdjustAction.cpp" />
+    <ClCompile Include="LoopInstancePropertyBar.cpp" />
+    <ClCompile Include="PartDistanceDetectActionBar.cpp" />
+    <ClCompile Include="DistanceMeasureAction.cpp" />
+    <ClCompile Include="ImportDxfDwg2SheetDlg.cpp" />
+    <ClCompile Include="IPartPlacementTransformAction.cpp" />
+    <ClCompile Include="LoopInstanceSelectAction.cpp" />
+    <ClCompile Include="LoopLeadEditAction2.cpp" />
+    <ClCompile Include="LoopToolEditAction3.cpp" />
+    <ClCompile Include="LoopToolEditAction2.cpp" />
+    <ClCompile Include="MicroJointAddAction.cpp" />
+    <ClCompile Include="MicroJointDeleteAction2.cpp" />
+    <ClCompile Include="MicroJointEditAction2.cpp" />
+    <ClCompile Include="MicroJointPreSelectAction2.cpp" />
+    <ClCompile Include="PartAddDlg.cpp" />
+    <ClCompile Include="PartGridGapDlg.cpp" />
+    <ClCompile Include="PartInstanceSelectAction.cpp" />
+    <ClCompile Include="PartLayoutEditor.cpp" />
+    <ClCompile Include="PartLayoutHelper.cpp" />
+    <ClCompile Include="PartLayoutPropertyBar.cpp" />
+    <ClCompile Include="AddPartPlacementFromDatacenterAction.cpp" />
+    <ClCompile Include="AddPartPlacementFromDxfdwgAction.cpp" />
+    <ClCompile Include="PartPlacementAddPanel.cpp" />
+    <ClCompile Include="PartPlacementCopyAction.cpp" />
+    <ClCompile Include="PartPlacementDeleteAction.cpp" />
+    <ClCompile Include="PartPlacementEditAction.cpp" />
+    <ClCompile Include="PartPlacementExplodeAction.cpp" />
+    <ClCompile Include="PartPlacementGridAction.cpp" />
+    <ClCompile Include="PartPlacementMoveAction.cpp" />
+    <ClCompile Include="PartPlacementMoveBase.cpp" />
+    <ClCompile Include="PartPlacementPreSelectAction.cpp" />
+    <ClCompile Include="PartPlacementPropertyBar.cpp" />
+    <ClCompile Include="PartPlacementRotateAction.cpp" />
+    <ClCompile Include="PartPlacementSelectAction.cpp" />
+    <ClCompile Include="PartPlacementTransformAction.cpp" />
+    <ClCompile Include="PartPlacementTree.cpp" />
+    <ClCompile Include="PartPlacementTreeNodeData.cpp" />
+    <ClCompile Include="PartPlacementViewBar.cpp" />
+    <ClCompile Include="PartTopologyBar.cpp" />
+    <ClCompile Include="PartTopologyTree.cpp" />
+    <ClCompile Include="SelectPartOrLoopActionBar.cpp" />
+    <ClCompile Include="SpreadSamePartActionBar.cpp" />
+    <ClCompile Include="StartCutPtAdjustAction.cpp" />
+    <ClCompile Include="StartCutPtPreSelectAction2.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WrongToolSizeLoopInstances.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clPartLayoutUI.def" />
+    <None Include="res\clPartLayoutUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChangeLoopToolActionBar.h" />
+    <ClInclude Include="ChangeLoopToolDlg.h" />
+    <ClInclude Include="ChangeLoopToolPane.h" />
+    <ClInclude Include="clPartLayoutUI.h" />
+    <ClInclude Include="clPartLayoutUICommon.h" />
+    <ClInclude Include="CornerAddAction2.h" />
+    <ClInclude Include="CornerDeleteAction2.h" />
+    <ClInclude Include="CornerEditAction2.h" />
+    <ClInclude Include="CornerPreSelectAction2.h" />
+    <ClInclude Include="CreatePartGridActionBar.h" />
+    <ClInclude Include="CutDirectionAdjustAction.h" />
+    <ClInclude Include="CutSideAdjustAction.h" />
+    <ClInclude Include="LoopInstancePropertyBar.h" />
+    <ClInclude Include="PartDistanceDetectActionBar.h" />
+    <ClInclude Include="DistanceMeasureAction.h" />
+    <ClInclude Include="ImportDxfDwg2SheetDlg.h" />
+    <ClInclude Include="IPartPlacementTransformAction.h" />
+    <ClInclude Include="LoopInstanceSelectAction.h" />
+    <ClInclude Include="LoopLeadEditAction2.h" />
+    <ClInclude Include="LoopToolEditAction2.h" />
+    <ClInclude Include="LoopToolEditAction3.h" />
+    <ClInclude Include="MicroJointAddAction.h" />
+    <ClInclude Include="MicroJointDeleteAction2.h" />
+    <ClInclude Include="MicroJointEditAction2.h" />
+    <ClInclude Include="MicroJointPreSelectAction2.h" />
+    <ClInclude Include="PartAddDlg.h" />
+    <ClInclude Include="PartGridGapDlg.h" />
+    <ClInclude Include="PartInstanceSelectAction.h" />
+    <ClInclude Include="PartLayoutEditor.h" />
+    <ClInclude Include="PartLayoutHelper.h" />
+    <ClInclude Include="PartLayoutPropertyBar.h" />
+    <ClInclude Include="AddPartPlacementFromDatacenterAction.h" />
+    <ClInclude Include="AddPartPlacementFromDxfdwgAction.h" />
+    <ClInclude Include="PartPlacementAddPanel.h" />
+    <ClInclude Include="PartPlacementCopyAction.h" />
+    <ClInclude Include="PartPlacementDeleteAction.h" />
+    <ClInclude Include="PartPlacementEditAction.h" />
+    <ClInclude Include="PartPlacementExplodeAction.h" />
+    <ClInclude Include="PartPlacementGridAction.h" />
+    <ClInclude Include="PartPlacementMoveAction.h" />
+    <ClInclude Include="PartPlacementMoveBase.h" />
+    <ClInclude Include="PartPlacementPreSelectAction.h" />
+    <ClInclude Include="PartPlacementPropertyBar.h" />
+    <ClInclude Include="PartPlacementRotateAction.h" />
+    <ClInclude Include="PartPlacementSelectAction.h" />
+    <ClInclude Include="PartPlacementTransformAction.h" />
+    <ClInclude Include="PartPlacementTree.h" />
+    <ClInclude Include="PartPlacementTreeNodeData.h" />
+    <ClInclude Include="PartPlacementViewBar.h" />
+    <ClInclude Include="PartTopologyBar.h" />
+    <ClInclude Include="PartTopologyTree.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectPartOrLoopActionBar.h" />
+    <ClInclude Include="SpreadSamePartActionBar.h" />
+    <ClInclude Include="StartCutPtAdjustAction.h" />
+    <ClInclude Include="StartCutPtPreSelectAction2.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WrongToolSizeLoopInstances.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clPartLayoutUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\basic\clBaseDataUI\clBaseDataUI.vcxproj">
+      <Project>{36681548-753e-497d-a612-01630c5b7f04}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clExpertLibUI\clExpertLibUI.vcxproj">
+      <Project>{cdc5dd0c-1af6-4cc1-9756-3e3314fdde99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clMachineLibUI\clMachineLibUI.vcxproj">
+      <Project>{d37ec670-70dc-4a7f-8c16-aa80e0a79668}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clOptionUI\clOptionUI.vcxproj">
+      <Project>{2b4b3d9f-c0cc-47f4-866c-06e05420d3b9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clCutFeatureUI\clCutFeatureUI.vcxproj">
+      <Project>{e79ef911-3a25-47ac-9899-9e147b89722c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clPartUI\clPartUI.vcxproj">
+      <Project>{d359cf86-e839-410a-9559-a7107a16d141}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\resource\clResource\clResource.vcxproj">
+      <Project>{58f2de9f-651d-4710-b337-73c84f0ba122}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clCanvasGeometryUI\clCanvasGeometryUI.vcxproj">
+      <Project>{401e7347-e112-42ce-b44a-5f43696ab3d1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

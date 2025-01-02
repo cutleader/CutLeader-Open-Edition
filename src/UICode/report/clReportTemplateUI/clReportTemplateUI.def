@@ -1,0 +1,6 @@
+; clReportTemplateUI.def : Declares the module parameters for the DLL.
+
+LIBRARY      "clReportTemplateUI"
+
+EXPORTS
+    ; Explicit exports can go here

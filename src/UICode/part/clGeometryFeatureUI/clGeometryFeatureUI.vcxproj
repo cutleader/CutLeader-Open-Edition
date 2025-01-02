@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0DAE83D4-47AC-4A7B-9CC9-1DD7B2AAB3FD}</ProjectGuid>
+    <RootNamespace>clGeometryFeature</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clGeometryFeatureUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clGeometryFeatureUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\resource\clResource;..\..\..\..\inc\config\clOption;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\basic\clUtility;..\..\basic\clBaseDataUI;..\..\..\UICode\resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;ClGeometryFeatureUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clOption.lib;clDbWrapper.lib;clUtility.lib;clDrawWrapper.lib;clGeometryBase.lib;clUILib.lib;clGeometryFeature.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\debug\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\debug;..\..\..\..\3rdparty\vld-2.5.1\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\clGeometryFeatureUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\resource\clResource;..\..\..\..\inc\config\clOption;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\part\clGeometryFeature;..\..\basic\clBaseDataUI;..\..\..\UICode\resource;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;ClGeometryFeatureUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clOption.lib;clDbWrapper.lib;clUtility.lib;clDrawWrapper.lib;clGeometryBase.lib;clUILib.lib;clGeometryFeature.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\release\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\clGeometryFeatureUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArcArrayPatternEditAction.cpp" />
+    <ClCompile Include="ArcPattern3PtEditAction.cpp" />
+    <ClCompile Include="ArcPatternEditAction.cpp" />
+    <ClCompile Include="ArrayPatternEditActionBase.cpp" />
+    <ClCompile Include="ChangeLoopSizeDlg.cpp" />
+    <ClCompile Include="CircleArrayPatternEditAction.cpp" />
+    <ClCompile Include="CirclePatternEditAction.cpp" />
+    <ClCompile Include="clGeometryFeatureUI.cpp" />
+    <ClCompile Include="DoubleDPatternEditAction.cpp" />
+    <ClCompile Include="EllipsePatternEditAction.cpp" />
+    <ClCompile Include="GeometryFeatureEditor.cpp" />
+    <ClCompile Include="GeometryOptimizeDlg.cpp" />
+    <ClCompile Include="GridArrayPatternEditAction.cpp" />
+    <ClCompile Include="IPatternEditAction.cpp" />
+    <ClCompile Include="IPatternGripEditAction.cpp" />
+    <ClCompile Include="IPatternTransformAction.cpp" />
+    <ClCompile Include="LineArrayPatternEditAction.cpp" />
+    <ClCompile Include="LinePatternEditAction.cpp" />
+    <ClCompile Include="MultiLinePatternEditor.cpp" />
+    <ClCompile Include="OBroundPatEditor.cpp" />
+    <ClCompile Include="PatternCopyAction.cpp" />
+    <ClCompile Include="PatternDeleteAction.cpp" />
+    <ClCompile Include="PatternEditActionBase.cpp" />
+    <ClCompile Include="PatternExplodeAction.cpp" />
+    <ClCompile Include="PatternGripEditActionBase.cpp" />
+    <ClCompile Include="PatternLoopAlignAction.cpp" />
+    <ClCompile Include="PatternLoopAlignCommand.cpp" />
+    <ClCompile Include="PatternLoopOffsetAction.cpp" />
+    <ClCompile Include="PatternLoopOffsetDlg.cpp" />
+    <ClCompile Include="PatternLoopSelectAction.cpp" />
+    <ClCompile Include="PatternMoveAction.cpp" />
+    <ClCompile Include="PatternPreSelectAction.cpp" />
+    <ClCompile Include="PatternPropertyBar.cpp" />
+    <ClCompile Include="PatternRotateAction.cpp" />
+    <ClCompile Include="PatternSelectAction.cpp" />
+    <ClCompile Include="PatternTransformActionBase.cpp" />
+    <ClCompile Include="RadSlotPatternEditAction.cpp" />
+    <ClCompile Include="RectHolePatternEditAction.cpp" />
+    <ClCompile Include="RectLinesDrawAction.cpp" />
+    <ClCompile Include="RoundCornerHolePatternEditAction.cpp" />
+    <ClCompile Include="RoundCornerLineArcsDrawAction.cpp" />
+    <ClCompile Include="SingleDPatternEditAction.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TextAddCommand.cpp" />
+    <ClCompile Include="TextDrawAction.cpp" />
+    <ClCompile Include="TextEditCommand.cpp" />
+    <ClCompile Include="TextParamActionBar.cpp" />
+    <ClCompile Include="TriangleHolePatternEditAction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clGeometryFeatureUI.def" />
+    <None Include="res\clGeometryFeatureUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArcArrayPatternEditAction.h" />
+    <ClInclude Include="ArcPattern3PtEditAction.h" />
+    <ClInclude Include="ArcPatternEditAction.h" />
+    <ClInclude Include="ArrayPatternEditActionBase.h" />
+    <ClInclude Include="ChangeLoopSizeDlg.h" />
+    <ClInclude Include="CircleArrayPatternEditAction.h" />
+    <ClInclude Include="CirclePatternEditAction.h" />
+    <ClInclude Include="clGeometryFeatureUI.h" />
+    <ClInclude Include="clGeometryFeatureUICommon.h" />
+    <ClInclude Include="DoubleDPatternEditAction.h" />
+    <ClInclude Include="EllipsePatternEditAction.h" />
+    <ClInclude Include="GeometryFeatureEditor.h" />
+    <ClInclude Include="GeometryOptimizeDlg.h" />
+    <ClInclude Include="GridArrayPatternEditAction.h" />
+    <ClInclude Include="IPatternEditAction.h" />
+    <ClInclude Include="IPatternGripEditAction.h" />
+    <ClInclude Include="IPatternTransformAction.h" />
+    <ClInclude Include="LineArrayPatternEditAction.h" />
+    <ClInclude Include="LinePatternEditAction.h" />
+    <ClInclude Include="MultiLinePatternEditAction.h" />
+    <ClInclude Include="OBroundPatternEditAction.h" />
+    <ClInclude Include="PatternCopyAction.h" />
+    <ClInclude Include="PatternDeleteAction.h" />
+    <ClInclude Include="PatternEditActionBase.h" />
+    <ClInclude Include="PatternExplodeAction.h" />
+    <ClInclude Include="PatternGripEditActionBase.h" />
+    <ClInclude Include="PatternLoopAlignAction.h" />
+    <ClInclude Include="PatternLoopAlignCommand.h" />
+    <ClInclude Include="PatternLoopOffsetAction.h" />
+    <ClInclude Include="PatternLoopOffsetDlg.h" />
+    <ClInclude Include="PatternLoopSelectAction.h" />
+    <ClInclude Include="PatternMoveAction.h" />
+    <ClInclude Include="PatternPreSelectAction.h" />
+    <ClInclude Include="PatternPropertyBar.h" />
+    <ClInclude Include="PatternRotateAction.h" />
+    <ClInclude Include="PatternSelectAction.h" />
+    <ClInclude Include="PatternTransformActionBase.h" />
+    <ClInclude Include="RadSlotPatternEditAction.h" />
+    <ClInclude Include="RectHolePatternEditAction.h" />
+    <ClInclude Include="RectLinesDrawAction.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RoundCornerHolePatternEditAction.h" />
+    <ClInclude Include="RoundCornerLineArcsDrawAction.h" />
+    <ClInclude Include="SingleDPatternEditAction.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextAddCommand.h" />
+    <ClInclude Include="TextDrawAction.h" />
+    <ClInclude Include="TextEditCommand.h" />
+    <ClInclude Include="TextParamActionBar.h" />
+    <ClInclude Include="TriangleHolePatternEditAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clGeometryFeatureUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\basic\clBaseDataUI\clBaseDataUI.vcxproj">
+      <Project>{36681548-753e-497d-a612-01630c5b7f04}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="clGeometryFeature.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

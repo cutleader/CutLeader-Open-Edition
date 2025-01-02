@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clResource.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\image\addLoopSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\addPartFromAsmDxf24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\addPartFromDB24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\addPartFromDxf24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\assignCam24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\assignSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\camConfig_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\checkIntf24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cLeader.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cLeaderDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\clearSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\clResource.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\config_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\createPartGrid24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cutDir24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cutfeature_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cutfeature_bar16.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cutfeature_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\cutSide24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\deleteSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\delGeom24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\delPart24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\depend_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\DownArrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\DownArrowSel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\drawArc24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\drawCircle24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\drawLine24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\drawPolyLine24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\drawRect24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\editLoopTool24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\error.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\exit.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\expertlib_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\explib_list.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\Frame.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\FrameDisable.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\FrameSel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\generateNC24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\geom_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\geom_bar_large.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\geom_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\geomLoop_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\help_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\info.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\insertLoopSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\joint_count0.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\joint_count1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\joint_count2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\joint_count3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\joint_count4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\joint_count6.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\loopLead24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\loopStartPt24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\macMgr_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\main_menu.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\main_menu_small.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\matLib 24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\matLib_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\measureDis24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\nest_border_space.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\nest_dir_x.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\nest_dir_y.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\nesting_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\next.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\orderSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\paramConfig.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\partDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\partinst_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\partinst_bar_32.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\partpmt_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\partpmt_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\poly_mat_margin.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\previous.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\product_logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\productExpl_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\progress_gif.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\quick_access.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\quickStart_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\rect_mat_margin.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\remnant cut auto 24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\resetCam24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\Run.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\RunDisable.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\RunSel.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\selectPart24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\selectSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\selGeom24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\sequence_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\sequence_bar16.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\seqUnit_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\sheetDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\simulateSeq24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\splasher.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\startcorner_br.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\startcorner_lb.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\startcorner_lt.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\startcorner_tr.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\startPage.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\sysConfig24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\tplDesign_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\tree_drop_copy.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\tree_drop_move.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\tree_drop_no.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_bkgnd.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_bkgnd2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_button.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_checkbox.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_checkbox.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_def_head.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_def_sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_def_tree.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_DROP.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_lockbox.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_lockbox.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_SIZE.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_split.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\treelist_STOP.CUR">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\undoredo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\warning.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\image\zoom_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taoresource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clResource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\image\editTaskParts24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\delPartFromTask24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDxf2Task24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDb2Task24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\part 32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\part 48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\task 32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\task 48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\new part from blank 48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\new part from dxf 48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\new task from blank 48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\new task from nest 48.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\nestTaskParts24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\copyPart24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\movePart24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawText24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawText24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addCanvasGeometryAsPart24.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\quickStart_bar_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cutfeature_bar_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\sequence_bar_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\..\..\..\CutLeaderV7\Src\Resource\common\res\partpmt_bar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\selGeom32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawRect32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawPolyLine32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawArc32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawCircle32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawLine32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\delGeom32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\assignCam32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\resetCam32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\checkIntf32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\loopLead32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cutDir32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\paramConfig32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\sysConfig32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDB32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDxf32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\selectPart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\createPartGrid32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\delPart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\assignSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\clearSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\selectSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\deleteSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\orderSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addLoopSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\insertLoopSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\simulateSeq32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\generateNC32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\loopStartPt32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\measureDis32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\matLib 32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\remnant cut auto 32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\editLoopTool32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cutSide32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\editTaskParts32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\delPartFromTask32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDxf2Task32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDb2Task32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\nestTaskParts32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\copyPart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\movePart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\drawText32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addCanvasGeometryAsPart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\rotatePart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\editTaskParts24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\delPartFromTask24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDxf2Task24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\addPartFromDb2Task24.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cutLoop16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\noCutLoop16.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\return2ForegroundCam_cancelEdit48.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\return2ForegroundCam_finishEdit48.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\gridPart32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\gridGeometry32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\leavePartInplaceEdit_cancelEdit48.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\leavePartInplaceEdit_finishEdit48.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_bottom_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_horizontalCenter_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_left_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_right_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_top_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_verticalCenter_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\alignLoop_center_32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\corner-add.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\corner-assign.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\corner-delete.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\corner-edit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\microjoint-add.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\microjoint-assign.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\microjoint-delete.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\microjoint-edit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\leadinout-assign.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\loopStartPt-assign.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\flycut-add-32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\sequence-add-32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\sequence-clear.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\sequence-reset.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cut-inside.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cut-on.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cut-outside.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\setRefPt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cutDir-ccw-32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\cutDir-cw-32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\loopGap32.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\image\product_name_OpenEdition.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

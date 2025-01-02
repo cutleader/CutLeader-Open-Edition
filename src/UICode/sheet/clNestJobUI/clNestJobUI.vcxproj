@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{42676766-AB8B-489B-8C6F-848B73F2A15B}</ProjectGuid>
+    <RootNamespace>nestMgr</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clNestJobUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clNestJobUI\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\config\clExpertLib;..\..\..\..\inc\config\clOption;..\..\..\..\inc\basic\clDbWrapper;..\..\resource\clResource;..\..\..\..\inc\part\clPart;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\config\clMaterialLib;..\..\..\..\inc\sheet\clSheet;..\..\..\..\inc\sheet\clPartLayout;..\..\sheet\clCutSequence;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\config\clMachineLib;..\..\post\clPostProcessor;..\..\importExport\clDxfDwg;..\..\report\clReportTemplate;..\..\report\clReportPrinter;..\..\importExport\clDataImportExport;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\..\..\inc\sheet\clCutSequence;..\..\..\..\inc\sheet\clNestJob;..\..\basic\clBaseDataUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;ClNestJobUI_Home;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clUILib.lib;clBaseData.lib;clDbWrapper.lib;clMaterialLib.lib;clNestJob.lib;clUtility.lib;clPart.lib;clSheet.lib;clExpertLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\debug\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\debug;..\..\..\..\3rdparty\vld-2.5.1\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\clNestJobUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\config\clExpertLib;..\..\..\..\inc\config\clOption;..\..\..\..\inc\basic\clDbWrapper;..\..\resource\clResource;..\..\..\..\inc\part\clPart;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\config\clMaterialLib;..\..\..\..\inc\sheet\clSheet;..\..\..\..\inc\sheet\clPartLayout;..\..\sheet\clCutSequence;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\config\clMachineLib;..\..\post\clPostProcessor;..\..\importExport\clDataImportExport;..\..\importExport\clDxfDwg;..\..\report\clReportTemplate;..\..\report\clReportPrinter;..\..\..\..\inc\sheet\clCutSequence;..\..\..\..\inc\sheet\clNestJob;..\..\basic\clBaseDataUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;ClNestJobUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clUILib.lib;clBaseData.lib;clDbWrapper.lib;clMaterialLib.lib;clNestJob.lib;clUtility.lib;clPart.lib;clSheet.lib;clExpertLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\release\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\clNestJobUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="clNestJobUI.cpp" />
+    <ClCompile Include="NestJobInfoDlg.cpp" />
+    <ClCompile Include="NestJobSelDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clNestJobUI.def" />
+    <None Include="res\clNestJobUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clNestJobUI.h" />
+    <ClInclude Include="clNestJobUICommon.h" />
+    <ClInclude Include="NestJobInfoDlg.h" />
+    <ClInclude Include="NestJobSelDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clNestJobUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\basic\clBaseDataUI\clBaseDataUI.vcxproj">
+      <Project>{36681548-753e-497d-a612-01630c5b7f04}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clExpertLibUI\clExpertLibUI.vcxproj">
+      <Project>{cdc5dd0c-1af6-4cc1-9756-3e3314fdde99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clMaterialLibUI\clMaterialLibUI.vcxproj">
+      <Project>{27a4e42a-4e9c-4771-881a-3f21f41f2f6c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clOptionUI\clOptionUI.vcxproj">
+      <Project>{2b4b3d9f-c0cc-47f4-866c-06e05420d3b9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clCutFeatureUI\clCutFeatureUI.vcxproj">
+      <Project>{e79ef911-3a25-47ac-9899-9e147b89722c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clGeometryFeatureUI\clGeometryFeatureUI.vcxproj">
+      <Project>{0dae83d4-47ac-4a7b-9cc9-1dd7b2aab3fd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clPartUI\clPartUI.vcxproj">
+      <Project>{d359cf86-e839-410a-9559-a7107a16d141}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\resource\clResource\clResource.vcxproj">
+      <Project>{58f2de9f-651d-4710-b337-73c84f0ba122}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clCutSequenceUI\clCutSequenceUI.vcxproj">
+      <Project>{fa78fd50-532d-4b52-be3e-5a699017997a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clPartLayoutUI\clPartLayoutUI.vcxproj">
+      <Project>{17c359fc-7dbe-465f-bd53-c2d3b609a852}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clSheetUI\clSheetUI.vcxproj">
+      <Project>{0b9ab221-c83d-4702-b6a6-e68d96359365}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

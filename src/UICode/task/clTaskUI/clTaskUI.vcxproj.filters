@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{6973ab30-b8de-458a-8339-227668c82835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Nesting">
+      <UniqueIdentifier>{ab4f5361-ddbe-4d55-955c-b7301f29287a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Task sheet">
+      <UniqueIdentifier>{8db53b82-9ea7-4e37-9a59-30ea33d3edb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Task part">
+      <UniqueIdentifier>{b266ac22-7937-4bde-b31e-eefed3d03634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business">
+      <UniqueIdentifier>{fe3bb54b-ef2d-4f06-b1d4-8d23ddba6dc6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPartFromDB2TaskDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDxfDwg2TaskDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialStockWarningDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskInfoDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="NestingPartsInTaskDlg.cpp">
+      <Filter>Source Files\Gui\Nesting</Filter>
+    </ClCompile>
+    <ClCompile Include="NestTaskPartsDlg.cpp">
+      <Filter>Source Files\Gui\Nesting</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPartsNestResultDlg.cpp">
+      <Filter>Source Files\Gui\Nesting</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSheetInfoDlg.cpp">
+      <Filter>Source Files\Gui\Task sheet</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSheetInfoListDlg.cpp">
+      <Filter>Source Files\Gui\Task sheet</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSheetManagementDlg.cpp">
+      <Filter>Source Files\Gui\Task sheet</Filter>
+    </ClCompile>
+    <ClCompile Include="BatchEditTaskPartDlg.cpp">
+      <Filter>Source Files\Gui\Task part</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPartInfoDlg.cpp">
+      <Filter>Source Files\Gui\Task part</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPartInfoListDlg.cpp">
+      <Filter>Source Files\Gui\Task part</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPartManagementDlg.cpp">
+      <Filter>Source Files\Gui\Task part</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPartsSettingDlg.cpp">
+      <Filter>Source Files\Gui\Task part</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPartManagementBar.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskSheetManagementBar.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="BatchEditTaskPartDlg_2.cpp">
+      <Filter>Source Files\Gui\Task part</Filter>
+    </ClCompile>
+    <ClCompile Include="clTaskUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigNestParamDlg.cpp">
+      <Filter>Source Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskHelper.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="PartInplaceEditData.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clTaskUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clTaskUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddPartFromDB2TaskDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BatchEditTaskPartDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDxfDwg2TaskDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialStockWarningDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NestingPartsInTaskDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NestTaskPartsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPartInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPartInfoListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPartManagementDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPartsNestResultDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPartsSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSheetInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSheetInfoListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSheetManagementDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPartManagementBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskSheetManagementBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BatchEditTaskPartDlg_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clTaskUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clTaskUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigNestParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PartInplaceEditData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clTaskUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

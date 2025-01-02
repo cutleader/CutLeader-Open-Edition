@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\action">
+      <UniqueIdentifier>{dd55596e-4d55-47c2-ba4a-bb6763696425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{1e9c548c-6697-4412-bede-4fbec71a9980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Panel">
+      <UniqueIdentifier>{0a234251-df5c-4c14-aa68-c276674c27dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\Dialog">
+      <UniqueIdentifier>{fea210d4-2c68-4614-ba97-cb7a3a5a8ab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\action bar">
+      <UniqueIdentifier>{99032631-4112-49f6-b1ae-06bde1aff53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\base">
+      <UniqueIdentifier>{70bdc8e3-3e73-4784-aab7-8f1ec301377e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\draw">
+      <UniqueIdentifier>{dca4ac89-77d7-4537-b9c0-edd37a6c3e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\business">
+      <UniqueIdentifier>{9e550572-b4ee-4409-a0db-db54346b47bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command">
+      <UniqueIdentifier>{f83e05bb-62f9-4d55-95e3-99815de13374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Command\base">
+      <UniqueIdentifier>{5bd6c56c-6e7d-4931-a6b2-b3a6c2f9b7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\loop position detect">
+      <UniqueIdentifier>{d5c3e5b9-d227-4fd8-849a-749bfe0f98c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\modify">
+      <UniqueIdentifier>{21255d02-85f3-491a-b28d-4ca484a621b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clCanvasGeometryUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternAddCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternDeleteAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternSelectAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternDeleteCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternPropertyBar.cpp">
+      <Filter>Source Files\Gui\Panel</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternPropertyEditCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternGripEditCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasGeometryEditAction.cpp">
+      <Filter>Source Files\action\base</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternGripEditActionBase.cpp">
+      <Filter>Source Files\action\base</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternPreSelectAction.cpp">
+      <Filter>Source Files\action\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ICanvasGeometryEditAction.cpp">
+      <Filter>Source Files\action\base</Filter>
+    </ClCompile>
+    <ClCompile Include="ICanvasPatternGripEditAction.cpp">
+      <Filter>Source Files\action\base</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternEditCommandBase.cpp">
+      <Filter>Source Files\Command\base</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternCopyAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasArcPatternEditAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasCirclePatternEditAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLinePatternEditAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasMultiLinePatternEditAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasRectPatternEditAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopMoveCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopRotateCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportDxfDwg2CanvasDlg.cpp">
+      <Filter>Source Files\Gui\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPatternsFromDxfdwgAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectPatternOrLoopActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPartFromCanvasAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatePartFromGeometryDlg.cpp">
+      <Filter>Source Files\Gui\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopAddCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopCopyCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasGeometryHelper.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasTextAddCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasTextEditCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasRectLinePatternEditAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternGridAction.cpp">
+      <Filter>Source Files\action</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateGeometryGridActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopGridCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasTextDrawAction.cpp">
+      <Filter>Source Files\action\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasZone.cpp">
+      <Filter>Source Files\action\loop position detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasZoneList.cpp">
+      <Filter>Source Files\action\loop position detect</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopPositionDetectActionBar.cpp">
+      <Filter>Source Files\Gui\action bar</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopPositionDetector.cpp">
+      <Filter>Source Files\action\loop position detect</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopAlignAction.cpp">
+      <Filter>Source Files\action\modify</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternMoveAction.cpp">
+      <Filter>Source Files\action\modify</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasPatternRotateAction.cpp">
+      <Filter>Source Files\action\modify</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopAlignCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasGeometryEditor.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasLoopSizeChangeCommand.cpp">
+      <Filter>Source Files\Command</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clCanvasGeometryUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clCanvasGeometryUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clCanvasGeometryUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clCanvasGeometryUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasGeometryEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasCirclePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternAddCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternPreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasGeometryEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternDeleteCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternPropertyEditCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternGripEditActionBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternGripEditCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanvasGeometryEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ICanvasPatternGripEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternEditCommandBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLinePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasMultiLinePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasArcPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasRectPatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternCopyAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternMoveAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopMoveCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternRotateAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopRotateCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportDxfDwg2CanvasDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPatternsFromDxfdwgAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectPatternOrLoopActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPartFromCanvasAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatePartFromGeometryDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopAddCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopCopyCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasGeometryHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasTextAddCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasTextDrawAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasTextEditCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasRectLinePatternEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasPatternGridAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateGeometryGridActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopGridCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasZoneList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopPositionDetectActionBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopPositionDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopAlignAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopAlignCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasLoopSizeChangeCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clCanvasGeometryUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

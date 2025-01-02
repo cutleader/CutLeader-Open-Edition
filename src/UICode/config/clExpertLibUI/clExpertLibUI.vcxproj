@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CDC5DD0C-1AF6-4CC1-9756-3E3314FDDE99}</ProjectGuid>
+    <RootNamespace>mac</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clExpertLibUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clExpertLibUI\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\inc\basic\clGeometryBase;..\..\resource\clResource;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\config\clOption;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\config\clMachineLib;..\..\..\..\3rdparty\SenseLock;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\..\..\inc\config\clExpertLib;..\..\KrnlLib;..\..\basic\clBaseDataUI;..\..\resource;..\..\config\clMachineLibUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;ClExpertLibUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clUtility.lib;clDbWrapper.lib;clDrawWrapper.lib;clGeometryBase.lib;clOption.lib;clUILib.lib;clMachineLib.lib;clExpertLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\debug\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\debug;..\..\..\..\3rdparty\SenseLock;..\..\..\..\3rdparty\vld-2.5.1\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\clExpertLibUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\..\..\inc\basic\clGeometryBase;..\..\resource\clResource;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\config\clOption;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUILib;..\..\..\..\inc\basic\clBaseData;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\config\clMachineLib;..\..\..\..\3rdparty\SenseLock;..\..\..\..\inc\config\clExpertLib;..\..\KrnlLib;..\..\basic\clBaseDataUI;..\..\resource;..\..\config\clMachineLibUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;ClExpertLibUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clUtility.lib;clDbWrapper.lib;clDrawWrapper.lib;clGeometryBase.lib;clOption.lib;clUILib.lib;clMachineLib.lib;clExpertLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\release\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\release;..\..\..\..\3rdparty\SenseLock;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\clExpertLibUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BridgeCutParamDlg.cpp" />
+    <ClCompile Include="CamConfigSelectDlg.cpp" />
+    <ClCompile Include="ChainCutParamDlg.cpp" />
+    <ClCompile Include="clExpertLibUI.cpp" />
+    <ClCompile Include="CollisionAvoidParamDlg.cpp" />
+    <ClCompile Include="ComCutParamDlg.cpp" />
+    <ClCompile Include="ExpertLibHelper.cpp" />
+    <ClCompile Include="CornerAssignPage.cpp" />
+    <ClCompile Include="CornerDrawStatic.cpp" />
+    <ClCompile Include="DefaultParamConfigSelectDlg.cpp" />
+    <ClCompile Include="ExpertLibItemInfoPage.cpp" />
+    <ClCompile Include="ExpertLibTree.cpp" />
+    <ClCompile Include="FlyCutParamDlg.cpp" />
+    <ClCompile Include="GridCutParamDlg.cpp" />
+    <ClCompile Include="LeadDrawStatic.cpp" />
+    <ClCompile Include="LeadInOutPage.cpp" />
+    <ClCompile Include="MachineSelectDlg.cpp" />
+    <ClCompile Include="MicroJointAssignmentPage.cpp" />
+    <ClCompile Include="NCConfigPage.cpp" />
+    <ClCompile Include="NestAdvancedParamDlg.cpp" />
+    <ClCompile Include="NestConfigItemPage.cpp" />
+    <ClCompile Include="ParamConfigDlg.cpp" />
+    <ClCompile Include="ParamConfigNameDlg.cpp" />
+    <ClCompile Include="ParamConfigPage.cpp" />
+    <ClCompile Include="ParamConfigSelectDlg.cpp" />
+    <ClCompile Include="PierceDrawStatic.cpp" />
+    <ClCompile Include="PierceLocationPage.cpp" />
+    <ClCompile Include="ReferencePointDlg.cpp" />
+    <ClCompile Include="SequenceSetPage.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ToolAssignPage.cpp" />
+    <ClCompile Include="ToolDxfMapDlg.cpp" />
+    <ClCompile Include="ToolManagementDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clExpertLibUI.def" />
+    <None Include="res\clExpertLibUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BridgeCutParamDlg.h" />
+    <ClInclude Include="CamConfigSelectDlg.h" />
+    <ClInclude Include="ChainCutParamDlg.h" />
+    <ClInclude Include="clExpertLibUI.h" />
+    <ClInclude Include="clExpertLibUICommon.h" />
+    <ClInclude Include="CollisionAvoidParamDlg.h" />
+    <ClInclude Include="ComCutParamDlg.h" />
+    <ClInclude Include="ExpertLibHelper.h" />
+    <ClInclude Include="ConditionParamNameInCyc.h" />
+    <ClInclude Include="CornerAssignPage.h" />
+    <ClInclude Include="CornerConfigItem.h" />
+    <ClInclude Include="CornerDrawStatic.h" />
+    <ClInclude Include="DefaultParamConfigSelectDlg.h" />
+    <ClInclude Include="ExpertLibItemInfoPage.h" />
+    <ClInclude Include="ExpertLibTree.h" />
+    <ClInclude Include="FlyCutParamDlg.h" />
+    <ClInclude Include="GridCutParamDlg.h" />
+    <ClInclude Include="LeadDrawStatic.h" />
+    <ClInclude Include="LeadInOutPage.h" />
+    <ClInclude Include="MachineSelectDlg.h" />
+    <ClInclude Include="MicroJointAssignmentPage.h" />
+    <ClInclude Include="NCConfigPage.h" />
+    <ClInclude Include="NestAdvancedParamDlg.h" />
+    <ClInclude Include="NestConfigItemPage.h" />
+    <ClInclude Include="NestParamPage.h" />
+    <ClInclude Include="ParamConfigDlg.h" />
+    <ClInclude Include="ParamConfigNameDlg.h" />
+    <ClInclude Include="ParamConfigPage.h" />
+    <ClInclude Include="ParamConfigSelectDlg.h" />
+    <ClInclude Include="PierceDrawStatic.h" />
+    <ClInclude Include="PierceLocationPage.h" />
+    <ClInclude Include="ReferencePointDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SequenceSetPage.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SenFengNumEditInit.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ToolAssignPage.h" />
+    <ClInclude Include="ToolDxfMapDlg.h" />
+    <ClInclude Include="ToolManagementDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clExpertLibUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\basic\clBaseDataUI\clBaseDataUI.vcxproj">
+      <Project>{36681548-753e-497d-a612-01630c5b7f04}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clMachineLibUI\clMachineLibUI.vcxproj">
+      <Project>{d37ec670-70dc-4a7f-8c16-aa80e0a79668}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

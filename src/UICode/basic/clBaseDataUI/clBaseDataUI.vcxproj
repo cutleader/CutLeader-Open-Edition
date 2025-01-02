@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36681548-753E-497D-A612-01630C5B7F04}</ProjectGuid>
+    <RootNamespace>productData</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clBaseDataUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clBaseDataUI\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUtility;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clUILib;..\..\resource\clResource;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\..\..\inc\basic\clBaseData;..\..\..\..\inc\resource;..\..\..\..\inc\basic\clGeometryBase;..\..\resource;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\config\clOption;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;ClBaseDataUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clDbWrapper.lib;clUILib.lib;clUtility.lib;clBaseData.lib;clDrawWrapper.lib;clGeometryBase.lib;clGeometryFeature.lib;clOption.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\debug\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\debug;..\..\..\..\3rdparty\vld-2.5.1\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\clBaseDataUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\..\inc\basic;..\..\..\..\inc\basic\clUtility;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\basic\clUILib;..\..\resource\clResource;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\..\..\inc\basic\clBaseData;..\..\..\..\inc\resource;..\..\..\..\inc\basic\clGeometryBase;..\..\resource;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\config\clOption;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;ClBaseDataUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clDbWrapper.lib;clUILib.lib;clUtility.lib;clBaseData.lib;clDrawWrapper.lib;clGeometryBase.lib;clGeometryFeature.lib;clOption.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\release\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\clBaseDataUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="ActionBar.cpp" />
+    <ClCompile Include="ActionBase.cpp" />
+    <ClCompile Include="clBaseDataUI.cpp" />
+    <ClCompile Include="ContentTranslationDlg.cpp" />
+    <ClCompile Include="CursorDrawer.cpp" />
+    <ClCompile Include="DataCenterTree.cpp" />
+    <ClCompile Include="DummyAction.cpp" />
+    <ClCompile Include="EditorBase.cpp" />
+    <ClCompile Include="FolderInfoDlg.cpp" />
+    <ClCompile Include="IAction.cpp" />
+    <ClCompile Include="IEditor.cpp" />
+    <ClCompile Include="SelectDataCenterFolderDlg.cpp" />
+    <ClCompile Include="DataSaveInfoDlg.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="SearchPartDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SubToolBar.cpp" />
+    <ClCompile Include="TopToolBar.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="ValueInputManager.cpp" />
+    <ClCompile Include="ZoomBaseAction.cpp" />
+    <ClCompile Include="ZoomInAction.cpp" />
+    <ClCompile Include="ZoomOutAction.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clBaseDataUI.def" />
+    <None Include="res\clBaseDataUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="ActionBar.h" />
+    <ClInclude Include="ActionBase.h" />
+    <ClInclude Include="clBaseDataUI.h" />
+    <ClInclude Include="clBaseDataUICommon.h" />
+    <ClInclude Include="ContentTranslationDlg.h" />
+    <ClInclude Include="CursorDrawer.h" />
+    <ClInclude Include="DataCenterTree.h" />
+    <ClInclude Include="DummyAction.h" />
+    <ClInclude Include="EditorBase.h" />
+    <ClInclude Include="FolderInfoDlg.h" />
+    <ClInclude Include="IAction.h" />
+    <ClInclude Include="IEditor.h" />
+    <ClInclude Include="SelectDataCenterFolderDlg.h" />
+    <ClInclude Include="DataSaveInfoDlg.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SearchPartDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubToolBar.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TopToolBar.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="ValueInputManager.h" />
+    <ClInclude Include="ZoomBaseAction.h" />
+    <ClInclude Include="ZoomInAction.h" />
+    <ClInclude Include="ZoomOutAction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clBaseDataUI.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="clBaseDataUI.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,2733 @@
+//
+// clRes.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#include "..\..\..\..\src\UICode\resource\clPartLayoutUIResource.h"				// (25100~25199)
+#include "..\..\..\..\src\UICode\resource\clBaseDataUIResource.h"				// (25400~25499)
+#include "..\..\..\..\src\UICode\resource\clExpertLibUIResource.h"					// (25600~25699)
+#include "..\..\..\..\src\UICode\resource\clFrameUIResource.h"					// (26000~26099)
+#include "..\..\..\..\src\UICode\resource\clTaskUIResource.h"					// (26100~26199)
+#include "..\..\..\..\src\UICode\resource\clGeometryFeatureUIResource.h"				// (27000~27099)
+#include "..\..\..\..\src\UICode\resource\clCanvasGeometryUIResource.h"			// (27300~27499)
+#include "..\..\..\..\inc\resource\clGeometryFeatureResource.h"
+#include "..\..\..\..\inc\resource\clExpertLibResource.h"
+#include "..\..\..\..\inc\resource\clOptionResource.h"
+#include "..\..\..\..\inc\resource\clFrameResource.h"
+#include "..\..\..\..\inc\resource\clPartLayoutResource.h"
+#include "..\..\..\..\inc\resource\clCutFeatureResource.h"
+#include "..\..\..\..\inc\resource\clNestResource.h"
+#include "..\..\..\..\inc\resource\clMaterialLibResource.h"
+#include "..\..\..\..\inc\resource\clMachineLibResource.h"
+#include "..\..\..\..\inc\resource\clCutSequenceResource.h"
+#include "..\..\..\..\inc\resource\clPostProcessorResource.h"
+#include "..\..\..\..\inc\resource\clPartResource.h"
+#include "..\..\..\..\inc\resource\clSheetResource.h"
+#include "..\..\..\..\inc\resource\clDataImportExportResource.h"
+#include "..\..\..\..\inc\resource\clKnowledgeBaseConfigResource.h"
+#include "..\..\..\..\inc\resource\clDataManagerResource.h"
+#include "..\..\..\..\inc\resource\clUILibResource.h"
+#include "..\..\..\..\inc\resource\clBaseDataResource.h"
+#include "..\..\..\..\inc\resource\clSecureResource.h"
+#include "..\..\..\..\inc\resource\clReportResource.h"
+#include "..\..\..\..\inc\resource\clUtilityResource.h"
+#include "..\..\..\..\inc\resource\clGeometryBaseResource.h"
+#include "..\..\..\..\inc\resource\clTaskResource.h"
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_INITIAL_TASK_TIP     "Set material size or param for initial task"
+    IDS_EDIT_INITIAL_TASK     "Edit Initial Task"
+	IDS_CL_VERSION                      "<b>Frame Version: WILLBEREPLACED1</b>"
+    IDS_SetDefaultParam                 "Default Param"
+    IDS_SetDefaultParam_Tip             "Set the default CAM Param, material size and report tempalte."
+	IDS_Return2ForegroundCam_cancelEdit	"Cancel editing"
+	IDS_Return2ForegroundCam_finishEdit	"Finish editing"
+	IDS_Return2ForegroundCam_NoSequence	"There is no sequence on current sheet, please assign sequence and then finish editing."
+	IDS_Return2ForegroundCam_SomeLoopNoSequence	"Some loops on sheet have no sequence assigned, are you sure to finish editing?"
+	IDS_LeavePartInplaceEdit_cancelEdit	"Cancel editing and return to task."
+	IDS_LeavePartInplaceEdit_finishEdit	"Finish editing and return to task."
+	IDS_DummyAction				"None Action"
+	IDS_ZoomInAction			"Zoom In"
+	IDS_ZoomOutAction			"Zoom Out"
+	IDS_SetReferencePt			"Set Reference Point"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY_GENERAL    "General"
+    IDS_NEW_EXT_PROP        "New Property"
+    IDS_EXT_PROP_SAME_NAME  "The name is used by some property, please change it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CATEGORY_GEOMETRY   "Geometry"
+    IDS_PROPBAR_PATPROP     "Geometry Property"
+    IDS_PROP_STARTPOINT_X   "Start X"
+    IDS_PROP_STARTPOINT_Y   "Start Y"
+    IDS_PROP_ENDPOINT_X     "End X"
+    IDS_PROP_ENDPOINT_Y     "End Y"
+    IDS_PROP_LENGTH         "Length"
+    IDS_PROP_RADIUS         "Radius"
+    IDS_PROP_START_ANGLE    "Start Angle"
+    IDS_PROP_MOVE_ANGLE     "Sweep Angle"
+    IDS_PROP_CENTERPOINT_X  "Center X"
+    IDS_PROP_CENTERPOINT_Y  "Center Y"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_NEWPOSITION  "Please select a new position"
+    IDS_OUTPUT_ZOOM_STARTCORNER "Please select the start point of zoom window"
+    IDS_OUTPUT_ZOOM_ENDCORNER "Please select the end point of zoom window"
+    IDS_OUTPUT_WELCOME      "Welcome to CutLeader!"
+    IDS_OUTPUT_SELECTACTION "Please select an action"
+    IDS_ACTION_CANCEL_ACTION "Quit Action"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VALUEINPUT          "Please input value"
+    IDS_TASK_MESSAGE        "Task Message"
+    IDS_MESSAGE_TYPE        "Message Type"
+    IDS_TASK_NAME           "Task Name"
+    IDS_MESSAGE_CONTENT     "Message Content"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ROTATE              "Rotate"
+    IDS_MOVE                "Move"
+    IDS_DRAW                "Draw"
+    IDS_EXPLODE             "Explode"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NODE_DATATYPE       "Node Type"
+    IDS_PART_NODE           "Part"
+    IDS_Task_Node          "Task"
+    IDS_FOLDER_NODE         "Folder"
+    IDS_WORKSPACE_NODE      "My Workspace"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DATATYPE            "Data Type"
+    IDS_STRING              "String"
+    IDS_INTEGER             "Integer"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BOOLEAN             "Boolean"
+    IDS_FLOAT               "Float"
+    IDS_CREATE_DATE         "Create Date"
+    IDS_MODIFY_DATE         "Modify Date"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE                "File"
+    IDS_NEW                 "New"
+    IDS_OPEN                "Open"
+    IDS_SAVE                "Save"
+    IDS_SAVEAS              "Save as"
+    IDS_CLOSE               "Close"
+    IDS_EXIT                "Exit"
+    IDS_RECENT_DATA         "Recent Data"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPORT              "Import"
+    IDS_EXPORT              "Export"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_QUICK_START         "Start"
+    IDS_DATA_MANAGEMENT     "Data Center"
+    IDS_OPEN_DXF            "Open DXF/DWG File"
+    IDS_DATA_IMPORT         "Data Import"
+    IDS_SPLIT_IMPORT        "Split Import"
+    IDS_Create_Task         "Create Task"
+    IDS_FromEmptyInitalSheet "From an empty sheet"
+    IDS_FromAutoNesting     "From Auto Nesting"
+    IDS_Create_Part         "Create Part"
+    IDS_FromDxfDwg          "From DXF/DWG file"
+    IDS_EmptyPart           "Empty Part"
+    IDS_KnowledgeBase       "Knowledge Base"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIG              "Configuration"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HELP                "Help"
+    IDS_HELP_HELPVIDEO      "Help Video"
+    IDS_HELP_TOPIC          "Help Topics"
+    IDS_HELP_WEBSITE        "Product Website"
+    IDS_HELP_UPDATE_DONGLE  "Update Dongle"
+    IDS_HELP_ABOUT          "About CutLeader"
+    IDS_SAMPLE_FUNCTIONS    "Sample Functions"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CREATE_FOLDER       "Create Folder"
+    IDS_ImportClTask        "Import CutLeader Task"
+    IDS_ImportClPart        "Import CutLeader Part"
+    IDS_ImportDxfDwg        "Import dxf/dwg"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NUM                 "Num"
+    IDS_NAME                "Name"
+    IDS_COMMENT             "Comment"
+    IDS_DESCRIPTION         "Description"
+    IDS_VALUE               "Value"
+    IDS_COUNT               "Count"
+    IDS_STATUS              "Status"
+    IDS_INVALID_DATA        "Invalid Value"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SIZE                "Size"
+    IDS_COLOR               "Color"
+    IDS_YES                 "Yes"
+    IDS_NO                  "No"
+    IDS_ENABLE              "Enable"
+    IDS_DISABLE             "Disable"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PRODUCT_NAME        "CutLeader Open Edition"
+    IDS_PRODUCT_REG_KEY     "CutLeader(ENG) Open Edition V7"
+    IDS_TASK_BACK_DATABASE  "Backup Database"
+    IDS_TASK_BACK_LOGFILE   "Backup Log File"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INCH                "Inch"
+    IDS_MM                  "MM"
+    IDS_ShowStartPage       "Show Start Page"
+    IDS_ShowNewTask         "Show New Task"
+	IDS_RealMachineOpc		"Real Machine Opc"
+	IDS_LocalOpc			"Local Opc"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENG                 "English"
+    IDS_CHS                 "Chinese"
+    IDS_TR                  "Turkey"
+    IDS_SPA                 "Spanish"
+    IDS_UKR                 "Ukrainian"
+    IDS_POL                 "Polish"
+    IDS_GER                 "German"
+    IDS_FRA                 "French"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RUS                 "Russian"
+    IDS_BGR                 "Bulgarian"
+    IDS_ROK                 "Korean"
+    IDS_NED                 "Dutch"
+    IDS_CRO                 "Croatian"
+    IDS_ROU                 "Romanian"
+    IDS_POR                 "Portuguese"
+    IDS_JPN                 "Japanese"
+    IDS_SVK                 "Slovak"
+    IDS_XYL                 "Hungarian"
+    IDS_ITA                 "Italian"
+    IDS_VIE                 "Vietnamese"
+    IDS_ZWF                 "Traditional Chinese"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_EXISTS         "File<WILLBEREPLACED1> has existed, do you want to overwrite it?"
+    IDS_MSG_PLAY_VIDEO      "You can double-click the item to play the video."
+    IDS_MSG_BK_DATABASE_OK  "The datebase has been backuped successfully."
+    IDS_MSG_BK_LOGFILE_OK   "The log file has been backuped successfully."
+    IDS_MSG_DEBUG_WARN_TITLE 
+                            "Something wrong with this software, please capture this dialog and send it to Manufacturer support team, please contact Manufacturer support team."
+    IDS_MSG_CHANGE_NEEDTO_RESTART 
+                            "The changes will take effect after restart CutLeader."
+    IDS_MSG_SAVE_TRANSLATION 
+                            "Do you want to save the changes about the translation?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LOGMSG_LEVEL_INFO   "Info"
+    IDS_LOGMSG_LEVEL_WARNING "Warning"
+    IDS_LOGMSG_LEVEL_ERROR  "Error"
+	IDS_MSG_FontFileNotExist    "This font file not exist, please select another font."
+	IDS_MSG_DefaultFontFileNotExist "The default font file not exist, please select another font."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAC_NAME            "Machine Name"
+    IDS_MAC_TYPE            "Machine Type"
+    IDS_MAC_LIST            "Machine List"
+    IDS_MAC_PARAM           "Machine Parameter"
+    IDS_MAC_CONDITION       "Machine Conditions"
+    IDS_MAC_NCCONFIG_TYPE   "NC Params"
+	IDS_MAC_PARAM_2           "Machine Param"
+	IDS_CutParamLib_2		"Cut Param Lib"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMON_FUNC_BAR     "Common functions"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_VERSION         "<b>WILLBEREPLACED1Application Version: WILLBEREPLACED2</b>"
+    IDS_DB_VERSION          "<b>Database Version: WILLBEREPLACED1</b>"
+    IDS_DRI_VERSION         "<b>Driver Version: WILLBEREPLACED1</b>"
+    IDS_PART_VERSION        "<b>Part Version: WILLBEREPLACED1</b>"
+    IDS_Task_VERSION         "<b>Task Version: WILLBEREPLACED1</b>"
+    IDS_EXPLIB_VERSION      "<b>Expert Library Version: WILLBEREPLACED1</b>"
+    IDS_MATLIB_VERSION      "<b>Material Library Version: WILLBEREPLACED1</b>"
+    IDS_RPTLIB_VERSION      "<b>Report Library Version: WILLBEREPLACED1</b>"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADDPART_FROM_DXF    "Add Part From dxf/dwg"
+    IDS_ADDPART_FROM_DB "Add Parts From Data Center"
+    IDS_COPY_PART           "Copy Part    (CTRL+C, CTRL+V)"
+    IDS_MOVE_PART           "Move Part    (CTRL+Q)"
+    IDS_ROTATE_PART         "Rotate Part    (CTRL+W)"
+    IDS_PREVIEW_REPORT      "Preview Report"
+    IDS_PRINT_SheetReport        "Print Sheet Report"
+    IDS_DFL_REPORT_TPL      "Default Report Template"
+    IDS_DESIGN_REPORT_TPL   "Design Report Template"
+    IDS_PREVIEW_LABEL       "Preview Label"
+    IDS_PRINT_LABEL         "Print Label"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DATA_MANAGEMENT_TIP "Manage the data of CutLeader. You can create, open and delete part/sheet, view information of data, import/export data."
+    IDS_CREATE_PART_TIP     "Create new part by specifing part name and part scheme"
+    IDS_OPEN_DXF_TIP        "Create new part by opening dxf/dwg file"
+    IDS_CreateTask_Tip_1    "Create a task which includes an enpty intial sheet."
+    IDS_CreateTask_Tip_2    "Execute auto nesting and create a task based the nesting result."
+    IDS_DonotHideUndoRedoBtn "Do not hide Undo/Redo button on Quick Access Bar, otherwise Undo/Redo function cannot work."
+    IDS_CAM_PARAM_TIP       "Set the CAM Param of the current part or sheet"
+    IDS_OPTIONS_TIP         "Set the System Param"
+    IDS_MAC_MGR_TIP         "Machine library keep basic info, driver program, machine condition of the machine"
+    IDS_EXPERTLIB_MGR_TIP   "Expert library keep the part scheme, sheet scheme and nesting scheme"
+    IDS_MATLIB_TIP          "Material library keep the size, thickness and count of material, material is used to create sheet."
+    IDS_PREVIEW_TaskReport  "Preview Task Report"
+    IDS_PRINT_TaskReport    "Print Task Report"
+	IDS_DELETE_PART			"Delete Part"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HELP_HELPVIDEO_TIP  "View help video of CutLeader"
+    IDS_HELP_TOPIC_TIP      "Open help document of CutLeader"
+    IDS_HELP_WEBSITE_TIP    "Visit the website of CutLeader"
+    IDS_HELP_UPDATE_DONGLE_TIP "Update the license info of the dongle"
+    IDS_HELP_ABOUT_TIP      "About CutLeader"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEOMETRY_LINE_TIP   "Draw Line"
+    IDS_GEOMETRY_MULTILINE_TIP "Draw Multiple Lines"
+    IDS_GEOMETRY_ARC_TIP    "Draw Arc"
+    IDS_GEOM_DRAW_RCLINEARC_TIP "Draw Round Corner Polygon"
+	IDS_GEOM_DRAW_RectLine_TIP	"Draw Rect Lines"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEOMETRY_ROUNDHOLE_TIP "Draw Round Hole"
+    IDS_GEOMETRY_RECTHOLE_TIP "Draw Rect Hole"
+    IDS_GEOMETRY_SINGLED_TIP "Draw Single D"
+    IDS_GEOMETRY_TRHOLE_TIP "Draw Triangle Hole"
+    IDS_GEOMETRY_RADSLOT_TIP "Draw Radius Slot"
+    IDS_GEOMETRY_PATLINE_TIP "Draw Line Array"
+    IDS_GEOMETRY_PATARC_TIP "Draw Arc Array"
+    IDS_GEOMETRY_PATCIRCLE_TIP "Draw Circle Array"
+    IDS_GEOMETRY_PATGRID_TIP "Draw Grid Array"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRAW_BASIC_GEOM     "Draw Basic Geometry"
+    IDS_GEOM_DRAW_RCLINEARC "Round Corner"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRAW_ARRAY_GEOM     "Draw Array Geometry"
+    IDS_SELECT_GEOM         "Select Geometry"
+    IDS_GEOM_OPTIMIZATION   "Geometry Optimization"
+    IDS_GEOM_OFFSET_LOOP    "Offset Loop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SELECT_GEOM_TIP     "Select geometry to edit"
+    IDS_DELETE_GEOM_TIP     "Delete Geometry"
+    IDS_EXPLODE_GEOM_TIP    "Explode standard/array geometry to line/arc geometry"
+    IDS_COPY_GEOM_TIP       "Copy Geometry"
+    IDS_MOVE_GEOM_TIP       "Move Geometry"
+    IDS_ROTATE_GEOM_TIP     "Rotate Geometry"
+    IDS_OPTIMIZE_GEOM_TIP   "Use less arcs to simplify many continous small line segments, these small line segments may be generated from spline or other curve."
+    IDS_OFFSET_LOOP_TIP     "Offset the selected loop inwards/outwards with a specify value"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRAW_STD_GEOM       "Draw Standard Geometry"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEOM_VIEW_ZOOMALL_TIP "Display all geometries in the fit mode"
+    IDS_GEOM_VIEW_ZOOMIN_TIP "Zoom in geometries within the rectangle"
+    IDS_GEOM_VIEW_ZOOMOUT_TIP "Zoom out geometries within the rectangle"
+    IDS_VIEWBAR_PATTERN_TIP "List all geometry nodes"
+    IDS_VIEWBAR_PATLOOP_TIP "List all loop nodes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEW                "Zoom"
+    IDS_WINDOWS             "Show/Hide"
+    IDS_READY               "Ready"
+    IDS_PROPERTY            "Property"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT              "Output"
+    IDS_AUTO                "Auto"
+    IDS_INSTANCE            "Instance"
+    IDS_GENERAL             "General"
+    IDS_COLUMN              "Column"
+	IDS_ToolBar             "Tool Bar"
+	IDS_All					"All"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD                 "Add"
+    IDS_EDIT                "Edit"
+    IDS_MODIFY              "Modify"
+    IDS_COPY                "Copy"
+    IDS_DELETE              "Delete"
+    IDS_RENAME              "Rename"
+    IDS_INFO                "Information"
+    IDS_WARNING             "Warning"
+    IDS_ERROR               "Error"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_SAVE_MAC       "Save Machine"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAM_LIBRARY         "CAM Library"
+    IDS_MAC_MGR             "Machine Management"
+    IDS_EXPERTLIB_MGR       "Expert Library"
+    IDS_MATLIB_MGR          "Material Library"
+    IDS_ADD_MAC             "Add Machine"
+    IDS_DEL_MAC             "Delete Machine"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_MAC_BASE   "Do you want to save the changes you've made in the machine's basic info page?"
+    IDS_MSG_MAC_BASE_NOT_CHANGE 
+                            "No changes have been made for the machine's basic info."
+    IDS_MSG_MAC_SAVED       "Changes for machine have been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_DELETE_MAC      "Do you want to delete the machine?"
+    IDS_MSG_DELETE_RESERVED_MAC "Cannot delete the reserved machine."
+    IDS_MSG_DELETE_CONFIGED_MAC 
+                            "You have generated expert library based on this machine, cannot delete it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAT_THICKNESS       "Material Thickness"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MATLIB              "Material Library"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MATSIZE_TYPE        "Type"
+    IDS_MATSIZE_RECT        "Rect"
+    IDS_MATSIZE_POLY        "Irregular"
+    IDS_MAT_TOTAL_NUM       "Total"
+    IDS_MAT_AVAILABLE_NUM   "Available"
+    IDS_MATSIZE_IS_REMNANT  "Remnant"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_DEL_MAT         "Are you sure to delete the material? this will also delete the relative material thichness and size."
+    IDS_MSG_DEL_DFL_MAT     "Cannot delete the default material."
+    IDS_MSG_SAVE_MAT_TYPE   "Do you want to save the changes you've made in Material page?"
+    IDS_MSG_MAT_TYPE_NOT_CHANGE 
+                            "No changes have been made for the data in Material page."
+    IDS_MSG_MAT_TYPE_SAVED  "Changes in Material page have been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_DEL_MAT_THICK   "Are you sure to delete the material thichness? this will also delete the relative material size."
+    IDS_MSG_DEL_DFL_MAT_THICK "Cannot delete the default material thickness."
+    IDS_MSG_SAVE_MAT_NAME   "Do you want to save the changes you've made in Material Thickness page?"
+    IDS_MSG_MAT_NAME_NOT_CHANGE 
+                            "No changes have been made for the data in Material Thickness page."
+    IDS_MSG_MAT_NAME_SAVED  "Changes in Material Thickness page have been saved."
+    IDS_MSG_DEL_MAT_SIZE    "Are you sure to delete the material size?"
+    IDS_MSG_DEL_DFL_MAT_SIZE "Cannot delete the default Material Size."
+    IDS_MSG_SAVE_MAT_SIZE   "Do you want to save the changes you've made in Material Size page?"
+    IDS_MSG_MAT_SIZE_NOT_CHANGE 
+                            "No changes have been made for the data in Material Size page."
+    IDS_MSG_MAT_SIZE_SAVED  "Changes in Material Size page have been saved."
+    IDS_MSG_MAT_SIZE_NONE   "The material was used up, please increase its stock count in material library."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_SAVE_MATLIB    "Save Material Library"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_MAT_SIZE_CHECK  "The material count should be larger than the used count."
+    IDS_MSG_IMPORT_MATSIZE_ERROR1 "Cannot find the close loop."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXP_PRT_SUCCESS     "The part has been exported successfully!"
+    IDS_EXP_SHEET_SUCCESS    "The sheet has been exported successfully!"
+    IDS_IMP_NOT_SUPPORT_VERSION 
+                            "This version cannot be supported by current system."
+    IDS_EXP_EXPLIB_SUCCESS  "The expert library has been exported successfully!"
+    IDS_EXP_MATLIB_SUCCESS  "The material has been exported successfully!"
+    IDS_MAT_Size            "Material Size"
+    IDS_MAT_Type            "Material Type"
+	IDS_ExportCutParamLib_Success	"Succeed to export Cut Param Library."
+	IDS_ExportCutParamLib_Fail	"Fail to export Cut Param Library."
+	IDS_ImportCutParamLib_Success	"Succeed to import Cut Param Library."
+	IDS_ImportCutParamLib_Fail	"Fail to import Cut Param Library."
+	IDS_ExportMachineParam_Success	"Succeed to export Machine Param."
+	IDS_ExportMachineParam_Fail	"Fail to export Machine Param."
+	IDS_ImportMachineParam_Success	"Succeed to import Machine Param."
+	IDS_ImportMachineParam_Fail	"Fail to import Machine Param."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXP_RESERVED_EXPLIB "Cannot export the reserved expert library item."
+    IDS_IMP_NO_ENOUGH_MAT   "The relative material was used up, please increase its stock count in material library."
+    IDS_BK_SEL_BK_FOLDER    "Please select the data which will be backup."
+    IDS_BK_FOLDER_NOT_FOUND "The backup folder do not exist."
+    IDS_SHUTDOWN_ALL_APP    "Please shutdown all CutLeader Apps before backup."
+    IDS_BACKUP_DB_AND_LOG   "The database and log file need to be backuped, are you sure to backup them?"
+    IDS_BACKUP_LOG          "The database need to be backuped, are you sure to backup it?"
+    IDS_BACKUP_DB           "The log file need to be backuped, are you sure to backup it?"
+    IDS_BK_IN_SAFE_LOC      "The backups should be placed at the safe place."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_CHANGE_SAVED    "The changes have been saved!"
+    IDS_MSG_NO_CHANGE       "No changes can be saved!"
+    IDS_MSG_CHANGE_LANG     "You must restart application for this change to take effect!"
+    IDS_MSG_SAVE_PRODUCT_PARAM 
+                            "Do you want to save the changes you've made in Product Param page?"
+    IDS_MSG_PRODUCT_PARAM   "The General Options of the system."
+    IDS_MSG_SEL_BK_FOLDER   "Please select the backup folder."
+    IDS_MSG_SAVE_IMPEXPT_PARAM 
+                            "Do you want to save the changes you've made in Import/Export Param page?"
+    IDS_MSG_IMPEXPT_PARAM   "The Options for Import/Export data into/out the system."
+    IDS_MSG_SAVE_DISPLAY_PARAM 
+                            "Do you want to save the changes you've made in Display Param page?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_DISPLAY_PARAM   "The Color and Display of the objects in the system."
+    IDS_MSG_SAVE_PARTEDIT_PARAM 
+                            "Do you want to save the changes you've made in param page?"
+    IDS_MSG_PART_EDIT       "The Options for editing part."
+    IDS_MSG_SAVE_SHEETEDIT_PARAM 
+                            "Do you want to save the changes you've made in param page?"
+    IDS_MSG_SHEET_EDIT      "The Options for editing sheet."
+	IDS_MSG_SAVE_SnapPtParam    "Do you want to save the changes you've made in param page?"
+	IDS_MSG_SnapPtParam     "The options for snapping points."
+	IDS_MSG_NestOpenBoundary  "Cannot nest some parts, because they do not have closed boundary."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEL_MAT             "Delete Material"
+    IDS_DEL_MAT_NAME        "Delete Material Thichness"
+    IDS_DEL_MAT_SIZE        "Delete Material Size"
+    IDS_ADD_MAT_NAME        "Create Material Thichness"
+    IDS_ADD_MAT_SIZE        "Create Material Size"
+    IDS_IMPORT_MAT_SIZE     "Import Material Size"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_VIEW_SEQUNIT    "All Sequences"
+    IDS_SEQ_VIEW_BY_ORDER   "Sort by Sequence Order"
+    IDS_SEQ_VIEW_BY_TYPE    "Sort by Sequence Type"
+    IDS_VIEWBAR_SUBRT_TPL   "Sub-routine template View"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_CREATE_REM_CUTLINE "Add"
+    IDS_SEQ_DELETE_REM_CUTLINE "Delete"
+    IDS_SEQ_INSERT_CHAIN_RESET "Insert Reset-instruction"
+    IDS_SEQ_DEL_CHAIN_RESET "Delete Reset-instruction"
+    IDS_SEQ_VIEW            "View"
+    IDS_SEQ_VIEWSEQUENCE    "Sequence Simulation"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_LIST_SEQ        "All Sequences"
+    IDS_SEQ_DELETE_SEQ      "Delete Sequence"
+    IDS_SEQ_INSERT_SEQ      "Insert Sequence"
+    IDS_SEQ_ADD_BDGE_NODE   "Add Bridge Cut Node"
+    IDS_SEQ_ADD_BDGESEQ     "Add Bridge Sequence"
+    IDS_SEQ_INSERT_BDGE_NODE "Insert Bridge Sequence"
+    IDS_SEQ_LINK_BDGE_SEQ   "Merge Bridge Sequence"
+    IDS_SEQ_BREAK_BDGESEQ   "Break Bridge Sequence"
+    IDS_SEQ_CHANGE_BDGE_START "Bridge Start Loop"
+    IDS_SEQ_CHANGE_SEQ_POS  "Change Sequence Order"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_VIEW_CUTNODE    "View Cut Nodes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SIM_NC_ROW      "Please select the NC rows which you want to simulate"
+    IDS_MSG_TRIAL_NC        "This is a Trial Version, cannot save NC code to the extenal file."
+    IDS_MACROUTER_VIEW_NC_TIP 
+                            "Generate NC code, select the NC code row to simulate the cutting progress."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_DRAWLINE_STARTPT "Please select the start point."
+    IDS_OUTPUT_DRAWLINE_ENDPT "Please select the end point."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_PATLINE_PAT  "Select a pattern to replicate on pattern line."
+    IDS_OUTPUT_PATLINE_XYSPACE 
+                            "Select the horizontal and vertical spacing of the line repetitions."
+    IDS_OUTPUT_PATLINE_NUM  "Select the number of repetitions."
+    IDS_OUTPUT_PATARC_PAT   "Select a pattern to replicate on pattern arc."
+    IDS_OUTPUT_PATARC_RAD_ANGLE "Select radius and start angle"
+    IDS_OUTPUT_PATARC_REPEAT_ANGLE 
+                            "Select the angle between repetitions on the arc."
+    IDS_OUTPUT_PATARC_NUM   "Select the number of repetitions."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_SELECTPRTPMT "Please select part."
+    IDS_OUTPUT_SELECTPRTPMT_EDIT "For selected parts, arrow key to touch other parts, ctrl+arrow key to move step by step, +/- key to rotate step by step, s/w key to CCW/CW rotate 90 degree."
+	IDS_OUTPUT_SelectCanvasGeometry2Edit "For selected loops, ctrl+arrow key to move step by step, +/- key to rotate step by step, s/w key to CCW/CW rotate 90 degree."
+    IDS_OUTPUT_SELECTPRTPMT_NEXTPT "Select another corner of the select box."
+    IDS_OUTPUT_NOPRTPMT_SELECT "No Part is selected."
+    IDS_OUTPUT_SELECT_GRID_PART "Please select a grid part."
+    IDS_OUTPUT_PARTPMT_BASEPT "Please select the position of part. +/- key to CW/CCW rotate, w/s key to CW/CCW rotate 90 degree."
+    IDS_MSG_PART_DB_CLICK_ADD "Double-click part to add it to sheet."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_GRID_SEL_PART "Select a part to create grid."
+    IDS_OUTPUT_GRID_PARTPMT "Please input the grid param in the floating dialog, then click OK to generate the grid."
+	IDS_OUTPUT_GridLoop "Please input the grid param in the floating dialog, then click OK to generate the grid."
+    IDS_OUTPUT_GRID_XY_NUM  "Please input the row/column number of the grid."
+    IDS_MSG_PARTGRID_GAP    "Distance between the boundary rect of parts."
+    IDS_MSG_EXPLODE_PARTGRID 
+                            "Please select a grid part which will be exploded."
+    IDS_OUTPUT_GRID_PART_SELECTED "The part selected is already a grid."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PART_GRID_PREVIEW   "Click to preview the part grid in the view area."
+    IDS_PART_GRID_OK        "Click to generate the part grid."
+    IDS_PART_GRID_CANCEL    "Click to quit the grid generation."
+    IDS_PARTPMT_FROM_DB_TIP "Add part from the database"
+    IDS_PARTPMT_FROM_DXF_TIP "Add part from dxf/dwg"
+	IDS_NewTaskFromNesting  "New task from auto nesting"
+    IDS_NewTaskFromNesting_tip "Auto nesting and create a task based on nesting result."
+    IDS_NewTaskFromEmptySheet "New task from empty sheet"
+    IDS_NewTaskFromEmptySheet_tip "Create a task which only has a initial empty sheet."
+    IDS_NewPartFromDxfDwg   "New part from dxf/dwg file"
+	IDS_NewPartFromDxfDwg_tip "Create a part with the data from a dxf/dwg file."
+    IDS_NewPartFromEmptyPart "New empty part"
+    IDS_NewPartFromEmptyPart_tip "Create an empty part."
+    IDS_OpenDocumentFromDataCenter "Open document from Data Center"
+    IDS_OpenDocumentFromDataCenter_tip "Open task/part document from Data Center."
+    IDS_NoRecentDocsToShow  "There is no recent documents to show here."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_COPYPARTPMT_NEWLOCATION "Select or input a new location for part, +/- key to CW/CCW rotate, w/s key to CW/CCW rotate 90 degree."
+    IDS_OUTPUT_SELECT_PRTPMT_COPY "Please select part to copy."
+    IDS_OUTPUT_ROTATEPARTPMT_BASEPT "Select or input the base point."
+    IDS_OUTPUT_ROTATEPARTPMT_ANGLE "Select a rotate angle"
+    IDS_OUTPUT_SELECT_PRTPMT_ROTATE "Please select part to rotate."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_SELECT_PRTPMT_DEL "Please select part to delete."
+    IDS_OUTPUT_SELECT_STARTCUT "Please select a Start Cut Feature to edit."
+    IDS_OUTPUT_SELECT_ENDCUT "Please select an End Cut Feature to edit."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEASURE_DIS_FST_LOOP "Please select the loop of the first point."
+    IDS_MEASURE_DIS_FST_PT  "Please select the first point."
+    IDS_MEASURE_DIS_SND_LOOP "Please select the loop of the second point."
+    IDS_MEASURE_DIS_SND_PT  "Please select the second point."
+    IDS_MEASURE_DIS_RESULT_1 
+                            "The distance between two points is: WILLBEREPLACED1 ."
+    IDS_MEASURE_DIS_RESULT_2 "The horizontal distance is: WILLBEREPLACED2 ."
+    IDS_MEASURE_DIS_RESULT_3 "The vertical distance is: WILLBEREPLACED3 ."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_MOVEPARTPMT_NEWLOCATION "Please select a new location for part, +/- key to CW/CCW rotate, w/s key to CW/CCW rotate 90 degree."
+    IDS_OUTPUT_SELECT_PRTPMT_MOVE "Please select part to move."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ACTION_EDIT_PART_ACTION "Edit Part"
+    IDS_COMMAND_CreatePartGroup "Create Part Group"
+    IDS_COMMAND_ExplodePartGroup    "Explode Part Group"
+    IDS_MSG_PartGroup_1 "No parts are selected, please select parts and then create part group."
+    IDS_MSG_PartGroup_2 "Please select a part group, and then explode it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_PATGRID_PAT  "Select a pattern to replicate on pattern grid"
+    IDS_OUTPUT_PATGRID_XYSPACE "Select the horizontal and vertical spacing"
+    IDS_OUTPUT_PATGRID_NUM  "Select the horizontal and vertical repetitions on the grid"
+    IDS_OUTPUT_PATGRID_XNUM "Select the horizontal repetitions on the grid"
+    IDS_OUTPUT_PATGRID_YNUM "Select the vertical repetitions on the grid"
+    IDS_OUTPUT_PATCIRCLE_PAT "Select a pattern to replicate on pattern circle"
+    IDS_OUTPUT_PATCIRCLE_RAD_ANGLE "Select radius and start angle"
+    IDS_OUTPUT_PATCIRCLE_NUM "Select the number of repetitions"
+    IDS_OUTPUT_PATCIRCLE_CENTERPT "Select center point of round hole"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_PATARC3PT_FIRSTPT "Select first point on the arc"
+    IDS_OUTPUT_PATARC3PT_SECONDPT "Select second point on the arc"
+    IDS_OUTPUT_PATARC3PT_THIRDPT "Select third point on the arc"
+    IDS_OUTPUT_RCLINE_CENTERPT "Select center point of rounded corner lines"
+    IDS_OUTPUT_RCLINE_LENGTH_WIDTH 
+                            "Select length and width of rounded corner lines"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_PATCIRCLE_RADIUS "Select radius"
+    IDS_OUTPUT_PATARC_CENTERPT "Select center point of arc"
+    IDS_OUTPUT_PATARC_RAD_STARTANGLE "Select radius and start angle"
+    IDS_OUTPUT_PATARC_MOVEANGLE "Select moving angle"
+    IDS_OUTPUT_PATARC_STARTANGLE "Select starting angle"
+    IDS_OUTPUT_PATARC_CENTERPT_RAD "Select center point and radius"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_RCLINE_RADIUS "Select corner radius of rounded corner lines"
+    IDS_OUTPUT_PATDOUBLED_CENTERPT "Select center point of double D"
+    IDS_OUTPUT_PATDOUBLED_RADIUS "Select radius of double D"
+    IDS_OUTPUT_PATDOUBLED_WIDTH_ANGLE "Select width and angle of double D"
+    IDS_OUTPUT_PATDOUBLED_WIDTH "Select width of double D"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_PATELLIPSE_CENTERPT "Select center point of elliptical arcs"
+    IDS_OUTPUT_PATELLIPSE_LENGTH_ANGLE 
+                            "Select length and angle of elliptical arcs"
+    IDS_OUTPUT_PATELLIPSE_WIDTH "Select width of elliptical arcs"
+    IDS_OUTPUT_PATELLIPSE_LENGTH "Select length of elliptical arcs"
+    IDS_OUTPUT_OBROUND_CENTERPT "Select center point of obround slot"
+    IDS_OUTPUT_OBROUND_ANGLE_LENGTH "Select angle and length of obround slot"
+    IDS_OUTPUT_OBROUND_WIDTH "Select width of obround slot"
+    IDS_OUTPUT_OBROUND_LENGTH "Select length of obround slot"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_TRIHOLE_BASEPT "Select base point of triangle hole"
+    IDS_OUTPUT_TRIHOLE_ANGLE_WIDTH "Select angle and width of triangle hole"
+    IDS_OUTPUT_TRIHOLE_WIDTH "Select width of triangle hole"
+    IDS_OUTPUT_TRIHOLE_HEIGHT "Select height of triangle hole"
+    IDS_OUTPUT_PATSINGLED_CENTERPT "Select center point of single D"
+    IDS_OUTPUT_PATSINGLED_RADIUS "Select radius of single D"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_ROTATEPAT_BASEPT "Select base point to begin rotating."
+    IDS_OUTPUT_ROTATEPAT_ANGLE "Select a rotate angle."
+    IDS_OUTPUT_ROTATEPAT_ARRAY "Cannot rotate the array pattern."
+    IDS_OUTPUT_OFFSETLOOP_SELECTLOOP "Please select a loop to offset it."
+    IDS_OUTPUT_OFFSETLOOP_OPEN_LOOP "Cannot offset the open loop."
+    IDS_OUTPUT_OFFSETLOOP_PROP_VAL 
+                            "Fail to offset the loop, please input the proper value."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_PATSINGLED_WIDTH_ANGLE "Select width and angle of single D"
+    IDS_OUTPUT_PATSINGLED_WIDTH "Select width of single D"
+    IDS_OUTPUT_SELECT_STDPAT "Please select a standard pattern."
+    IDS_OUTPUT_REPEAT_NUM_SMALL "This value cannot be less than 2."
+    IDS_OUTPUT_REPEAT_NUM_SMALL_EX "This value cannot be less than 1."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_SELECTPATTERN "Please select geometry to edit."
+    IDS_OUTPUT_SELECTPAT_NEXTPT "Select another corner of the select box"
+    IDS_OUTPUT_NOPAT_SELECT "No geometries are selected."
+    IDS_OUTPUT_RCLICK_SELECT "Please right click to confirm the selection."
+    IDS_OUTPUT_PAT_SELECT   "Geometries are selected."
+    IDS_NO_PATLOOP_SELECTED "No geometry loops are selected."
+    IDS_OUTPUT_COPYPAT_BASEPT "Select base point to begin copying."
+    IDS_OUTPUT_COPYPAT_NEWLOCATION "Select a new location for patterns."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_OPT_TASK        "Geometry Optimization"
+    IDS_MSG_OPT_LOOP        "Optimizing loop, the loop index: <%d>"
+    IDS_MSG_OPT_ALL_LOOPS   "All loops have been optimized."
+    IDS_MSG_OPT_TASK_OK     "The optimization task has been executed successfully."
+    IDS_MSG_OPT_TASK_CANCEL "The task has been canceled."
+	IDS_OUTPUT_SelectMultiLoop2Align "Please select multiple loops to align."
+	IDS_COMMAND_AlignLoop	"Align Loops"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUTFEATURE_NO_MJ_SELECT		"No Micro Joint feature is selected."
+    IDS_CUTFEATURE_MJ_SELECTED		"Microjoint features were selected."
+    IDS_CUTFEATURE_DELETE_CORNER	"Please select a Corner Feature to delete"
+    IDS_CUTFEATURE_EDIT_CORNER		"Please select a Corner Feature to edit"
+    IDS_CUTFEATURE_SELECT_CORNER	"Please select Corner Feature"
+    IDS_CUTFEATURE_ASSIGN_SMOOTH_CORNER 
+									"Cannot assign a Corner Feature to a smooth corner."
+    IDS_CUTFEATURE_CORNER_EXIST 
+									"Corner Feature has existed at the specify location."
+    IDS_CUTFEATURE_SELECT_CORNER_PT 
+									"Please select a corner point to assign Corner Feature on it."
+    IDS_CUTFEATURE_CORNER_OPEN_LOOP 
+									"Cannot assign Corner Feature to open loop."
+    IDS_CUTFEATURE_CORNER_WRONG_VAL 
+									"Please input the proper corner feature param."
+    IDS_CUTFEATURE_NO_CORNER_SELECT	"No Corner feature is selected."
+    IDS_CUTFEATURE_CORNER_SELECTED	"Corner features were selected."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUTFEATURE_SELECT_STARTCUT "Please the start cut point."
+    IDS_CHANGE_CUTSIDE      "Please select loops to change the cut side."
+    IDS_CHANGE_CUTSIDE_OPENLOOP "Cannot change the cut side for open loop."
+    IDS_CHANGE_DIRECTION    "Please select loops to change the cut direction."
+    IDS_CUTFEATURE_NO_STARTPT_SELECT "No Start Cut Points is selected."
+    IDS_CUTFEATURE_STARTPT_SELECTED "Start Cut Points were selected."
+	IDS_MSG_AdjustStartCutPt "Please move the cursor closer to a closed loop and change its start cut point."
+	IDS_MSG_AddMicroJoint "Please move the cursor closer to a closed loop and add micro joint."
+    IDS_MSG_ASSIGN_CUTFEATURE "CAM feature have been assigned for all loops."
+    IDS_MSG_RESET_CUTFEATURE "Are you sure to reset CAM features for all loops?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MEASURE_DISTANCE_TIP "Measure the distance between two points"
+    IDS_MSG_INTF_CHECK_TASK_EX "Interfere Checking"
+    IDS_MSG_INTF_CHECK_PART "Checking the interfere of the part."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_INTF_CHECK_TASK "Interfere Checking"
+    IDS_MSG_INTF_CHECK_LOOP "Checking the interfere, the loop index: <%d>"
+    IDS_MSG_INTF_CHECK_ALL_LOOPS "All loops have been checked."
+    IDS_MSG_INTF_CHECK_TASK_OK 
+                            "The Checking task has been executed successfully."
+    IDS_MSG_INTF_CHECK_TASK_CANCEL "The task has been canceled."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_SELECT_STD_ARRAY_PAT 
+                            "Please select a standard/array pattern to explode."
+    IDS_OUTPUT_RIGHT_CLICK_EXPLODE 
+                            "Please right click button to explode the pattern."
+    IDS_OUTPUT_MOVEPAT_BASEPT "Select base point to begin moving."
+    IDS_OUTPUT_MOVEPAT_NEWLOCATION "Select a new location for patterns."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_RECTLINE_STARTCORNER "Select starting corner of rectangle"
+    IDS_OUTPUT_RECTLINE_ENDCORNER "Select ending corner of rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_RADSLOT_CENTERPT "Select center point of radius slot"
+    IDS_OUTPUT_RADSLOT_RAD_ANGLE 
+                            "Select radius and start angle of radius slot"
+    IDS_OUTPUT_RADSLOT_STARTANGLE "Select starting angle of radius slot"
+    IDS_OUTPUT_RADSLOT_ENDANGLE "Select moving angle of radius slot"
+    IDS_OUTPUT_RADSLOT_WIDTH "Select width of radius slot"
+    IDS_OUTPUT_RADSLOT_RADIUS "Select radius of radius slot"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OUTPUT_RCHOLE_CENTERPT 
+                            "Select center point of rounded corner rectangle"
+    IDS_OUTPUT_RCHOLE_LENGTH_WIDTH 
+                            "Select length and width of rounded corner rectangle"
+    IDS_OUTPUT_RCHOLE_LENGTH "Select length of rounded corner rectangle"
+    IDS_OUTPUT_RCHOLE_WIDTH "Select width of rounded corner rectangle"
+    IDS_OUTPUT_RCHOLE_RADIUS "Select radius of rounded corner rectangle"
+    IDS_OUTPUT_RECTHOLE_CENTERPT "Select starting corner of rectangle"
+    IDS_OUTPUT_RECTHOLE_LENGTH_WIDTH "Select length and width of rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUTFEATURE_STARTCUT "Start Cut"
+    IDS_CUTFEATURE_ENDCUT   "End Cut"
+    IDS_CUTFEATURE_MicroJoint "Micro Joint"
+    IDS_CUTFEATURE_CORNER   "Corner"
+    IDS_CUTFEATURE_DELETE_MicroJoint "Please select Micro Joint to delete"
+    IDS_CUTFEATURE_SELECT_MicroJoint "Please select Micro Joint feature."
+    IDS_CUTFEATURE_GEOM_NOT_HOLD_MicroJoint 
+                            "Cannot assign the micro joint to current location."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_EDIT_LOOP_TOOL  "Please select geometry loop to edit tool information."
+    IDS_MSG_EDIT_LOOP_TOOL_2  "Select loops or parts to change their tools to the desired tool."
+    IDS_MSG_AssignedLoopTool    "Tool information of all loops have been reset successfully."
+    IDS_MSG_AssignedMicroJoint  "Micro Joint information of all loops have been reset successfully."
+    IDS_MSG_AssignedCornerFeature  "Corner Feature information of all loops have been reset successfully."
+    IDS_MSG_AssignedStartCutPtAndLeadData   "Start cut point and lead data of all loops have been reset successfully."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUTFEATURE          "CAM Feature"
+    IDS_TASK_ASSIGN_MicroJoint "Assign micro joint"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_CLEAR_ALL       "Are you sure to delete all the sequences?"
+    IDS_MSG_ResetSequence_OK    "All sequences of sheet have been reset successfully."
+    IDS_SEQ_NO_CUTSEQ_EXIST "No sequence exist in current sheet."
+    IDS_SEQ_SELECT_SEQ      "Please select a sequence."
+    IDS_SEQ_NO_SEQ_SELECT   "No sequence was selected."
+    IDS_SEQ_ACTIVE_IS_LOOP_SEQ 
+                            "Current high-lighted sequence is loop sequence."
+    IDS_SEQ_ACTIVE_IS_COMCUT_SEQ 
+                            "Current high-lighted sequence is common cut sequence."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_SELECT_LOOPINST "Please select a loop instance."
+    IDS_SEQ_ADD_LOOPSEQ     "Please select a loop instance to assign sequence."
+    IDS_SEQ_LOOP_SEQUENCED  "The current loop instance already has the sequence."
+    IDS_SEQ_INSERT_BASE_SEQ "Please select a sequence before which the new sequence will be inserted."
+    IDS_SEQ_INSERT_NEWLOOP  "Please select a loop instance which will be assigned sequence."
+    IDS_SEQ_SELECT_PARTINST "Please select a part."
+    IDS_SEQ_PART_SEQUENCED  "The current part instance already has the sequence."
+	IDS_CannotPlacePartOnCanvas             "Cannot place part on canvas, part can only be placed on sheet."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_ACTIVE_IS_BDGE_SEQ 
+                            "Current high-lighted sequence is bridge sequence."
+    IDS_SEQ_ACTIVE_IS_GridCut_SEQ 
+                            "Current high-lighted sequence is grid-cut sequence."
+    IDS_SEQ_DELETE_SEQUENCE "Please select a sequence to remove."
+    IDS_SEQ_SELECT_SEQ_1    "Please select a sequence and it will be moved to the front of the sequence list."
+    IDS_SEQ_SELECT_SEQ_2    "Please select a sequence and it will be inserted to the back of previous selected sequence."
+    IDS_SEQ_SELECT_SEQ_3    "Please select a sequence as reference and the later selected sequence will be moved behind this sequence."
+    IDS_SEQ_REPLACE_HOLESEQ_SELECT_PART 
+                            "Please select a part to copy its inner-loop sequences."
+    IDS_SEQ_REPLACE_HOLESEQ_1 
+                            "The inner loops of the selected part are not all sequenced."
+    IDS_SEQ_REPLACE_HOLESEQ_2 
+                            "There should be at least 2 loops inside the part."
+    IDS_SEQ_REPLACE_HOLESEQ_3 
+                            "The sequences of the part's inner loops are not continuous."
+    IDS_SEQ_REPLACE_HOLESEQ_4 
+                            "Are you sure to copy the inner-loop sequences within the part to the other same parts?"
+    IDS_SEQ_REPLACE_HOLESEQ_5 
+                            "There are no more instances of this part in the sheet."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_PT_NOTALLOW_BDGE 
+                            "Cannot apply the bridge between these two points, the bridge width may be too large."
+    IDS_SEQ_SEL_BDGE_PT     "Please select a point on the boundary loop as the bridge point."
+    IDS_SEQ_LOOP_NOTALLOW_BDGE 
+                            "Cannot apply the bridge cut between these two loops, please re-select the loop."
+    IDS_SEQ_BREAK_BDGE      "Please select the bridge which will be broken."
+    IDS_SEQ_BREAK_BDGE_NO_SEL 
+                            "No bridge was selected, please select the bridge which will be broken."
+    IDS_SEQ_BDGE_START_SELECT 
+                            "Please select the start loop of the bridge sequence."
+    IDS_SEQ_LOOP_NOT_BDGE_1 "The selected loop already has common cut sequence, please select the other loop."
+    IDS_SEQ_LOOP_NOT_BDGE_2 "The selected loop already has chain cut sequence, please select the other loop."
+    IDS_SEQ_BDGE_SAME_LOOP  "The two end points of the bridge should be at two different loops."
+    IDS_SEQ_BDGE_LOOPTOOL_WARN 
+                            "The tool sizes on these two boundary loops are not same, cannot apply bridge sequence on them."
+    IDS_SEQ_SEL_PT_LOOP_4_CHAIN 
+                            "Please select point on sheet or boundary loop of part."
+    IDS_SEQ_LOOP_NOT_CHAIN_1 
+                            "The selected loop already has common cut sequence, please select the other loop."
+    IDS_SEQ_LOOP_NOT_CHAIN_2 
+                            "The selected loop already has bridge cut sequence, please select the other loop."
+    IDS_SEQ_LOOP_NOT_CHAIN_3 
+                            "The selected loop already has chain cut sequence, please select the other loop."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_CHAIN_SEL_BASE_NODE 
+                            "Please select a chain cut node as the insert reference."
+    IDS_SEQ_CHAIN_NO_BASE_NODE_SEL 
+                            "No chain node was selected, please select a chain cut node as the insert reference."
+    IDS_SEQ_CHAIN_DEL_NODE  "Please select the chain node which will be deleted."
+    IDS_SEQ_CHAIN_DEL_LAST_LOOP 
+                            "The chain cut sequence only have one loop chain node, cannot delete it."
+    IDS_SEQ_CHAIN_DEL_NO_NODE_SEL 
+                            "No chain cut node was selected, please select the chain node which will be deleted."
+    IDS_SEQ_CHAIN_LOOPTOOL_WARN 
+                            "The tool size on this boundary loop is different with those boundary loops in the chain-cut sequence."
+    IDS_GRID_SEQ_NO_PART_SEL "No parts were selected."
+    IDS_GRID_SEQ_ONE_PART_SEL_TIP 
+                            "The grid sequence can only be generated for same part"
+    IDS_GRID_SEQ_SEL_GRID_TIP "Please select a part grid"
+    IDS_GRID_SEQ_PART_GAP_TIP 
+                            "The part distance should be set as the beam width"
+    IDS_GRID_SEQ_EXIST_SEQ_TIP 
+                            "Some sequences existed for the selected parts"
+    IDS_GRID_SEQ_LOOPTOOL_WARN 
+                            "The tool sizes on the boundary loop of these selected parts are not same, cannot apply grid-cut sequence on them."
+    IDS_GRID_SEQ_RECT_BOUNDARY 
+                            "Grid-cut sequence can only be applied on the parts which have the rect boundary loop."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FLYCUT_SEQ_NO_HOLE_SEL_TIP "No holes were selected"
+    IDS_SEQ_ADD_FLYCUT_GRID_TIP "Please select a hole grid"
+    IDS_SEQ_FLYCUT_SEQ_EXIST_TIP 
+                            "You need to assign loop sequences for the selected holes before applying fly cut for them"
+    IDS_SEQ_FLYCUT_APPLY_SAMEPARTS_TIP 
+                            "Apply this fly cut to other same parts?"
+    IDS_SEQ_AUTO_REM_CUTLINE_ACTION 
+                            "Generate remnant cut-line here, and also can save the remnant material to the Material Library."
+    IDS_SEQ_ADD_REM_CUTLINE_ACTION 
+                            "Please draw the remnant cutting lines, press ESC to quit, right-click to finish the edit."
+    IDS_SEQ_DEL_REM_CUTLINE_ACTION 
+                            "Select the remnant cut line and left-click to delete it."
+    IDS_SEQ_AUTO_REM_CUTLINE_ERROR "Cannot generate remnant cut-line."
+    IDS_SEQ_AUTO_REM_CUTLINE_OK "Succeed to generate remnant cut-line."
+    IDS_SEQ_NO_PART_EXIST   "There are no parts on the sheet."
+	IDS_FlyCut_LoopsMustHaveSameCutOffset "Selected loops should have same cut offset style."
+	IDS_FlyCut_LoopsMustBelongOnePartInst	"Selected loops should belong to one part."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_REM_MAT_ERROR   "Fail to generate the remnant material."
+    IDS_SEQ_REM_MAT_OK      "Remnant material <WILLBEREPLACED1> has been generated, you can open the Material Library to check it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_DELETE_MOV_PT   "Please select the movement point which will be deleted."
+    IDS_SEQ_DEL_MOVPT_NO_SEL 
+                            "No movement point was selected, please select the movement point which will be deleted."
+    IDS_SEQ_ADD_MOVPT_BASE  "Please select a base movement point, new movement point will be added after it."
+    IDS_SEQ_MOVPT_NO_BASE_SEL 
+                            "No movement point was selected, please select a movement point as the insert reference."
+    IDS_SEQ_ADD_MOVPT_PT    "Please press the left button to add a movement point."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_VIEW_SPEED1     "Current simulation speed: 1(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED2     "Current simulation speed: 2(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED3     "Current simulation speed: 3(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED4     "Current simulation speed: 4(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED5     "Current simulation speed: 5(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED6     "Current simulation speed: 6(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED7     "Current simulation speed: 7(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_SPEED8     "Current simulation speed: 8(1-8), press +/- key to Speed up/Speed Down, press left mouse button to Pause/Resume."
+    IDS_SEQ_VIEW_PAUSE      "The sequence simulation is paused, press left mouse button to resume."
+    IDS_SEQ_VIEW_FINISH     "The sequence simulation is finished."
+    IDS_SEQ_NO_SEQ_SIM      "No sequence exist, please assign sequences for the sheet and then simulate them."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQUNIT             "Sequence"
+    IDS_CUTSEQ_LIST         "Sequence List"
+    IDS_LOOP_SEQUNIT        "Loop Sequence"
+    IDS_COMCUT_SEQUNIT      "Common Cut Sequence"
+    IDS_SUBRT_SEQUNIT       "Sub Routine Sequence"
+    IDS_SUBRT_GRID_SEQUNIT  "Grid Sub Routine Sequence"
+    IDS_LOOP_GRID_SEQUNIT   "Grid-Loop Sequence"
+    IDS_BDGE_SEQUNIT        "Bridge Sequence"
+    IDS_CHAIN_SEQUNIT       "Chain Sequence"
+    IDS_GRID_SEQUNIT        "Grid Cut"
+    IDS_FLYCUT_SEQUNIT      "Fly Cut"
+    IDS_MOVE_PT             "Movement Point"
+    IDS_REMNANT_CUTLINE     "Remnant Cut-Line"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEOMETRY            "Geometry"
+    IDS_GEOMETRY_LIST       "Geometry List"
+    IDS_GEOM_TYPE           "Type"
+    IDS_LINESIDE_LEFT       "Left"
+    IDS_LINESIDE_CENTER     "Center"
+    IDS_LINESIDE_RIGHT      "Right"
+    IDS_ARCSIDE_OUTSIDE     "Outside"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ARCSIDE_ON          "On"
+    IDS_ARCSIDE_INSIDE      "Inside"
+    IDS_GEOMETRY_STD        "Standard Geometry"
+    IDS_GEOMETRY_POLYGON    "Polygon Geometry"
+    IDS_GEOMETRY_ARRAY      "Array Geometry"
+    IDS_GEOMETRY_LINE       "Line"
+    IDS_GEOMETRY_ARC        "Arc"
+    IDS_GEOMETRY_RECTHOLE   "Rect Hole"
+    IDS_GEOMETRY_TRHOLE     "Triangle Hole"
+    IDS_GEOMETRY_ROUNDHOLE  "Round Hole"
+    IDS_GEOMETRY_OBROUND    "OBround"
+    IDS_GEOMETRY_ELLIPSE    "Ellipse"
+    IDS_GEOMETRY_SINGLED    "Single D"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TPL_PAGE_PARTINFO   "Part Info"
+    IDS_TPL_PAGE_SHEETINFO  "Sheet Info"
+    IDS_TPL_PAGE_TASK    "Task Info"
+    IDS_TPL_PAGE_PART_LABEL "Part Label Page"
+    IDS_RPT_NEW_TPL_NAME    "New Template"
+    IDS_RPT_TPL_ALLTYPE     "All Report Template"
+    IDS_RPT_TPL_PARTINFO    "Part Info"
+    IDS_RPT_TPL_SHEETINFO   "Sheet Info"
+    IDS_RPT_TPL_TASK     "Task Info"
+    IDS_RPT_TPL_LABEL       "Label Info"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LEFT_TOP            "Left Top"
+    IDS_RIGHT_TOP           "Right Top"
+    IDS_LEFT_BOTTOM         "Left Bottom"
+    IDS_RIGHT_BOTTOM        "Right Bottom"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TPL_PAGE_WIDTH      "Page Width"
+    IDS_TPL_PAGE_HEIGHT     "Page Height"
+    IDS_TPL_PAGE_TYPE       "Page Type"
+    IDS_TPL_PAGE_ALLTYPE    "All Template Page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TPL_GENERAL         "General"
+    IDS_TPL_PREFERENCE      "Preference"
+    IDS_MGR_REPORT_TPL      "Report Template Management"
+    IDS_NEW_TPL_PAGE        "New Template Page"
+    IDS_MGR_TPL_PAGE        "Template Management"
+    IDS_ENTITY_DRAW         "Draw"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRAW_LABEL          "Label"
+    IDS_DRAW_FIELD          "Field"
+    IDS_DRAW_STATIC_IMG     "Static Picture"
+    IDS_DRAW_DYN_IMG        "Dynamic Picture"
+    IDS_DRAW_GRID           "Grid"
+    IDS_DRAW_LINE           "Line"
+    IDS_DRAW_BOX            "Box"
+    IDS_DRAW_ELLIPSE        "Ellipse"
+    IDS_DRAW_STATIC         "Static Text"
+    IDS_DRAW_BARCODE        "Bar Code"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TPL_SAVE            "Save Template"
+    IDS_TPL_UNDO            "Undo"
+    IDS_TPL_REDO            "Redo"
+    IDS_CTRL_PANEL          "Control Panel"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REPORT              "Report"
+    IDS_REPORT_TPL          "Report Template"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENTITY_EDIT         "Edit"
+    IDS_ENTITY_PROP         "Property"
+    IDS_ENTITY_COPY         "Copy"
+    IDS_ENTITY_CUT          "Cut"
+    IDS_ENTITY_PASTE        "Paste"
+    IDS_ENTITY_DELETE       "Delete"
+    IDS_ENTITY_GROUP        "Group"
+    IDS_ENTITY_UNGROUP      "UnGroup"
+    IDS_ENTITY_VIEW         "View"
+    IDS_ENTITY_ZOOM_IN      "Zoom In"
+    IDS_ENTITY_ZOOM_OUT     "Zoom Out"
+    IDS_ENTITY_NO_ZOOM      "No Zoom"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BIND_ITEM_TaskName "Task Name"
+    IDS_BIND_ITEM_TaskComment "Task Comment"
+    IDS_BIND_ITEM_Task_PlanningPartCount "Initial Part Count"
+    IDS_BIND_ITEM_TaskUtilization "Nesting Utilization"
+    IDS_BIND_ITEM_Task_CostTime "Nesting Cost Time"
+    IDS_BIND_ITEM_PRINT_DATE "Print Date"
+    IDS_COMMAND_ADD_ENTITY  "Draw Entity"
+    IDS_COMMAND_MOVE_ENTITY "Move Entity"
+    IDS_COMMAND_RESIZE_ENTITY "Resize Entity"
+    IDS_COMMAND_PASTE_ENTITY "Paste Entity"
+    IDS_COMMAND_DELETE_ENTITY "Delete Entity"
+    IDS_COMMAND_CUT_ENTITY  "Cut Entity"
+    IDS_BIND_ITEM_TASK_TotalSheetCount "Total Sheet Count"
+    IDS_BIND_ITEM_Task_NestedPartCount "Nested Part Count"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BIND_ITEM_SHEET_CUT_COST "Cutting Cost"
+    IDS_BIND_ITEM_SHEET_RAPID_COST "Rapid Movement Cost"
+    IDS_BIND_ITEM_SHEET_PIERCE_COST "Pierce Cost"
+    IDS_BIND_ITEM_SHEET_TOTAL_COST "Total Cost"
+    IDS_BIND_ITEM_SHEET_TOTAL_TIME "Total Time"
+    IDS_BIND_ITEM_SHEET_CREATE_DATE "Sheet Create Date"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TPL_UNIT_PIXEL      "Pixel"
+    IDS_TPL_UNIT_INCH       "Inch"
+    IDS_TPL_UNIT_CM         "Centimeter"
+    IDS_BMP_EXT             ".bmp"
+    IDS_JPG_EXT             ".jpg"
+    IDS_PNG_EXT             ".png"
+    IDS_IMG_FILTER          "*.bmp|*.bmp|*.jpg|*.jpg|*.png|*.png|"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LINE_STYLE_1        "Solid"
+    IDS_LINE_STYLE_2        "Dashed"
+    IDS_LINE_STYLE_3        "Dotted"
+    IDS_JUST_LEFT           "Left"
+    IDS_JUST_CENTER         "Center"
+    IDS_JUST_RIGHT          "Right"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMAND_GROUP_ENTITY "Group Entity"
+    IDS_COMMAND_UNGROUP_ENTITY "UnGroup Entity"
+    IDS_MSG_RPT_CHANGE_SAVED "The changes have been saved."
+    IDS_MSG_RPT_NO_CHANGE   "No changes can be saved."
+    IDS_MSG_TPL_PARAM       "Default params of the template."
+    IDS_MSG_SAVE_TPL_PARAM  "Do you want to save the changes you've made in Template Param page?"
+    IDS_MSG_RPT_DISPLAY_PARAM "Default params for display."
+    IDS_MSG_SAVE_RPT_DISPLAY_PARAM 
+                            "Do you want to save the changes you've made in Display Param page?"
+    IDS_MSG_DESIGN_PARAM    "Default params for design template."
+    IDS_MSG_SAVE_DESIGN_PARAM 
+                            "Do you want to save the changes you've made in Design Param page?"
+    IDS_MSG_SAVE_TEMPLATE_PAGE "Save the changes of the template page?"
+    IDS_MSG_SAVE_TEMPLATE_PAGE_OK "The template page has been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SELECT_TEMPLATE_PAGE "Please select a template page."
+    IDS_MSG_DELETE_TEMPLATE_PAGE "Are you sure to delete the template page?"
+    IDS_MSG_TEMPLATE_PAGE_SAVED 
+                            "Template Page<WILLBEREPLACED1> was saved successfully."
+    IDS_MSG_TEMPLATE_PAGE_NOT_CHANGED 
+                            "No changes have been made for Template Page<WILLBEREPLACED1>."
+    IDS_MSG_TEMPLATE_PAGE_OPENED 
+                            "Template Page<WILLBEREPLACED1> has been opened, please close it and try again."
+    IDS_MSG_TEMPLATE_INCLUDE_PAGE 
+                            "This Template Page existed in the Report Template."
+    IDS_MSG_SAVE_TEMPLATE   "Save the changes of the report template?"
+    IDS_MSG_SAVE_TEMPLATE_OK "The report template has been saved."
+    IDS_MSG_SELECT_TEMPLATE "Please select a report template."
+    IDS_MSG_DELETE_TEMPLATE "Are you sure to delete the report template?"
+    IDS_MSG_TEMPLATE_NOT_CHANGED "No changes have been made for Template."
+    IDS_MSG_WRONG_DFL_TPL   "Please set the default report template."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_NO_ENTITY_SELECT "No template entity is selected."
+    IDS_MSG_ONE_ENTITY_PROP "Please select one template entity to edit its property."
+    IDS_MSG_SOME_ENTITY_GROUPED "Some selected entities have been grouped."
+    IDS_MSG_GROUP_ONE_ENTITY "Please select more than one entities to group."
+    IDS_MSG_GROUP_SUCCESS   "The selected entities have been grouped successfully."
+    IDS_MSG_NO_GROUP_SELECT "No group is selected."
+    IDS_MSG_UNGROUP_SUCCESS "The selected entities have been ungrouped successfully."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BIND_ITEM_PART_LIST "Part List"
+    IDS_BIND_ITEM_PART_NAME "Part Name"
+    IDS_BIND_ITEM_PART_SIZE "Part Size"
+    IDS_BIND_ITEM_PART_AREA "Part Area"
+    IDS_BIND_ITEM_PART_COUNT "Part Count"
+    IDS_BIND_ITEM_PART_SUBMIT_COUNT "Submitted Count"
+    IDS_BIND_ITEM_PART_NESTED_COUNT "Nested Count"
+    IDS_BIND_ITEM_PART_PREVIEW "Part Preview"
+    IDS_BIND_ITEM_PART_WEIGHT "Part Weight"
+    IDS_BIND_ITEM_SHEET_TOTAL_LENGTH "Total Path Length"
+    IDS_BIND_ITEM_SHEET_LIST "Sheet List"
+    IDS_BIND_ITEM_SHEET_NAME "Sheet Name"
+    IDS_BIND_ITEM_SHEET_SIZE "Sheet Size"
+    IDS_BIND_ITEM_SHEET_COUNT "Sheet Count"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BIND_ITEM_SHEET_UTILIZATION "Sheet Utilization"
+    IDS_BIND_ITEM_SHEET_PREVIEW "Sheet Preview"
+    IDS_BIND_ITEM_SHEET_CUT_LENGTH "Cutting Path Length"
+    IDS_BIND_ITEM_SHEET_CONTOUR_LENGTH "All Contour Length"
+    IDS_BIND_ITEM_SHEET_RAPID_LENGTH "Rapid Movement Length"
+    IDS_BIND_ITEM_SHEET_PIERCE_COUNT "Pierce Count"
+    IDS_BIND_ITEM_MATSIZE_LIST "Material List"
+    IDS_BIND_ITEM_MATSIZE_NEST_LIST "Nest Material List"
+    IDS_BIND_ITEM_MATSIZE_NAME "Material Thickness"
+    IDS_BIND_ITEM_MATSIZE_SIZE "Material Size"
+    IDS_BIND_ITEM_MATSIZE_COUNT "Material Count"
+    IDS_BIND_ITEM_MATSIZE_AVAIL "Material Available"
+    IDS_BIND_ITEM_MATSIZE_SUBMIT_COUNT "Submitted Material"
+    IDS_BIND_ITEM_MATSIZE_NESTED_COUNT "Nested Material"
+    IDS_BIND_ITEM_MATTYPE   "Material Type"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BIND_ITEM_SHEET_CUT_TIME "Cut Time"
+    IDS_BIND_ITEM_SHEET_RAPID_TIME "Rapid Movement Time"
+    IDS_BIND_ITEM_SHEET_PIERCE_TIME "Pierce Time"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CCW                 "CCW"
+    IDS_CW                  "CW"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEOMETRY_DOUBLED    "Double D"
+    IDS_GEOMETRY_RCHOLE     "Round Corner Hole"
+    IDS_GEOMETRY_RADSLOT    "Radius Slot"
+    IDS_GEOMETRY_PATLINE    "Line Array"
+    IDS_GEOMETRY_PATARC     "Arc Array"
+    IDS_GEOMETRY_PATCIRCLE  "Circle Array"
+    IDS_GEOMETRY_PATGRID    "Grid Array"
+    IDS_LOOP                "Loop"
+    IDS_LOOP_LIST           "Loop List"
+    IDS_LOOP_POLY           "Polygon Loop"
+    IDS_LOOP_SINGLE         "Standard Loop"
+    IDS_LOOP_ARRAY          "Array Loop"
+
+	IDS_AlignLoop_Left	"Left Alignment"
+	IDS_AlignLoop_Right	"Right Alignment"
+	IDS_AlignLoop_Top		"Top Alignment"
+	IDS_AlignLoop_Bottom	"Bottom Alignment"
+	IDS_AlignLoop_HorizontalCenter	"Horizontal Center"
+	IDS_AlignLoop_VerticalCenter		"Vertical Center"
+	IDS_AlignLoop_Center		"Center Alignment"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUTO_PROCESS        "Auto-process"
+    IDS_STARTEND_CUT        "Start/End Cut"
+    IDS_MICROJOINT          "Microjoint"
+    IDS_CORNER_FEATURE      "Corner Feature"
+    IDS_COND_FEATURE        "Cut Condition"
+    IDS_LOOPTOOL_FEATURE    "Loop Tool"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_LOOPTOOL_TIP   "Edit the tool information on the loop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASSIGN_CUTFEATURE   "Assign CAM Feature"
+    IDS_RESET_CUTFEATURE    "Reset CAM Feature"
+    IDS_CHECK_INTERFERE     "Check Interfere"
+    IDS_EDIT_LOOP_LEAD      "Edit Lead In/Out"
+	IDS_SetAsCutOutside	"Cut Outside"
+	IDS_SetAsCutInside	"Cut Inside"
+	IDS_SetAsCutOn	"Cut On"
+	IDS_SetLoopGap		"Set Gap"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_LOOP_START_PT  "Adjust Start Cut Point"
+    IDS_EDIT_LEADOUT        "Edit Lead Out"
+    IDS_EDIT_COND           "Edit"
+    IDS_SWITCH_CUTSIDE      "Switch Cut Side"
+    IDS_CHANGE_CUTDIR       "Change Cut Direction"
+	IDS_ResetLeadLine		"Reset Lead Data"
+	IDS_ResetStartCutPt		"Reset Start Cut Point"
+	IDS_ResetMicroJoint		"Reset Micro Joint"
+	IDS_ResetCorner			"Reset Corner Feature"
+	IDS_AddMicroJoint	"Add Micro Joint"
+	IDS_EditMicroJoint	"Edit Micro Joint"
+	IDS_DeleteMicroJoint "Delete Micro Joint"
+	IDS_AddCornerFeature	"Add Corner Feature"
+	IDS_EditCornerFeature	"Edit Corner Feature"
+	IDS_DeleteCornerFeature	"Delete Corner Feature"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMAND_ADD_MicroJoint "Add Micro Joint"
+    IDS_COMMAMD_DEL_MicroJoint "Delete Micro Joint"
+    IDS_COMMAMD_MOD_MJ_WIDTH "Change Microjoint Width"
+    IDS_COMMAMD_MOD_MJ_LEAD "Modify Lead In/Out"
+    IDS_COMMAMD_MOD_MJ_PT   "Modify Microjoint Position"
+    IDS_COMMAMD_ADD_CORNER  "Add Corner Feature"
+    IDS_COMMAMD_DEL_CORNER  "Delete Corner Feature"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMAMD_MOD_CORNER  "Modify Corner Feature"
+    IDS_COMMAMD_MOD_COND    "Modify Cut Condition"
+    IDS_COMMAMD_ADD_COND    "Add Cut Condition"
+    IDS_COMMAMD_DEL_COND    "Delete Cut Condition"
+    IDS_COMMAMD_MOD_TOOLSIZE "Modify Tool Size"
+    IDS_COMMAMD_CHANGE_TOOL "Change Loop Tool"
+    IDS_COMMAMD_MOD_TOOLCOLOR "Modify Tool Color"
+    IDS_COMMAMD_NoCutLoop	"No Cutting Loop"
+    IDS_MSG_NoCutLoop   "No-Cut the selected loop."
+	IDS_SwitchCutDirection	"Switch Cut Direction"
+	IDS_CcwCutDirection	"CCW Cut"
+	IDS_CwCutDirection	"CW Cut"
+    IDS_MSG_LoopHaveWrongToolSize   "Some loops were assigned incorrect tool width, are you sure to accept it?"
+    IDS_SEQ_PartNoCutting   "The part is flaged as No-cutting, please select other part."
+    IDS_SEQ_LoopNoCutting   "The loop is flaged as No-cutting, please select other loop."
+    IDS_SEQ_ACTIVE_IS_FlyCut_SEQ    "Current high-lighted sequence is fly-cut sequence."
+    IDS_SEQ_ACTIVE_IS_ChainCut_SEQ    "Current high-lighted sequence is chain-cut sequence."
+    IDS_GRID_Warning_1  "Some boundary loop has been flaged as No-Cutting, cannot apply grid-cut sequence on them."
+    IDS_COLORITEM_NoCutLoop	"No-Cutting Loop"
+    IDS_COLORITEM_IncorrectToolSize "Incorrect Tool Size"
+    IDS_OUTPUT_SelectLoopInstance   "Please select loop to edit."
+    IDS_SelectLoopInstance  "Select Loop"
+    IDS_SwitchSelectObject    "Switch to select part or select loop status."
+    IDS_QuitCurrentAction       "Quit currrent action and enter default action which select part."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROP_LEADOUT_ENABLE "Enable Lead Out"
+    IDS_PROP_LEADOUT_LENGTH "Lead Out Length"
+    IDS_PROP_LEADOUT_ANGLE  "Lead Out Angle"
+    IDS_PROP_MJ_LEADIN_COND "Lead In Condition"
+    IDS_PROP_MJ_LEADOUT_COND "Lead Out Condition"
+    IDS_SET_MJ_POINT        "Adjust micro joint Position"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROPBAR_LOOPTOOL    "Loop Tool Information"
+    IDS_COMMAMD_MOD_LEAD    "Modify Lead In/Out Data"
+    IDS_COMMAMD_MOD_STARTPT "Modify Start Point"
+    IDS_COMMAMD_MOD_ENDPT   "Modify End Point"
+    IDS_COMMAMD_CHANGE_CUTSIDE "Switch Cut Side"
+    IDS_COMMAMD_CHANGE_DIR  "Change Cut Direction"
+	IDS_COMMAMD_SetOverCut	"Set Loop Gap"
+	IDS_COMMAMD_SetLoopGap "Set Over Cut"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROPBAR_CORNERPROP  "Corner Feature Property"
+    IDS_CUTFEATURE_CORNERINFO "Corner Feature Information"
+    IDS_PROP_CORNER_TYPE    "Type"
+    IDS_PROP_CORNER_VALUE   "Value"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROPBAR_STARTCUTPROP "Start Cut Property"
+    IDS_PROPBAR_ENDCUTPROP  "End Cut Property"
+    IDS_CATEGORY_STARTPOINT "Start Cut Point"
+    IDS_CATEGORY_LEADINDATA "Lead In Data"
+    IDS_CATEGORY_LEADOUTDATA "Lead Out Data"
+    IDS_CATEGORY_LEADINCOND "Lead In Conditions"
+    IDS_CATEGORY_LEADOUTCOND "Lead Out Conditions"
+    IDS_CATEGORY_DOPIERCECOND "Do-Pierce conditions"
+    IDS_CATEGORY_UNPIERCECOND "Un-Pierce conditions"
+    IDS_PROP_CORNER_LEAD_ENABLE "Enable Corner Lead"
+    IDS_PROP_LEAD_TYPE      "Lead Type"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROP_LEAD_LENGTH    "Length"
+    IDS_PROP_LEAD_ANGLE     "Angle"
+    IDS_PROP_LEAD_ARCRAD    "Arc Radius"
+    IDS_PROP_LEAD_ARC_ANGLE "Arc Angle"
+    IDS_PROP_LEAD_LINESPLIT "Two Lines Split"
+    IDS_PROP_LEAD_OVERCUT   "Over Cut"
+    IDS_SET_STARTCUT_POINT  "Adjust StartCut Point"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROPBAR_MicroJointPROP "Micro Joint Property"
+    IDS_CATEGORY_MJ_POS_WIDTH "Microjoint Position and Width"
+    IDS_CATEGORY_MJ_LEADIN  "Microjoint Lead In"
+    IDS_CATEGORY_MJ_LEADOUT "Microjoint Lead Out"
+    IDS_PROP_MicroJointWIDTH "Width"
+    IDS_PROP_LEADIN_ENABLE  "Enable Lead In"
+    IDS_PROP_LEADIN_LENGTH  "Lead In Length"
+    IDS_PROP_LEADIN_ANGLE   "Lead In Angle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMAND_MOVE_PARTPMT "Move Part"
+    IDS_COMMAND_ADD_PARTPMT "Add Part"
+    IDS_COMMAND_DEL_PARTPMT "Delete Part"
+    IDS_COMMAND_EDITPROP_PRTPMT "Edit Part Property"
+    IDS_COMMAND_GRID_PRTPMT "Grid Part"
+    IDS_COMMAND_COPY_PARTPMT "Copy Part"
+    IDS_COMMAND_ROTATE_PARTPMT "Rotate Part"
+    IDS_COMMAND_CHG_GRID_SPACE "Modify Grid Spacing"
+    IDS_COMMAND_EXPLODE_GRID "Explode Part Grid"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NESTJOB             "Nest Job"
+    IDS_NEW_NESTJOB         "New Nest Job"
+    IDS_TASK_SAVE_NESTJOB   "Save Nest Job"
+    IDS_NESTMGR_NEST_PRIORITY "Priority"
+    IDS_SHEET_QUANTITY      "Sheet Count"
+    IDS_MATSIZE_USED        "Material"
+    IDS_PART_SUBMITTED_NUM  "Submitted Count"
+    IDS_PART_NESTED_NUM     "Nested Count"
+    IDS_NESTPART_OUTER_LOOPTOOL "Boundary Loop Tool"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHEET_NAME          "Name (prefix + count)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_NESTJOB_NAME    "Please input the job name."
+    IDS_MSG_NO_NESTPART     "Please select parts that will be nested."
+    IDS_MSG_NO_NESTMAT      "Please select the materials that will be used for nesting."
+    IDS_MSG_NEST_OPEN_BOUNDARY 
+                            "Cannot nest part<WILLBEREPLACED1> because it do not has a closed boundary."
+    IDS_MSG_TRIAL_MAT_COUNT_1 
+                            "This is a Trial Edition, only one Material Size can be used for nesting."
+    IDS_MSG_TRIAL_MAT_COUNT_2 
+                            "This is a Trial Edition, the available count of the Material will be set as 2 automatically."
+    IDS_MSG_SELECT_SHEET    "Please select a sheet which will be generated to remnant material."
+    IDS_MSG_NEST_INFO       "Please select the part to set the nesting info."
+    IDS_MSG_PART_NAME_COL_ERROR 
+                            "In row<WILLBEREPLACED1>, the part name column have the invalid data."
+    IDS_MSG_PART_PATH_COL_ERROR 
+                            "In row<WILLBEREPLACED1>, the part path column have the invalid data."
+    IDS_MSG_PART_WIDTH_COL_ERROR 
+                            "In row<WILLBEREPLACED1>, the part width column have the invalid data."
+    IDS_MSG_PART_HEIGHT_COL_ERROR 
+                            "In row<WILLBEREPLACED1>, the part height column have the invalid data."
+    IDS_MSG_PART_COUNT_COL_ERROR 
+                            "In row<WILLBEREPLACED1>, the part count column have the invalid data."
+    IDS_MSG_SEL_VALID_XLS   "Please select a valid Excel file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_NO_DATA_IMPORT  "There is no data to import."
+    IDS_MSG_NO_NEST_JOB     "There is no Nest Job in the database."
+    IDS_MSG_INVALID_NEST_JOB 
+                            "The selected Nest Job is damaged, please select the other Nest Job."
+    IDS_MSG_STOP_NEST       "Are you sure to interrupt the nesting?"
+    IDS_MSG_TOOLSIZE_WARN   "The tool sizes for the part boundary loops are different, this will cause the different distance between parts, so some parts cannot be cut as common cut."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHEET               "Sheet"
+    IDS_NEW_SHEET           "New Sheet"
+    IDS_TASK                "Task"
+    IDS_NEW_TASK            "New task"
+    IDS_TaskManagement      "Task Management"
+    IDS_TaskPartManagement  "Part Management"
+    IDS_TaskSheetManagement "Sheet Management"
+    IDS_AddTaskPartFromDataCenter "Add part to task from data center."
+    IDS_AddTaskPartFromDxfDwg "Add part to task from dxf/dwg."
+    IDS_EditPartInfo        "Edit part information in task."
+    IDS_DeletePartFromTask  "Delete selected parts from task."
+    IDS_MSG_PartExistInTask "The part<WILLBEREPLACED1> has existed in the task, can not add it again."
+    IDS_MSG_NoPartIsSelected "Please select part which will be added into the task."
+    IDS_MSG_NoPartIsSelectedToDelete "No part is selected to delete."
+    IDS_MSG_MakeSureToDeletePart "Are you sure to delete the selected parts from task?"
+    IDS_MSG_NoPartToShow    "There are no parts in this task."
+    IDS_MSG_CannotDeleteAllTaskSheet "Cannot delete all sheets of the task."
+    IDS_MSG_MakeSureToDeleteTaskSheet "Are you sure to delete the selected sheets from task?"
+    IDS_MSG_NoSheetIsSelectedToDelete "No sheet is selected to delete."
+    IDS_MSG_MakeSureToDeletePart_2 "Are you sure to delete the selected parts from task? some parts have been placed on sheet."
+    IDS_MSG_MaterialStockWarning "These materials do not have enough stock to create sheet."
+    IDS_MSG_PleaseSelectUnfinishedParts "Please select part which will be nested in Part Manager."
+    IDS_MSG_AllPartsfinished "There is no remaining parts in task."
+    IDS_MSG_NoPartIsSelectedToEdit "No part is selected to edit."
+    IDS_COMMAND_AutoNesting "Auto Nesting"
+    IDS_PartPlanningCount   "Planning Count"
+    IDS_PartPlacedCount     "Placed Count"
+    IDS_RequiredMaterialQuantity "Required Count"
+    IDS_RemainingQuantity   "Remaining Quantity"
+    IDS_PartNestingPriority "Auto-Nesting Priority"
+    IDS_PartNestingRotateAngle "Auto-Nesting Rotate Angle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DLG_CAPTION_LEAD    "the hull of the lead"
+    IDS_DLG_CAPTION_MicroJoint "the hull of the micro joint"
+    IDS_DLG_CAPTION_CORNER  "the hull of the corner"
+    IDS_DLG_CAPTION_PATLIST "the polygon of the pattern list"
+    IDS_DLG_CAPTION_NESTSHAPE 
+                            "the boundar and hole polygons of the nest shape"
+    IDS_DLG_CAPTION_OVERLAPRECT "the Rects in the Overlap Rect"
+    IDS_DLG_CAPTION_ONEPART_RST "the nest result of one part."
+    IDS_DLG_CAPTION_PAIR_INFO_1 "the pair info 1 of the nest shape."
+    IDS_DLG_CAPTION_PAIR_INFO_2 "the pair info 2 of the nest shape."
+    IDS_DLG_CAPTION_PAIR_INFO_3 "the pair info 3 of the nest shape."
+	IDS_GEOM_DRAW_3PtArc "3 Points Arc"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RAPID_NEST          "This algorthm is more suitable for the case that the part shape is regular and the nesting number is large, this algorthm run fast."
+    IDS_TRUESHAPE_NEST      "This algorthm is more suitable for the case that the part shape is irregular and the nesting number is small, this algorthm run slow."
+    IDS_IMP_RECT_PART_FROM_XLS "Import Rect Part From Excel"
+    IDS_SET_NEST_INFO_TIP   "Set the nesting config of the selected parts"
+    IDS_RENEST_NEST_JOB     "Select an old Nest Job and nest it again."
+    IDS_SAVE_NEST_JOB       "Save the Nest Job to data center, and then you can visit it there."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD_PART_FROM_DXF   "Add parts from dxf/dwg files."
+    IDS_ADD_PART_FROM_ASM_DXF "Add Part From Assembly DXF/DWG"
+    IDS_ADD_PART_FROM_DB    "Add parts from CutLeader database."
+    IDS_ADD_MAT_FROM_DB     "Add materials from Material Library."
+    IDS_AddStdPart          "Add standard parts"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PART_LAYOUT         "Part Layout"
+    IDS_PARTPMT             "Part Placement"
+    IDS_PARTPMT_LIST        "Part List"
+    IDS_PARTPMT_TYPE        "Part Type"
+    IDS_PARTPMT_SINGLE      "Single Part"
+    IDS_PARTPMT_GRID        "Part Grid"
+    IDS_PARTINST            "Part Instance"
+	IDS_CanvasGeometry      "Canvas Geometry"
+	IDS_Canvas              "Canvas"
+	IDS_AddPatternFromDxf   "Add Geometry From Dxf/Dwg"
+	IDS_AddCanvasPattern2Task   "Add Geometry To Part Library"
+	IDS_SelectPatternAdding2Task   "Please select geometry which will be added to Part Library."
+	IDS_COMMAND_AddLoop2Canvas  "Add Loop"
+	IDS_COMMAND_CopyCanvasLoop  "Copy Loop"
+	IDS_COMMAND_MoveCanvasLoop  "Move Loop"
+	IDS_COMMAND_RotateCanvasLoop  "Rotate Loop"
+	IDS_COMMAND_GridCanvasLoop	"Grid Loop"
+	IDS_OUTPUT_SelectCanvasGeometry2Delete  "Please select geometry on canvas to delete."
+	IDS_OUTPUT_SelectCanvasGeometry2Copy  "Please select geometry on canvas to copy."
+	IDS_OUTPUT_SelectCanvasGeometry2Move  "Please select geometry on canvas to move."
+	IDS_OUTPUT_SelectCanvasGeometry2Rotate  "Please select geometry on canvas to rotate."
+	IDS_OUTPUT_SelectCanvasGeometry2Grid  "Please select geometry on canvas to create grid."
+	IDS_DrawText                    "Draw Text"
+	IDS_GeometryCount				"Geometry Count"
+	IDS_LoopCount					"Loop Count"
+	IDS_GeometrySize				"Geometry Size"
+	IDS_GeometryLength				"Geometry Length"
+	IDS_TextCount					"Text Count"
+	IDS_EditText                    "Edit Text"
+	IDS_SetLoopSize					"Change Loop Size"
+	IDS_Text                        "Text"
+	IDS_MSG_CannotCreateText    "Cannot create text because some text params are incorrect."
+	IDS_MSG_SelectTextLeftBottomPt "Please select the left bottom point of text."
+	IDS_SnapPt_EndPt					"End Point"
+	IDS_SnapPt_MiddlePt				    "Middle Point"
+	IDS_SnapPt_CenterPt					"Center Point"
+	IDS_SnapPt_ClosestPt				"Closest Point"
+	IDS_SnapPt_FootPt					"Foot Point"
+	IDS_SnapPt_TangencyPt				"Tangency Point"
+	IDS_SnapPt_ControlPt				"Control Point"
+	IDS_SnapPt_CrossPt					"Cross Point"
+	IDS_LoopDistanceDetect_ComCut		"Selected loops should use same tool size and be cut outside, and can only be common cut with same layer loops which are under odd number layer."
+	IDS_PressKey_SetLoopDistance		"Move mouse to param panel and release left mouse button to set param"
+	IDS_PressKey_SetPartDistance		"Move mouse to param panel and release left mouse button to set param"
+	IDS_Find_StickPosition				"Succeed Touching"
+	IDS_Find_AlignPosition				"Succeed Alignment"
+	IDS_Find_Stick_Align_Position		"Succeed Touching and Alignment"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARTPMT_ADDPART     "Add Part"
+    IDS_PARTPMT_FROM_DB     "From database"
+    IDS_PARTPMT_FROM_DXF    "From Dxf/Dwg"
+    IDS_AddPartsByNest      "Auto Nesting"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARTPMT_SELECT      "Select Part"
+    IDS_EDIT_LAYOUT         "Edit Part Layout"
+    IDS_PARTPMT_CREATE_GRID "Create Part Grid"
+    IDS_PARTPMT_EXPLODE_GRID "Explode Part Grid"
+    IDS_PARTPMT_GRID_GAP    "Edit grid gap"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARTPMT_VIEW_ZOOMALL "Zoom All"
+    IDS_PARTPMT_VIEW_ZOOMIN "Zoom In"
+    IDS_PARTPMT_VIEW_ZOOMOUT "Zoom Out"
+    IDS_PARTPMT_VIEW_OFFSET "View Offset"
+    IDS_PARTPMT_VIEW_ALL_PART "List all parts"
+    IDS_PROPBAR_AddPRTPMT   "Load part into sheet"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_FEATURE        "Edit CAM Feature"
+    IDS_GEN_SKELE_REMANT    "Generate Remnant Material"
+    IDS_MEASURE_DISTANCE    "Measure Distance"
+	IDS_InPlaceEditPart	"Edit Part Data"
+	IDS_PartInstanceCount	"Part Count"
+	IDS_PartInstanceSize	"Part Size"
+	IDS_MSG_SelectOnePartToEditPartData	"Please select one part to edit it."
+	IDS_MSG_WhetherInplaceEditPart	"After editing the part, the relative sheet will be updated and its sequence will be cleared, are you sure to continue?"
+	IDS_MSG_InplaceEditPart_EmptyPart	"The part is empty, cannot update it to task."
+END
+
+
+
+STRINGTABLE 
+BEGIN
+    IDS_VIEWBAR_PARTPMT_TIP "List all parts on the sheet"
+    IDS_GEN_SKELE_REMANT_TIP 
+                            "Generate the skeleton remanant material from the sheet and save it to the material library"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROPBAR_EDITPRTPMT  "Part Property"
+	IDS_LoopInstanceProperty  "Loop Property"
+    IDS_CATEGORY_PARTPMT_DATA "Part Layout Data"
+    IDS_CATEGORY_PARTPMT_GRID "Grid Data"
+    IDS_PROP_PARTNAME       "Part Name"
+    IDS_SET_GRID_GAP        "Set Part Spacing in Grid"
+    IDS_VIEWBAR_PARTPMT     "All parts on the sheet"
+    IDS_VIEWBAR_PARTTOP     "Part Topology View"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NestTaskParts_TIP   "Nest Remaining parts in current task."
+    IDS_PARTPMT_SELECT_TIP  "Select part on sheet"
+    IDS_PARTPMT_OPEN_PART_TIP 
+                            "Open the selected part to edit it, the change of part will refresh the sheet."
+    IDS_PARTPMT_CREATE_GRID_TIP "Create the part grid"
+    IDS_PARTPMT_EXPLODE_GRID_TIP "Explode Part Grid to seperated parts"
+    IDS_PARTPMT_DELETE_TIP  "Delete the part from the sheet"
+    IDS_PARTPMT_COPY_TIP    "Copy the part on the sheet"
+    IDS_PARTPMT_MOVE_TIP    "Move the part on the sheet"
+    IDS_PARTPMT_ROTATE_TIP  "Rotate the part on the sheet"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_ADD_CHAIN_NODE_CMD "Add Chain Node"
+    IDS_SEQ_ADD_CHAIN_SEQ_CMD "Add Chain Sequence"
+    IDS_SEQ_DEL_CHAIN_NODE_CMD "Delete Chain Node"
+    IDS_SEQ_ADD_GRIDSEQ     "Add Grid Sequence"
+    IDS_SEQ_ADD_FLYCUT_SEQ_CMD "Add Fly Cut"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_INSERT_LOOP_SEQ "Insert Loop Sequence"
+    IDS_SEQ_REPLACE_HOLE_SEQ "Replace Hole Sequence"
+    IDS_SEQ_REMOVESEQUENCE  "Remove Sequence"
+    IDS_SEQ_SELECTSEQUENCE  "Select Sequence"
+    IDS_SEQ_ADD_BDGE_SEQ    "Add Bridge"
+    IDS_SEQ_BREAK_BDGE_SEQ  "Break Bridge"
+    IDS_SEQ_BDGE_START_LOOP "Start Loop"
+    IDS_SEQ_SORTSEQUENCE    "Change Order"
+    IDS_SEQ_ADD_MOV_PT      "Add"
+    IDS_SEQ_DEL_MOV_PT      "Delete"
+    IDS_SEQ_ADD_CHAIN_SEQ   "Add Chain Cut"
+    IDS_SEQ_INSERT_CHAIN_NODE "Insert Node"
+    IDS_SEQ_DEL_CHAIN_NODE  "Delete Node"
+    IDS_SEQ_ADD_GRID_SEQ    "Add"
+	IDS_SEQ_AddFlyCut "Add Fly Cut"
+    IDS_SEQ_AUTO_REM_CUTLINE "Generate"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEST_ROT_ANG        "Rotate Angle"
+    IDS_PART_ROTATE_FREE    "Free Rotate"
+    IDS_PART_ROTATE_90_INCREMENT "90 Increment"
+    IDS_PART_ROTATE_0_FIXED "0 Fixed"
+    IDS_PART_ROTATE_90_FIXED "90 Fixed"
+    IDS_PART_ROTATE_180_FIXED "180 Fixed"
+    IDS_PART_ROTATE_270_FIXED "270 Fixed"
+    IDS_PART_ROTATE_VERTICAL "Vertical Rotate"
+    IDS_PART_ROTATE_HORIZONTAL "Horizontal Rotate"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_NEST_TASK       "Execute Nesting Task"
+    IDS_MSG_PREPARE_NESTDATA 
+                            "Preparing the data which will be used for nesting."
+    IDS_MSG_DO_NEST         "Nesting the submitted parts."
+    IDS_MSG_GEN_NESTJOB     "Generating the nesting result."
+    IDS_MSG_DO_NEST_OK      "The nesting task is finished."
+    IDS_MSG_DO_NEST_CANCEL  "The nesting task was canceled."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROP_CORNER_ANGLE   "Corner Angle"
+    IDS_PROP_LOCATION_X     "Location X"
+    IDS_PROP_LOCATION_Y     "Location Y"
+    IDS_PROP_CORNER_RADIUS  "Corner radius"
+    IDS_PROP_SEGMENT_COUNT  "Segment Count"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ASSIGN_CUTFEATURE_TIP 
+                            "Auto-assign CAM feature of each geometry loop based on the expert library, e.g. lead in/out, micro joint, corner feature, cut condition of geometry."
+    IDS_RESET_CUTFEATURE_TIP 
+                            "Clear CAM feature of each geometry loop, then assign them based on the expert library."
+    IDS_CHECK_INTERFERE_TIP "Check whether the lead in/out interfere with the geometry items, if yes, adjust the length or position of lead in/out."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_LEAD_TIP       "Edit the lead in of loop"
+    IDS_EDIT_START_PT_TIP   "Adjust the start cut position of the closed loop"
+    IDS_CHANGE_CUTDIR_TIP   "Chaneg the cut direction of the loop"
+    IDS_SWITCH_CUTSIDE_TIP  "Change the cut side of the loop"
+    IDS_ADD_MJ_TIP          "Add micro joint on the loop"
+    IDS_EDIT_MJ_TIP         "Edit micro joint on the loop"
+    IDS_DELETE_MJ_TIP       "Delete micro joint on the loop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD_CORNER_TIP      "Add corner feature on the loop"
+    IDS_EDIT_CORNER_TIP     "Edit corner feature on the loop"
+    IDS_DELETE_CORNER_TIP   "Delete corner feature on the loop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEOM_VIEW_ZOOMALL   "Zoom All"
+    IDS_GEOM_VIEW_ZOOMIN    "Zoom In"
+    IDS_GEOM_VIEW_ZOOMOUT   "Zoom Out"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMAND_MOVE_PAT    "Move Pattern"
+    IDS_COMMAND_ROTATE_PAT  "Rotate Pattern"
+    IDS_COMMAND_ADD_PAT     "Add Pattern"
+    IDS_COMMAND_COPY_PAT    "Copy Pattern"
+    IDS_COMMAND_DEL_PAT     "Delete Pattern"
+    IDS_COMMAND_GRIPEDIT_PAT "Grip Edit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMAND_EDITPROP_PAT "Edit Pattern Property"
+    IDS_COMMAND_EXPLODE_STD_PAT "Explode Standard Pattern"
+    IDS_COMMAND_EXPLODE_ARRAY_PAT "Explode Array Pattern"
+    IDS_COMMAND_ARRAY_PAT   "Array Pattern"
+    IDS_COMMAND_DEL_PATLOOP "Delete Loop"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROP_ANGLE          "Angle"
+    IDS_PROP_WIDTH          "Width"
+    IDS_PROP_SPACE_X        "Column Spacing"
+    IDS_PROP_SPACE_Y        "Row Spacing"
+    IDS_PROP_SPACE          "Spacing"
+    IDS_PROP_REPEAT_NUM     "Repeat Num"
+    IDS_PROP_HEIGHT         "Height"
+    IDS_PROP_SPACE_ANGLE    "Angle Spacing"
+    IDS_PROP_REPEAT_NUM_X   "Column Count"
+    IDS_PROP_REPEAT_NUM_Y   "Row Count"
+    IDS_PROP_DEPTH          "Depth"
+END
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OPTIONS             "Options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RANGETWO            "Range 2"
+    IDS_RANGETHREE          "Range 3"
+    IDS_INTERNAL_GEOMETRY   "Internal Geometry"
+    IDS_EXTERNAL_GEOMETRY   "External Geometry"
+    IDS_LEADINTYPE_LINE     "Line"
+    IDS_LEADINTYPE_TWOLINES "Two Lines"
+    IDS_LEADINTYPE_LINEANDARC "Line & Arc"
+    IDS_LEADINTYPE_HOOK     "Hook"
+    IDS_LEADINTYPE_NONE     "None"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LEADOUTTYPE_LINE    "Line"
+    IDS_LEADOUTTYPE_ARC     "Arc"
+    IDS_LEADOUTTYPE_LINEANDARC "Line & Arc"
+    IDS_LEADOUTTYPE_NONE    "None"
+    IDS_CORNERTYPE_NONE     "None"
+    IDS_CORNERTYPE_CROSS    "Cross Corner"
+    IDS_CORNERTYPE_RADIUS   "Radius Corner"
+    IDS_CORNERTYPE_TAB      "Tab Corner"
+    IDS_CORNERTYPE_LOOP     "Loop Corner"
+    IDS_CORNERTYPE_CoolingPoint "Cooling Point"
+    IDS_NESTALG_REMNANT_RECT "Remnant Rectangle"
+    IDS_NESTALG_TRUE_SHAPE  "True Shape"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PARAM_CONFIG        "Configuration"
+    IDS_NEW_PARAM_CONFIG    "New Configuration"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LEAD_CONFIG         "Lead In/Out Assignment"
+    IDS_PIERCE_CONFIG       "Pierce Location Assignment"
+    IDS_MJ_CONFIG           "Bridge Microjoint Assignment"
+    IDS_CORNER_CONFIG       "Corner Assignment"
+    IDS_SEQUENCE_CONFIG     "Sequence Setting"
+    IDS_NC_CONFIG           "NC Config"
+    IDS_NEST_PARAM          "Nest Param"
+    IDS_TOOL_ASSIGN         "Tool Assignment"
+    IDS_RANGEONE            "Range 1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COND_CATEGORY_CUT   "Cut Condition"
+    IDS_COND_CATEGORY_DOPIERCE "Do-Pierce Condition"
+    IDS_COND_CATEGORY_UNPIERCE "Un-Pierce Condition"
+    IDS_COND_CATEGORYTYPE   "Condition Category"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPERTLIBRARY       "Expert Library"
+    IDS_EXPLIB_ITEM         "Expert Library Item"
+    IDS_CAM_PARAM           "CAM Param"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DRI_FILTER          "Driver Files (*.CLDri)|*.CLDri||"
+    IDS_DRI                 ".CLDri"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CURSOR_POSITION     "Cursor Position: [WILLBEREPLACED1]."
+    IDS_WORK_MODE           "WILLBEREPLACED1: [WILLBEREPLACED2]."
+    IDS_PART_MODE           "Part Edit"
+    IDS_SHEET_MODE          "Sheet Edit"
+	IDS_Canvas_Mode			"Canvas Edit"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_SAVE_EXPLIB    "Save Expert Library"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_KEY_FILEFILTER      "Key Files (*.CLKey6)|*.CLKey6||"
+    IDS_KEY_FILEEXT         ".CLKey6"
+    IDS_XML_FILEEXT         ".xml"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SELECT_VALID_LIC "Please select a valid license file."
+    IDS_MSG_ATTACH_DONGLE   "Please attach the correct dongle."
+    IDS_MSG_EducationEdition		 "Dongle is not detected, system will run in demo mode. ( Hint : for full functionality, plug the dongle and restart CutLeader )"
+    IDS_MSG_EducationEdition_TimeOut    "Education Edition will be shut down automatically after <WILLBEREPLACED1> minutes, please save your data ASAP."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_WRITE_DONGLE_OK "License data has been writtern into the dongle."
+    IDS_MSG_WRITE_DONGLE_FAIL "Fail to write License data into the dongle."
+    IDS_MSG_VIEW_DONGLE_FAIL "Fail to view license info from the dongle."
+    IDS_MSG_TRAIL_EDITION   "This is a Trial Version, some functions are disabled. Please contact Manufacturer if you want to buy formal edition."
+    IDS_MSG_EXPIRE_DATE     "Your license has expired, please contact Manufacturer, customer ID[WILLBEREPLACED1]."
+    IDS_MSG_IMP_KEY_ERROR1  "The Key file do not fit this dongle."
+    IDS_MSG_CoreModules_ShouldBeIntegraty 
+                            "Integraty check failed, the kernel dlls should be loaded together."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COLORITEM_BACKGROUND "Back ground"
+    IDS_COLORITEM_PATTERN   "Pattern"
+    IDS_COLORITEM_ACTIVEOBJ "Active Object"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPORT_DXFDWG_FILEEXT "DXF/DWG Files (*.dxf;*.dwg)|*.dxf;*.dwg|"
+	IDS_IMPORT_DxfDwgInfo	"%d Entities, %.2f X %.2f"
+    IDS_EXP_PRT_DXFDWG_FILEEXT 
+                            "DXF Files (*.dxf)|*.dxf|DWG Files (*.dwg)|*.dwg|CutLeader Part Files (*.CLPrt)|*.CLPrt|"
+    IDS_EXP_SHT_DXFDWG_FILEEXT 
+                            "DXF Files (*.dxf)|*.dxf|DWG Files (*.dwg)|*.dwg|CutLeader Sheet Files (*.CLSht)|*.CLSht|"
+    IDS_IMPEXP_EXPLIBITEM_FILEEXT 
+                            "CutLeader Expert Library Files (*.CLExpLib)|*.CLExpLib|"
+    IDS_IMPEXP_MATLIB_FILEEXT 
+                            "CutLeader Material Library Files (*.CLMatLib)|*.CLMatLib|"
+    IDS_IMPEXP_BK_DB_FILEEXT 
+                            "CutLeader Database Backup Files (*.CLDB)|*.CLDB|"
+    IDS_IMPORT_XLS_EXT      "Excel File (*.xls;*.xlsx)|*.xls;*.xlsx|"
+    IDS_IMPEXP_TaskItem_FileExt "CutLeader Task Files (*.CLTask)|*.CLTask|"
+    IDS_EXP_DXFDWG_FILEEXT  "DXF Files (*.dxf)|*.dxf|DWG Files (*.dwg)|*.dwg|"
+    IDS_ImportClPart_FileExt "CutLeader Part Files (*.CLPrt)|*.CLPrt|"
+	IDS_ImportExportCutParamLib_FileFilter "CutLeader Cut Param Library Files (*.ClCutParamLib7)|*.ClCutParamLib7|"
+	IDS_ImportExportCutParamLib_Ext ".ClCutParamLib7"
+	IDS_ImportExportMachineParam_FileFilter "CutLeader Machine Param Files (*.ClMachineParam7)|*.ClMachineParam7|"
+	IDS_ImportExportMachineParam_Ext ".ClMachineParam7"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COLORITEM_SELECTOBJ "Selected Object"
+    IDS_COLORITEM_ACTIVELOOP "Active Pattern Loop"
+    IDS_COLORITEM_SELECTLOOP "Selected Pattern Loop"
+    IDS_COLORITEM_DRAWASSIST "Draw Assistor"
+    IDS_COLORITEM_STARTCUTPT "Start cut point"
+    IDS_COLORITEM_LEADINOUT "Lead In/Out"
+    IDS_COLORITEM_MicroJoint "Micro Joint"
+    IDS_COLORITEM_CORNER    "Corner Feature"
+    IDS_COLORITEM_CUTPATH   "Cut Path"
+    IDS_COLORITEM_SEQUENCE  "Sequence"
+    IDS_COLORITEM_SEQ_SIM   "Sequence Simulation"
+    IDS_COLORITEM_OT        "Over Travel"
+    IDS_COLORITEM_ENDCUTPT  "End cut point"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_IMPEXP_DXF_EXT      ".dxf"
+    IDS_IMPEXP_DWG_EXT      ".dwg"
+    IDS_IMPEXP_TAOPRT_EXT   ".CLPrt"
+    IDS_IMPEXP_TAOSHT_EXT   ".CLSht"
+    IDS_IMPEXP_EXPLIBITEM_EXT ".CLExpLib"
+    IDS_IMPEXP_MATLIB_EXT   ".CLMatLib"
+    IDS_IMPEXP_BK_DB_EXT    ".CLDB"
+    IDS_IMPEXP_TaskItem_Ext ".CLTask"
+    IDS_IMPEXP_IMPORTFILE   "Import File"
+    IDS_IMPEXP_EXPORTFILE   "Export File"
+    IDS_IMPORT_FILEEXT      "DXF/DWG Files (*.dxf;*.dwg)|*.dxf;*.dwg|CutLeader Part Files (*.CLPrt)|*.CLPrt|CutLeader Sheet Files (*.CLSht)|*.CLSht|"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_BACKUP_TASK     "Data Backup"
+    IDS_MSG_COPY_DB_FILES   "Copy database to the backup location."
+    IDS_MSG_ZIP_DB_FILES    "Zip database folder to the backup location."
+    IDS_MSG_DEL_TMP_FOLDER  "Delete the temporary database folder."
+    IDS_EXP_TASK_SUCCESS    "The Task has been exported successfully!"
+    IDS_MSG_SelectSheet2Export "Please select one sheet to export."
+    IDS_MSG_Sheet_EXPORT_FOLDER "Please select the folder where the sheet will be placed."
+    IDS_EXP_SHEET_Fail      "Fail to export sheet to dxf file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_RECOVERY_TASK   "Data Recovery"
+    IDS_MSG_DEL_CURRENT_DB  "Delete the current database."
+    IDS_MSG_UNZIP_BK_DB     "Unzip the backup database to the product folder."
+    IDS_MSG_ALL_DATA_RC     "The database have been recovered."
+    IDS_MSG_RC_TASK_OK      "The recovery task has been executed successfully."
+    IDS_MSG_RC_TASK_CANCEL  "The task has been canceled."
+    IDS_MSG_IMPORT_TASK_OK  "The import task has been executed successfully."
+    IDS_MSG_ClTask_Imported "CutLeader Task<WILLBEREPLACED1> has been imported."
+    IDS_MSG_DxfDwg_Imported "Dxf/Dwg File<WILLBEREPLACED1> has been imported."
+    IDS_MSG_ClPart_Imported "CutLeader Part<WILLBEREPLACED1> has been imported."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_BK_LOG_FILES    "Backup the log file."
+    IDS_MSG_EMPTY_OLD_LOG   "Empty the original log file."
+    IDS_MSG_ALL_DATA_BK     "All data have been backuped."
+    IDS_MSG_BK_TASK_OK      "The backup task has been executed successfully."
+    IDS_MSG_BK_TASK_CANCEL  "The task has been canceled."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TURRETSHEET         "Turret"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ                 "Sequence"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NC                  "NC"
+    IDS_NC_FILEFILTER       "NC File (*.WILLBEREPLACED1)|*.WILLBEREPLACED1||"
+    IDS_NC_FILEEXT          ".WILLBEREPLACED1"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEW_FOLDER          "New Folder"
+    IDS_STRING_CATEGORY_1   "Character string of category 1"
+    IDS_STRING_CATEGORY_1_EXPLAIN 
+                            "These strings are on the dialog controls which created by VC++ resource designer, e.g. Caption of the Button/Dialog, etc..."
+    IDS_STRING_CATEGORY_2   "Character string of category 2"
+    IDS_STRING_CATEGORY_2_EXPLAIN 
+                            "These strings are defined by user, e.g. the popup message, the column names of the table contrl, the items in the list box, etc..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ID           "String ID"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_DELETE_CAMDATA "Delete Part CAM Data"
+    IDS_TASK_SAVE_PART_PAGE "Save Part Page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_PART       "Do you want to save the changes you've made in the Part Information page?"
+    IDS_MSG_SAVE_FOLDER     "Do you want to save the changes you've made in the Folder Information page?"
+    IDS_PART_PAGE_SAVED     "Changes in Part Information page<WILLBEREPLACED1> has been saved."
+    IDS_PART_PAGE_NOT_CHANGED 
+                            "No changes have been made for the data in Part Information page<WILLBEREPLACED1>."
+    IDS_FOLDER_PAGE_SAVED   "Changes in Folder Information page<WILLBEREPLACED1> has been saved."
+    IDS_FOLDER_PAGE_NOT_CHANGED 
+                            "No changes have been made for the data in Folder Information page<WILLBEREPLACED1>."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_IMPORT_DATA     "Import Data"
+    IDS_Task_PAGE_SAVED     "Changes in Task Information page<WILLBEREPLACED1> has been saved."
+    IDS_Task_PAGE_NOT_CHANGED "No changes have been made for the data in Task Information page<WILLBEREPLACED1>."
+    IDS_MSG_SAVE_Task       "Do you want to save the changes you've made in the Task Information page?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_AUTO_ASSIGN_SEQ "Auto Assign Sequence"
+    IDS_MSG_PREPARE_EXPLIB  "Load data from Expert Library..."
+    IDS_MSG_CALC_SHEET_TOP  "Calculate the topology of the sheet..."
+    IDS_MSG_ASSIGN_SEQ      "Assign sequence to part instances..."
+    IDS_MSG_ALL_PART_SEQED  "All Part Instances have been assigned sequence."
+    IDS_MSG_AUTO_SEQ_OK     "The Auto-Sequence task has been executed successfully."
+    IDS_MSG_AUTO_SEQ_CANCEL "The task has been canceled."
+    IDS_MSG_PREPROCESS_SHEET "Pre-process the sheet..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_ALL_INST_ASSIGN_SEQ "All parts have been assigned sequence."
+    IDS_MSG_INVALID_REGION  "The red dash loops are the used region of the sheet."
+    IDS_MSG_REM_MAT_SAVED   "The Remnant Material has been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GET_REM_FROM_TOP    "Remnant from top"
+    IDS_GET_REM_FROM_BOTTOM "Remnant from bottom"
+    IDS_GET_REM_FROM_LEFT   "Remnant from left"
+    IDS_GET_REM_FROM_RIGHT  "Remnant from right"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_GEN_NC          "Generating NC Code"
+    IDS_MSG_GEN_CUTNODE     "Generating the cutting path..."
+    IDS_MSG_GEN_NODE_NC     "Generating NC Code of each cutting path..."
+    IDS_MSG_GEN_NODE_NC_OK  "NC Code of all cut nodes have been generated."
+    IDS_MSG_GEN_NC_OK       "The NC-Generation task has been executed successfully."
+    IDS_MSG_GEN_NC_CANCEL   "The task has been canceled."
+    IDS_MSG_GEN_NC_NO_SEQ   "Current sheet do not include any cut sequence, continue to generate NC?"
+    IDS_MSG_UPDATE_OPENED_SHEET "Update the opening sheets"
+    IDS_MSG_UPDATE_SHEET    "Update the opening sheet, the sheet index: <%d>"
+    IDS_MSG_UPDATE_SHEET_OK "All sheets have been updated."
+    IDS_MSG_UPDATE_SHEET_TASK_OK "The task has been executed successfully."
+	IDS_CutParam			"Cut Param"
+	IDS_NewCutParam			"New Cut Param"
+	IDS_CutParamLib			"Cut Param Library"
+	IDS_O2					"O2"
+	IDS_N2					"N2"
+	IDS_Air					"Air"
+	IDS_GeneralCut			"General Cut"
+	IDS_FixHeightCut		"Fix Height Cut"
+	IDS_MultistagePierce	"Multistage Pierce"
+	IDS_MachineCutParameter		"Cut Parameter"
+	IDS_MachineAxisParameter	"Axis Parameter"
+	IDS_MachineExpertParameter	"Expert Parameter"
+	IDS_SpeedType_Trapezoid		"Trapezoid"
+	IDS_SpeedType_S_Shape		"S-Shape"
+	IDS_SpeedType_SL_Shape		"SL-Shape"
+	IDS_SpeedType_Quadratic		"Quadratic"
+	IDS_SpeedType_QuadraticSmooth		"Quadratic Smooth"
+	IDS_AxisStatus_Power_off			"Power Off"
+	IDS_AxisStatus_Errotstop			"Axis Error"
+	IDS_AxisStatus_Stopping				"Stopping"
+	IDS_AxisStatus_Standstill			"Stand Still"
+	IDS_AxisStatus_Discreate_motion		"Discreate Motion"
+	IDS_AxisStatus_Continuous_motion	"Continuous Motion"
+	IDS_AxisStatus_Synchronized_motion	"Synchronized Motion"
+	IDS_AxisStatus_Homing				"Homing"
+	IDS_DonotCutLoopInstances_Tip		"No cutting the selected loop instance."
+	IDS_CutLoopInstances_Tip		"Set the selected loop instance as cutting."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEW_PART            "New Part"
+    IDS_PARTNAME            "Part Name"
+    IDS_PART_SIZE           "Part Size"
+    IDS_PART_CAMDATA_NAME   "CAM Feature Data"
+    IDS_PART                "Part"
+    IDS_DFL_PARTCAMDATA_NAME "New CAM Feature"
+    IDS_SCHEME_GEN_CAMDATA  "The red color items means that the part has generated cam data set for them."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_UPDATE_SHEET_TASK_CANCEL "The task has been canceled."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_PART_REPAIR     "Not all CAM data of the part are valid, please repair it."
+    IDS_MSG_PART_NOT_REPAIR "There should be at lease one valid CAM data in the part."
+    IDS_MSG_CAMDATA_SCHEME_LOST 
+                            "CAM data<WILLBEREPLACED1> has lost its scheme info, please repair it."
+    IDS_MSG_CAMDATA_SCHEME_REPAIRED 
+                            "Scheme info of Part CAM data<WILLBEREPLACED1> has been repaired as <WILLBEREPLACED2>."
+    IDS_MSG_SHEET_REPAIR    "The invalid info of the sheet are highlighted as red color, please repair them."
+    IDS_MSG_SHEET_MAT_LOST  "Sheet<WILLBEREPLACED1> has lost its material info, please repair it."
+    IDS_MSG_SHEET_MAT_REPAIRED 
+                            "The material of sheet has been repaired to <WILLBEREPLACED1>."
+    IDS_MSG_SHEET_SCHEME_LOST 
+                            "Sheet<WILLBEREPLACED1> has lost its scheme info, please repair it."
+    IDS_MSG_SHEET_SCHEME_REPAIRED 
+                            "The scheme of sheet has been repaired to <WILLBEREPLACED1>."
+    IDS_MSG_CAMDATA_EXPLIB_NOTSAME 
+                            "CAM data of part<WILLBEREPLACED1> do not use the same expert library item with the sheet, please repair it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_CAMDATA_REPLACED 
+                            "Now CAM Data<WILLBEREPLACED1> of Part<WILLBEREPLACED2> is referenced by the sheet."
+    IDS_MSG_CAMDATA_CREATE  "A new CAM Data<WILLBEREPLACED1> is created for Part<WILLBEREPLACED2> and is referenced by the sheet."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SEL_FOLDER      "You should select a folder node to proceed."
+    IDS_MSG_DEL_SEL_ITEMS   "Do you want to delete the selected items?"
+    IDS_MSG_DEL_OPENED_ITEMS 
+                            "The data or the dependence of the data have been opened, please close them and try again."
+    IDS_MSG_DEL_ROOT        "The Root Folder cannot be deleted!"
+    IDS_MSG_DeletePartsLibraryFolder "The Parts Library folder cannot be deleted."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_SAVE_FOLDER_PAGE "Save Folder Page"
+    IDS_MSG_DEL_CAMDATA     "Do you want to delete this CAM dataset?"
+    IDS_MSG_CHANGE_MAT      "Do you want to change the material which was used by this sheet?"
+    IDS_MSG_CHANGE_SHEETSCHEME 
+                            "Do you want to change the sheet scheme of this sheet? this action will reset the sequence of this sheet."
+    IDS_MSG_DEL_LAST        "Cannot delete the last CAM data set."
+    IDS_MSG_CannotChangeCamParam "Cannot change the CAM Param of the sheet because the task is opened currently."
+    IDS_MSG_LostCamParamOrMaterial "Some sheet lost its CAM param or material, please repair it."
+    IDS_MSG_CannotChangeMat "Cannot change the material of the sheet because the task is opened currently."
+    IDS_TASK_SAVE_Task_PAGE "Save Task Page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SEL_PARAM_CONFIG "Please select the Configuration."
+    IDS_MSG_LOOP2PART_MSG_1 "1) More than one parts are recognized or some part do not has a closed boundary."
+    IDS_MSG_LOOP2PART_MSG_2 "2) The legal part should have a closed boundary."
+    IDS_MSG_LOOP2PART_SEL_PART "No parts are selected."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_CONFIG_PARAM_USED 
+                            "The configuration has been used by some CAM dataset of the part."
+    IDS_MSG_SEL_EXPLIB_ITEM "Please select the expert library item."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CLOSESHT_BEFORE_SAVEPART 
+                            "Before save part, please close the sheet which referred the part."
+    IDS_PART_SAVED          "Part<WILLBEREPLACED1> has been saved."
+    IDS_PART_NOT_CHANGED    "No changes have been made for Part<WILLBEREPLACED1>."
+    IDS_DATA_NOT_FIND       "The data<WILLBEREPLACED1> cannot be found."
+    IDS_MSG_DependedByOtherData "Cannot delete the selected items because some other data depend on the selected items."
+    IDS_PartsLibrary_Node   "Parts Library"
+    IDS_PartsLibrary_Comment "Default folder for saving parts."
+    IDS_TASK_SAVED          "Task<WILLBEREPLACED1> has been saved."
+    IDS_TASK_NOT_CHANGED    "No changes have been made for Task<WILLBEREPLACED1>."
+    IDS_AskToSaveCurrentDoc "Do you want to save document <WILLBEREPLACED1>?"
+	IDS_SaveTaskDoc			"Do you want to save task<WILLBEREPLACED1>?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_START_PAGE          "Start Page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TASK_SAVE_PART      "Save Part"
+    IDS_TASK_SAVE_TASK     "Save Task"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHT_GUIDE_STEP_0    "You have reached the first step of this guide."
+    IDS_SHT_GUIDE_STEP_1    "Step 1: Click this button to add dxf/dwg parts to the sheet."
+    IDS_SHT_GUIDE_STEP_2    "Step 2: Click this button to generate the sequence of the sheet automatically."
+    IDS_SHT_GUIDE_STEP_3    "Step 3: Click this button to simulate the cutting progress."
+    IDS_SHT_GUIDE_STEP_4    "Step 4: Click this button to generate the NC code."
+    IDS_SHT_GUIDE_STEP_n    "You have reached the last step of this guide."
+    IDS_SHT_QUIT_GUIDE      "Are you sure to quit the guide mode?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_MAC_PARAM  "Do you want to save the changes you've made in the machine param page?"
+    IDS_MSG_MAC_PARAM_NOT_CHANGE 
+                            "No changes have been made for the data in the machine param page."
+    IDS_MSG_MAC_PARAM_SAVED "Changes in the machine param page have been saved."
+    IDS_MSG_DRI_VER_INCORRECT 
+                            "The driver version is not supported by current application."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_NESTPARAM  "Do you want to save the changes you've made in the Nest Param page?"
+	IDS_MSG_SAVE_CutParam "Do you want to save the changes you've made in the Cut Param page?"
+    IDS_MSG_NESTPARAM_NOT_CHANGE 
+                            "No changes have been made for the data in Nest Param page."
+    IDS_MSG_NESTPARAM_SAVED "Changes in Nest Param page have been saved."
+    IDS_MSG_SAVE_LEAD       "Do you want to save the changes you've made in the Lead in/out page?"
+    IDS_MSG_LEAD_NOT_CHANGE "No changes have been made for the data in Lead in/out page."
+    IDS_MSG_LEAD_SAVED      "Changes in Lead in/out page have been saved."
+    IDS_MSG_SelectOneCutParam "Please select one Cut Param."
+	IDS_MSG_WrongMaterial	"Please input correct material name."
+	IDS_MSG_WrongThickness  "Please input correct material thickness."
+	IDS_MSG_Delete_CutParam_1	"Are you sure to delte selected cut params?"
+	IDS_MSG_Delete_CutParam_2	"Cannot delete all cut params in library, there are at least one cut param in cut param library."
+	IDS_MSG_AppliedCutParamFromLib	"Cut Param in Cut Param Library has been applied."
+	IDS_MSG_AppliedCutParamToLib	"Cut Param in Cut Param Library has been updated."
+	IDS_MSG_SaveAsCutParamToLib		"Succeed to save as Cut Param to Cut Param Library."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_PIERCE     "Do you want to save the changes you've made in the Pierce Location page?"
+    IDS_MSG_PIERCE_NOT_CHANGE 
+                            "No changes have been made for the data in Pierce Location page."
+    IDS_MSG_PIERCE_SAVED    "Changes in Pierce Location page have been saved."
+    IDS_MSG_CHANGE_PIERCE_PT 
+                            "You can click on the geometry's boundary to change the pierce point."
+    IDS_MSG_SAVE_MJ_ASSIGN  "Do you want to save the changes you've made in the Microjoint page?"
+    IDS_MSG_MJ_ASSIGN_NOT_CHANGE 
+                            "No changes have been made for the data in Microjoint page."
+    IDS_MSG_MJ_ASSIGN_SAVED "Changes in Microjoint page have been saved."
+    IDS_MSG_SAVE_CORNER_ASSIGN 
+                            "Do you want to save the changes you've made in the Corner Assignment page?"
+    IDS_MSG_CORNER_NOT_CHANGE 
+                            "No changes have been made for the data in Corner Assignment page."
+    IDS_MSG_CORNER_SAVED    "Changes in Corner Assignment page have been saved."
+    IDS_MSG_CORNER_PREVIEW  "The thin red graph indicate the real corner shape."
+    IDS_MSG_CornerAssignRule_2  "Each angle range is corresponding to a corner feature."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_COND_ASSIGN 
+                            "Do you want to save the changes you've made in the Condition Assignment page?"
+    IDS_MSG_COND_ASSIGN_NOT_CHANGE 
+                            "No changes have been made for the data in Condition Assignment page."
+    IDS_MSG_COND_ASSIGN_SAVED 
+                            "Changes in Condition Assignment page have been saved."
+    IDS_MSG_CHANGE_COND_RULE 
+                            "You can change the condition assign rules for different shapes."
+    IDS_MSG_SAVE_SEQ_CONFIG "Do you want to save the changes you've made in the Sequence Config page?"
+    IDS_MSG_SEQ_CONFIG_NOT_CHANGE 
+                            "No changes have been made for the data in Sequence Config page."
+    IDS_MSG_SEQ_CONFIG_SAVED 
+                            "Changes in Sequence Config page have been saved."
+    IDS_MSG_SUBRT_AVOID     "Sub Routine and Cut Avoidance cannot be applied at same time."
+    IDS_MSG_SAVE_NC_CONFIG  "Do you want to save the changes you've made in the NC Config page?"
+    IDS_MSG_NC_CONFIG_NOT_CHANGE 
+                            "No changes have been made for the data in NC Config page."
+    IDS_MSG_NC_CONFIG_SAVED "Changes in NC Config page have been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_MAC_HAS_CONFIGED 
+                            "The Machine have generated the corresponding Expert Library Item."
+    IDS_MSG_DELETE_TOOL     "Are you sure to delete the tool?"
+    IDS_MSG_DELETE_DEFAULT_TOOL "Cannot delete the default tool."
+    IDS_MSG_DELETE_TOOL_ASSIGN_RULE 
+                            "Are you sure to delete this assignment rule?"
+    IDS_MSG_SAVE_TOOL_CONFIG 
+                            "Do you want to save the changes for the tool assignment config?"
+    IDS_MSG_TOOL_CONFIG_NOT_CHANGE 
+                            "No changes have been made for the tool assignment config."
+    IDS_MSG_TOOL_CONFIG_SAVED 
+                            "Changes for the tool assignment config have been saved."
+    IDS_MSG_TOOL_RENAME     "The tool name has been existed, please rename this tool."
+    IDS_MSG_DELETE_USED_TOOL 
+                            "Some tool assignment rule has used this tool, cannot delete it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_MAC_COND   "Do you want to save the changes you've made in the Machine Condition page?"
+    IDS_MSG_MAC_COND_NOT_CHANGE 
+                            "No changes have been made for the data in Machine Condition page."
+    IDS_MSG_MAC_COND_SAVED  "Changes in Machine Condition page have been saved."
+    IDS_MSG_SAVE_NC_TYPE    "Do you want to save the changes you've made in the NC Connfig Type page?"
+    IDS_MSG_NC_TYPE_NOT_CHANGE 
+                            "No changes have been made for the data in NC Connfig Type page."
+    IDS_MSG_NC_TYPE_SAVED   "Changes in NC Connfig Type page have been saved."
+	IDS_MSG_CutParam_NOT_CHANGE "No changes have been made for the data in Cut Param page."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_SAVE_EXPLIB_ITEM 
+                            "Do you want to save the changes you've made in the expert library item page?"
+    IDS_MSG_EXPLIB_ITEM_NOT_CHANGE 
+                            "No changes have been made for the data in expert library item page."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_EXPLIB_ITEM_SAVED 
+                            "Changes in expert library item page have been saved."
+    IDS_MSG_DEL_EXPLIB_ITEM "Do you want to delete the expert library item?"
+    IDS_MSG_DEL_RESERVED_EXPLIBITEM 
+                            "Can not delete the reserved expert library item."
+    IDS_MSG_DEL_DFL_EXPLIBITEM 
+                            "Can not delete the default expert library item."
+    IDS_MSG_DEL_DFL_SCHEME  "Can not delete the default scheme."
+    IDS_MSG_PARAM_CONFIG_EXIST "The configuration has existed."
+    IDS_MSG_DEL_PARAM_CONFIG "Do you want to delete the configuration?"
+    IDS_MSG_SelectParamConfigSubNode "Please select the CAM Param sub node."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_MAC_CONFIGED    "The Machine with the red color have generated the corresponding Expert Library Item."
+    IDS_MSG_MAC_SELECT      "Please select a machine."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADJUST_STARTPT_INNERLOOP "Inner Holes Only"
+    IDS_ADJUST_STARTPT_ALLLOOP "All Contours"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_AUTOSEQUENCE    "Auto Assign Sequence"
+    IDS_SEQ_CLEARALLSEQUENCE "Clear All Sequence"
+    IDS_SEQ_EDIT            "Edit Sequence"
+    IDS_SEQ_ADD_LOOP_SEQ    "Add Loop Sequence"
+	IDS_SEQ_ResetSequence "Reset All Sequence"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GEN_CUTNODE_TASK    "Generating Cutting Path"
+    IDS_MSG_OFFSET_PART     "Offset parts..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MSG_CHECK_INTF      "Checking interference after offset parts..."
+    IDS_MSG_GEN_CUTPATH     "Generating cutting path..."
+    IDS_MSG_GEN_CUTPATH_OK  "Cutting path have been generated."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUTNODE             "Cut Node"
+    IDS_LINE_CUTNODE        "Line CutNode"
+    IDS_ARC_CUTNODE         "Arc CutNode"
+    IDS_SELECTTOOL_CUTNODE  "Select-tool CutNode"
+    IDS_TRACE_CUTNODE       "Trace line CutNode"
+    IDS_DOPIERCE_CUTNODE    "Do-pierce CutNode"
+    IDS_UNPIERCE_CUTNODE    "Un-pierce CutNode"
+    IDS_LOOPINFO_CUTNODE    "LoopInfo_of_seq CutNode"
+    IDS_CoolingPoint_CutNode    "Cooling Point CutNode"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_AUTOSEQUENCE_TIP 
+                            "Generate cutting sequences of the sheet automatically"
+    IDS_SEQ_CLEARALLSEQUENCE_TIP "Clean all cutting sequence"
+    IDS_SEQ_SELECTSEQUENCE_TIP "Select a cutting sequence"
+    IDS_SEQ_REMOVESEQUENCE_TIP "Remove the selected sequence"
+    IDS_SEQ_ORDER_SEQUENCE_TIP 
+                            "Sort the sequences by click sequence one by one"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_REPLACE_HOLE_SEQ_TIP 
+                            "Apply the inner-hole sequences within a part to the other same parts"
+    IDS_SEQ_ADDSEQUENCE_TIP "Add loop sequence to the end of all sequences"
+    IDS_SEQ_INSERTSEQUENCE_TIP "Insert a sequence before a selected sequence"
+    IDS_SEQ_ADD_BDGE_SEQ_TIP 
+                            "Create the bridge sequence to bridge several outer loops"
+    IDS_SEQ_BREAK_BDGE_SEQ_TIP "Break the bridge sequence"
+    IDS_SEQ_BDGE_SEQ_START_TIP 
+                            "Set the start cut loop of the bridge sequence"
+    IDS_SEQ_ADD_CHAIN_SEQ_TIP 
+                            "Create the chain cut sequence to cut several outer loops together"
+    IDS_SEQ_ADD_CHAIN_NODE_TIP 
+                            "Insert the new chain cut node before/after the selected chain cut node"
+    IDS_SEQ_DEL_CHAIN_NODE_TIP 
+                            "Delete the selected chain node of the chain cut sequence"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_ADD_GRID_SEQ_TIP 
+                            "Please select a grid part to generate the grid-cut sequence"
+	IDS_SEQ_AddFlyCut_TIP "Create FlyCut sequence from Rect/Circle grid."
+    IDS_SEQ_ADD_MOV_PT_TIP  "Insert Movement Point"
+    IDS_SEQ_DEL_MOV_PT_TIP  "Delete Movement Point"
+	IDS_FlyCut_LoopsMustBeRectOrCircle "Select loops should be Rect/Circle."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SEQ_AUTO_REM_CUTLINE_TIP "Auto generate Remnant Cutting Line"
+    IDS_SEQ_ADD_REM_CUTLINE_TIP "Add Remnant Cut Line"
+    IDS_SEQ_DEL_REM_CUTLINE_TIP "Delete Remnant Cut Line"
+    IDS_SEQ_VIEWSEQUENCE_TIP 
+                            "View all sequences to simulate the cutting progress"
+    IDS_SEQ_VIEW_CUTSEQ_TIP "List all sequence"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NC_FILE_EXIST       "The NC file already exist, do you want to replace it?"
+    IDS_MACROUTER_VIEW      "View"
+    IDS_MACROUTER_VIEW_NC   "Generate NC Code"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MACROUTER_NC_CODE   	"NC Code"
+    IDS_MACROUTER_SAVE_NC_CODE	"Save NC Code"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MIN_WIDTH           "Min Width"
+    IDS_MAX_WIDTH           "Max Width"
+    IDS_ZONE_FROM           "Rect Zone"
+    IDS_ZONE_TO             "Rect Zone To"
+    IDS_LENGTH_FROM         "Length"
+    IDS_LENGTH_TO           "Length To"
+    IDS_RADIUS_FROM         "Radius"
+    IDS_RADIUS_TO           "Radius To"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TAB_DEFAULT         "Default"
+    IDS_TAB_STD_SHAPE       "Standard Shape"
+    IDS_TAB_POLYGON         "Polygon"
+    IDS_TAB_LINE            "Line"
+    IDS_TAB_ARC             "Arc"
+	IDS_MSG_CutParam_SAVED "Changes in Cut Param page have been saved."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEW_TOOL            "New tool"
+    IDS_LOOP_WIDTH_SMALLER_THAN "Loop Width <="
+    IDS_LOOP_HEIGHT_SMALLER_THAN "Loop Height <="
+    IDS_TOOL                "Tool"
+    IDS_TOOL_CUTSIDE        "Cut Offset"
+    IDS_TOOL_CUTSIDE_CUTON  "Cut On"
+    IDS_TOOL_CUTSIDE_AUTO   "Auto"
+    IDS_TOOL_MAP_LAYERNAME  "Layer Name"
+END
+/////////////////////////////////////////////////////////////////////////////

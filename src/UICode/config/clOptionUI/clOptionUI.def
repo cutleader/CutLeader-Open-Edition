@@ -1,0 +1,6 @@
+; clOptionUI.def : Declares the module parameters for the DLL.
+
+LIBRARY      "clOptionUI"
+
+EXPORTS
+    ; Explicit exports can go here

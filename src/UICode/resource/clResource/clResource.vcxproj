@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{58F2DE9F-651D-4710-B337-73C84F0BA122}</ProjectGuid>
+    <RootNamespace>taores</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clResource\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clResource\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\..\..\bin\debug\clResource.dll</OutputFile>
+      <ModuleDefinitionFile>.\clResource.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\..\..\bin\release\clResource.dll</OutputFile>
+      <ModuleDefinitionFile>.\clResource.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="clResource.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\image\addLoopSeq24.bmp" />
+    <None Include="..\image\addPartFromAsmDxf24.bmp" />
+    <None Include="..\image\addPartFromDB24.bmp" />
+    <None Include="..\image\addPartFromDxf24.bmp" />
+    <None Include="..\image\assignCam24.bmp" />
+    <None Include="..\image\assignSeq24.bmp" />
+    <None Include="..\image\camConfig_bar.bmp" />
+    <None Include="..\image\checkIntf24.bmp" />
+    <None Include="..\image\cLeader.ico" />
+    <None Include="..\image\cLeaderDoc.ico" />
+    <None Include="..\image\clearSeq24.bmp" />
+    <None Include="..\image\config_bar.bmp" />
+    <None Include="..\image\createPartGrid24.bmp" />
+    <None Include="..\image\cutDir24.bmp" />
+    <None Include="..\image\cutfeature_bar.bmp" />
+    <None Include="..\image\cutfeature_bar16.bmp" />
+    <None Include="..\image\cutfeature_tree.bmp" />
+    <None Include="..\image\cutSide24.bmp" />
+    <None Include="..\image\deleteSeq24.bmp" />
+    <None Include="..\image\delGeom24.bmp" />
+    <None Include="..\image\delPart24.bmp" />
+    <None Include="..\image\depend_tree.bmp" />
+    <None Include="..\image\DownArrow.bmp" />
+    <None Include="..\image\DownArrowSel.bmp" />
+    <None Include="..\image\drawArc24.bmp" />
+    <None Include="..\image\drawCircle24.bmp" />
+    <None Include="..\image\drawLine24.bmp" />
+    <None Include="..\image\drawPolyLine24.bmp" />
+    <None Include="..\image\drawRect24.bmp" />
+    <None Include="..\image\editLoopTool24.bmp" />
+    <None Include="..\image\error.ico" />
+    <None Include="..\image\exit.bmp" />
+    <None Include="..\image\expertlib_tree.bmp" />
+    <None Include="..\image\explib_list.bmp" />
+    <None Include="..\image\filelarge.bmp" />
+    <None Include="..\image\filesmall.bmp" />
+    <None Include="..\image\Frame.bmp" />
+    <None Include="..\image\FrameDisable.bmp" />
+    <None Include="..\image\FrameSel.bmp" />
+    <None Include="..\image\generateNC24.bmp" />
+    <None Include="..\image\geomLoop_tree.bmp" />
+    <None Include="..\image\geom_bar.bmp" />
+    <None Include="..\image\geom_bar_large.bmp" />
+    <None Include="..\image\geom_tree.bmp" />
+    <None Include="..\image\help_bar.bmp" />
+    <None Include="..\image\info.ico" />
+    <None Include="..\image\insertLoopSeq24.bmp" />
+    <None Include="..\image\joint_count0.bmp" />
+    <None Include="..\image\joint_count1.bmp" />
+    <None Include="..\image\joint_count2.bmp" />
+    <None Include="..\image\joint_count3.bmp" />
+    <None Include="..\image\joint_count4.bmp" />
+    <None Include="..\image\joint_count6.bmp" />
+    <None Include="..\image\loopLead24.bmp" />
+    <None Include="..\image\loopStartPt24.bmp" />
+    <None Include="..\image\macMgr_tree.bmp" />
+    <None Include="..\image\main.bmp" />
+    <None Include="..\image\main_menu.bmp" />
+    <None Include="..\image\main_menu_small.bmp" />
+    <None Include="..\image\matLib 24.bmp" />
+    <None Include="..\image\matLib_tree.bmp" />
+    <None Include="..\image\measureDis24.bmp" />
+    <None Include="..\image\nesting_bar.bmp" />
+    <None Include="..\image\nest_border_space.bmp" />
+    <None Include="..\image\nest_dir_x.bmp" />
+    <None Include="..\image\nest_dir_y.bmp" />
+    <None Include="..\image\next.bmp" />
+    <None Include="..\image\orderSeq24.bmp" />
+    <None Include="..\image\paramConfig.bmp" />
+    <None Include="..\image\partDoc.ico" />
+    <None Include="..\image\partinst_bar.bmp" />
+    <None Include="..\image\partinst_bar_32.bmp" />
+    <None Include="..\image\partpmt_bar.bmp" />
+    <None Include="..\image\partpmt_tree.bmp" />
+    <None Include="..\image\poly_mat_margin.bmp" />
+    <None Include="..\image\previous.bmp" />
+    <None Include="..\image\productExpl_tree.bmp" />
+    <None Include="..\image\product_logo.bmp" />
+    <None Include="..\image\progress_gif.bin" />
+    <None Include="..\image\quickStart_bar.bmp" />
+    <None Include="..\image\quick_access.bmp" />
+    <None Include="..\image\rect_mat_margin.bmp" />
+    <None Include="..\image\remnant cut auto 24.bmp" />
+    <None Include="..\image\resetCam24.bmp" />
+    <None Include="..\image\Run.bmp" />
+    <None Include="..\image\RunDisable.bmp" />
+    <None Include="..\image\RunSel.bmp" />
+    <None Include="..\image\selectPart24.bmp" />
+    <None Include="..\image\selectSeq24.bmp" />
+    <None Include="..\image\selGeom24.bmp" />
+    <None Include="..\image\sequence_bar.bmp" />
+    <None Include="..\image\sequence_bar16.bmp" />
+    <None Include="..\image\seqUnit_tree.bmp" />
+    <None Include="..\image\sheetDoc.ico" />
+    <None Include="..\image\simulateSeq24.bmp" />
+    <None Include="..\image\splasher.bmp" />
+    <None Include="..\image\startcorner_br.BMP" />
+    <None Include="..\image\startcorner_lb.BMP" />
+    <None Include="..\image\startcorner_lt.bmp" />
+    <None Include="..\image\startcorner_tr.BMP" />
+    <None Include="..\image\startPage.ico" />
+    <None Include="..\image\sysConfig24.bmp" />
+    <None Include="..\image\Toolbar.bmp" />
+    <None Include="..\image\Toolbar256.bmp" />
+    <None Include="..\image\tplDesign_bar.bmp" />
+    <None Include="..\image\treelist_bkgnd.BMP" />
+    <None Include="..\image\treelist_bkgnd2.bmp" />
+    <None Include="..\image\treelist_button.cur" />
+    <None Include="..\image\treelist_checkbox.bmp" />
+    <None Include="..\image\treelist_checkbox.cur" />
+    <None Include="..\image\treelist_def_head.bmp" />
+    <None Include="..\image\treelist_def_sort.bmp" />
+    <None Include="..\image\treelist_def_tree.bmp" />
+    <None Include="..\image\treelist_DROP.CUR" />
+    <None Include="..\image\treelist_lockbox.bmp" />
+    <None Include="..\image\treelist_lockbox.cur" />
+    <None Include="..\image\treelist_SIZE.CUR" />
+    <None Include="..\image\treelist_split.cur" />
+    <None Include="..\image\treelist_STOP.CUR" />
+    <None Include="..\image\tree_drop_copy.cur" />
+    <None Include="..\image\tree_drop_move.cur" />
+    <None Include="..\image\tree_drop_no.cur" />
+    <None Include="..\image\undoredo.bmp" />
+    <None Include="..\image\warning.ico" />
+    <None Include="..\image\zoom_bar.bmp" />
+    <None Include="clResource.def" />
+    <None Include="res\clResource.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clResource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="taoresource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clResource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\CutLeaderV7\Src\Resource\common\res\partpmt_bar.bmp" />
+    <Image Include="..\image\addCanvasGeometryAsPart24.bmp" />
+    <Image Include="..\image\addCanvasGeometryAsPart32.png" />
+    <Image Include="..\image\addLoopSeq32.png" />
+    <Image Include="..\image\addPartFromDb2Task24.bmp" />
+    <Image Include="..\image\addPartFromDb2Task24.png" />
+    <Image Include="..\image\addPartFromDb2Task32.png" />
+    <Image Include="..\image\addPartFromDB32.png" />
+    <Image Include="..\image\addPartFromDxf2Task24.bmp" />
+    <Image Include="..\image\addPartFromDxf2Task24.png" />
+    <Image Include="..\image\addPartFromDxf2Task32.png" />
+    <Image Include="..\image\addPartFromDxf32.png" />
+    <Image Include="..\image\alignLoop_bottom_32.png" />
+    <Image Include="..\image\alignLoop_center_32.png" />
+    <Image Include="..\image\alignLoop_horizontalCenter_32.png" />
+    <Image Include="..\image\alignLoop_left_32.png" />
+    <Image Include="..\image\alignLoop_right_32.png" />
+    <Image Include="..\image\alignLoop_top_32.png" />
+    <Image Include="..\image\alignLoop_verticalCenter_32.png" />
+    <Image Include="..\image\assignCam32.png" />
+    <Image Include="..\image\assignSeq32.png" />
+    <Image Include="..\image\checkIntf32.png" />
+    <Image Include="..\image\clearSeq32.png" />
+    <Image Include="..\image\copyPart24.bmp" />
+    <Image Include="..\image\copyPart32.png" />
+    <Image Include="..\image\corner-add.png" />
+    <Image Include="..\image\corner-assign.png" />
+    <Image Include="..\image\corner-delete.png" />
+    <Image Include="..\image\corner-edit.png" />
+    <Image Include="..\image\createPartGrid32.png" />
+    <Image Include="..\image\cut-inside.png" />
+    <Image Include="..\image\cut-on.png" />
+    <Image Include="..\image\cut-outside.png" />
+    <Image Include="..\image\cutDir-ccw-32.png" />
+    <Image Include="..\image\cutDir-cw-32.png" />
+    <Image Include="..\image\cutDir32.png" />
+    <Image Include="..\image\cutfeature_bar_16.bmp" />
+    <Image Include="..\image\cutLoop16.png" />
+    <Image Include="..\image\cutSide32.png" />
+    <Image Include="..\image\deleteSeq32.png" />
+    <Image Include="..\image\delGeom32.png" />
+    <Image Include="..\image\delPart32.png" />
+    <Image Include="..\image\delPartFromTask24.bmp" />
+    <Image Include="..\image\delPartFromTask24.png" />
+    <Image Include="..\image\delPartFromTask32.png" />
+    <Image Include="..\image\drawArc32.png" />
+    <Image Include="..\image\drawCircle32.png" />
+    <Image Include="..\image\drawLine32.png" />
+    <Image Include="..\image\drawPolyLine32.png" />
+    <Image Include="..\image\drawRect32.png" />
+    <Image Include="..\image\drawText24.bmp" />
+    <Image Include="..\image\drawText24.png" />
+    <Image Include="..\image\drawText32.png" />
+    <Image Include="..\image\editLoopTool32.png" />
+    <Image Include="..\image\editTaskParts24.bmp" />
+    <Image Include="..\image\editTaskParts24.png" />
+    <Image Include="..\image\editTaskParts32.png" />
+    <Image Include="..\image\flycut-add-32.png" />
+    <Image Include="..\image\generateNC32.png" />
+    <Image Include="..\image\gridGeometry32.png" />
+    <Image Include="..\image\gridPart32.png" />
+    <Image Include="..\image\insertLoopSeq32.png" />
+    <Image Include="..\image\leadinout-assign.png" />
+    <Image Include="..\image\leavePartInplaceEdit_cancelEdit48.png" />
+    <Image Include="..\image\leavePartInplaceEdit_finishEdit48.png" />
+    <Image Include="..\image\loopGap32.png" />
+    <Image Include="..\image\loopLead32.png" />
+    <Image Include="..\image\loopStartPt-assign.png" />
+    <Image Include="..\image\loopStartPt32.png" />
+    <Image Include="..\image\matLib 32.png" />
+    <Image Include="..\image\measureDis32.png" />
+    <Image Include="..\image\microjoint-add.png" />
+    <Image Include="..\image\microjoint-assign.png" />
+    <Image Include="..\image\microjoint-delete.png" />
+    <Image Include="..\image\microjoint-edit.png" />
+    <Image Include="..\image\movePart24.bmp" />
+    <Image Include="..\image\movePart32.png" />
+    <Image Include="..\image\nestTaskParts24.bmp" />
+    <Image Include="..\image\nestTaskParts32.png" />
+    <Image Include="..\image\new part from blank 48.bmp" />
+    <Image Include="..\image\new part from dxf 48.bmp" />
+    <Image Include="..\image\new task from blank 48.bmp" />
+    <Image Include="..\image\new task from nest 48.bmp" />
+    <Image Include="..\image\noCutLoop16.png" />
+    <Image Include="..\image\orderSeq32.png" />
+    <Image Include="..\image\paramConfig32.png" />
+    <Image Include="..\image\part 32.bmp" />
+    <Image Include="..\image\part 48.bmp" />
+    <Image Include="..\image\product_name_OpenEdition.bmp" />
+    <Image Include="..\image\quickStart_bar_16.bmp" />
+    <Image Include="..\image\remnant cut auto 32.png" />
+    <Image Include="..\image\resetCam32.png" />
+    <Image Include="..\image\return2ForegroundCam_cancelEdit48.png" />
+    <Image Include="..\image\return2ForegroundCam_finishEdit48.png" />
+    <Image Include="..\image\rotatePart32.png" />
+    <Image Include="..\image\selectPart32.png" />
+    <Image Include="..\image\selectSeq32.png" />
+    <Image Include="..\image\selGeom32.png" />
+    <Image Include="..\image\sequence-add-32.png" />
+    <Image Include="..\image\sequence-clear.png" />
+    <Image Include="..\image\sequence-reset.png" />
+    <Image Include="..\image\sequence_bar_16.bmp" />
+    <Image Include="..\image\setRefPt.png" />
+    <Image Include="..\image\simulateSeq32.png" />
+    <Image Include="..\image\sysConfig32.png" />
+    <Image Include="..\image\task 32.bmp" />
+    <Image Include="..\image\task 48.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="clResource.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

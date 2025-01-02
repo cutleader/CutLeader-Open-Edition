@@ -1,0 +1,6 @@
+; clReportConfigUI.def : Declares the module parameters for the DLL.
+
+LIBRARY      "clReportConfigUI"
+
+EXPORTS
+    ; Explicit exports can go here

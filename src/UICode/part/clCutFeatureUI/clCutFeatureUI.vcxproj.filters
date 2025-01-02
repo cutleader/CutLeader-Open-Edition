@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\action">
+      <UniqueIdentifier>{d5ae61bb-67bf-4edc-ba4e-95af69379280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\micro joint">
+      <UniqueIdentifier>{e9226e32-0f66-43d3-ac19-e0163faf06b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\corner">
+      <UniqueIdentifier>{022fa0b7-cb6b-4aec-aa94-df09f851d48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\startEnd cut">
+      <UniqueIdentifier>{376d7715-24a9-4915-8b95-0c2197a695ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\action\loopTool">
+      <UniqueIdentifier>{20a5cf9b-87b7-4b15-9cfd-613b7b2b1932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\business">
+      <UniqueIdentifier>{b04a1e03-044a-4f0d-a2ad-b2ff16b633a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui">
+      <UniqueIdentifier>{c8790f19-2d50-4c72-8982-ace98be5c4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\dialog">
+      <UniqueIdentifier>{f376a692-3c2f-4632-a99c-45743c770d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gui\panel">
+      <UniqueIdentifier>{77f52a6d-fabb-4e49-8c53-782e233ed56c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="clCutFeatureUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CutFeatureEditBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointAddAction.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointDelAction.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointEditAction.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointPreSelectAction.cpp">
+      <Filter>Source Files\action\micro joint</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerAddAction.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerDeleteAction.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerEditAction.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerPreSelectAction.cpp">
+      <Filter>Source Files\action\corner</Filter>
+    </ClCompile>
+    <ClCompile Include="CutDirectionChangeAction.cpp">
+      <Filter>Source Files\action\startEnd cut</Filter>
+    </ClCompile>
+    <ClCompile Include="CutSideChangeAction.cpp">
+      <Filter>Source Files\action\startEnd cut</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopLeadEditAction.cpp">
+      <Filter>Source Files\action\startEnd cut</Filter>
+    </ClCompile>
+    <ClCompile Include="StartCutPtPreSelectAction.cpp">
+      <Filter>Source Files\action\startEnd cut</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopToolEditAction.cpp">
+      <Filter>Source Files\action\loopTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CutFeatureEditor.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="CutFeatureHelper.cpp">
+      <Filter>Source Files\business</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopToolEditDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CornerPropertyBar.cpp">
+      <Filter>Source Files\Gui\panel</Filter>
+    </ClCompile>
+    <ClCompile Include="CutFeaturePropertyBar.cpp">
+      <Filter>Source Files\Gui\panel</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopLeadPropertyBar.cpp">
+      <Filter>Source Files\Gui\panel</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopToolEditPanel.cpp">
+      <Filter>Source Files\Gui\panel</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroJointPropertyBar.cpp">
+      <Filter>Source Files\Gui\panel</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeLoopGapDlg.cpp">
+      <Filter>Source Files\Gui\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="StartCutPtChangeAction.cpp">
+      <Filter>Source Files\action\startEnd cut</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clCutFeatureUI.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\clCutFeatureUI.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="clCutFeatureUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clCutFeatureUICommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerDeleteAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerPreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CornerPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutDirectionChangeAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutFeatureEditBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutFeatureEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutFeaturePropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutSideChangeAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopLeadEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopLeadPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopToolEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopToolEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopToolEditPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointAddAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointDelAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointEditAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointPreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroJointPropertyBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartCutPtChangeAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StartCutPtPreSelectAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CutFeatureHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeLoopGapDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clCutFeatureUI.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

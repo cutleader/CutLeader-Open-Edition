@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA78FD50-532D-4B52-BE3E-5A699017997A}</ProjectGuid>
+    <RootNamespace>clCutSequence</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30028.132</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\bin\Debug\</OutDir>
+    <IntDir>..\..\..\..\build\debug\clCutSequenceUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\bin\Release\</OutDir>
+    <IntDir>..\..\..\..\build\release\clCutSequenceUI\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\resource\clResource;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\part\clCutFeature;..\..\..\..\inc\config\clExpertLib;..\..\..\..\inc\sheet\clPartLayout;..\..\..\..\inc\config\clOption;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clBaseData;..\..\..\..\inc\basic\clUILib;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\config\clMachineLib;..\..\..\..\inc\config\clMaterialLib;..\..\..\..\3rdparty\vld-2.5.1\include;..\..\..\..\inc\part\clPart;..\..\..\..\inc\sheet\clCutSequence;..\..\sampleCode\loopSequenceDelete;..\..\sheet\clCutSequenceUI;..\..\basic\clBaseDataUI;..\..\sampleCode;..\..\sampleCode\RealTimeCut;..\..\KrnlLib;..\..\sheet\clPartLayoutUI;..\..\resource;..\..\post\SenfengCncModule;..\..\sheet\clCanvasGeometryUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;ClCutSequenceUI_Home;_BIND_TO_CURRENT_VCLIBS_VERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clGeometryFeature.lib;clPartLayout.lib;clCutFeature.lib;clOption.lib;clExpertLib.lib;clPart.lib;clUtility.lib;clDbWrapper.lib;clDrawWrapper.lib;clGeometryBase.lib;clUILib.lib;clMachineLib.lib;clMaterialLib.lib;clCutSequence.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\debug\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\debug;..\..\..\..\3rdparty\vld-2.5.1\lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\clCutSequenceUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\lib\debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/wd4819 /wd4250 /wd4996 /MP8 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\..\resource\clResource;..\..\..\..\inc\basic\clUtility;..\..\..\..\inc\part\clGeometryFeature;..\..\..\..\inc\part\clCutFeature;..\..\..\..\inc\config\clExpertLib;..\..\..\..\inc\sheet\clPartLayout;..\..\..\..\inc\config\clOption;..\..\..\..\inc\basic\clDrawWrapper;..\..\..\..\inc\basic\clGeometryBase;..\..\..\..\inc\basic\clDbWrapper;..\..\..\..\inc\resource;..\..\..\..\inc\basic;..\..\..\..\inc\basic\clBaseData;..\..\..\..\inc\basic\clUILib;..\..\..\..\3rdparty\boost_1_71_0;..\..\..\..\inc\config\clMachineLib;..\..\..\..\inc\config\clMaterialLib;..\..\..\..\inc\part\clPart;..\..\..\..\inc\sheet\clCutSequence;..\..\sampleCode\loopSequenceDelete;..\..\sheet\clCutSequenceUI;..\..\basic\clBaseDataUI;..\..\sampleCode;..\..\sampleCode\RealTimeCut;..\..\KrnlLib;..\..\sheet\clPartLayoutUI;..\..\resource;..\..\post\SenfengCncModule;..\..\sheet\clCanvasGeometryUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;_BIND_TO_CURRENT_VCLIBS_VERSION;ClCutSequenceUI_Home;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>clBaseData.lib;clGeometryFeature.lib;clPartLayout.lib;clCutFeature.lib;clOption.lib;clExpertLib.lib;clPart.lib;clUtility.lib;clDbWrapper.lib;clDrawWrapper.lib;clGeometryBase.lib;clUILib.lib;clMachineLib.lib;clMaterialLib.lib;clCutSequence.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\bin\release\$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\clCutSequenceUI.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\lib\release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplyPartActionBar.cpp" />
+    <ClCompile Include="BridgeSequenceAddAction.cpp" />
+    <ClCompile Include="BridgeSequenceBreakAction.cpp" />
+    <ClCompile Include="CanvasReferencePointDlg.cpp" />
+    <ClCompile Include="ChainCutSequenceAddAction.cpp" />
+    <ClCompile Include="ChainNodeDeleteAction.cpp" />
+    <ClCompile Include="ChainNodeInsertAction.cpp" />
+    <ClCompile Include="clCutSequenceUI.cpp" />
+    <ClCompile Include="CutNodeSimulator.cpp" />
+    <ClCompile Include="CutNodeViewBar.cpp" />
+    <ClCompile Include="CutSequenceDeleteAction.cpp" />
+    <ClCompile Include="CutSequenceGrid.cpp" />
+    <ClCompile Include="CutSequenceOrderChangeActionA.cpp" />
+    <ClCompile Include="CutSequenceOrderChangeActionB.cpp" />
+    <ClCompile Include="CutSequencePane.cpp" />
+    <ClCompile Include="CutSequencePreSelectAction.cpp" />
+    <ClCompile Include="CutSequenceSelectAction.cpp" />
+    <ClCompile Include="CutSequenceTree.cpp" />
+    <ClCompile Include="GenerateRemCutLineActionBar.cpp" />
+    <ClCompile Include="GridCutSequenceAddAction.cpp" />
+    <ClCompile Include="HoleSequenceReplaceAction.cpp" />
+    <ClCompile Include="InsertPositionActionBar.cpp" />
+    <ClCompile Include="LoopSequenceAddAction.cpp" />
+    <ClCompile Include="LoopSequenceInsertAction.cpp" />
+    <ClCompile Include="MovePtAddAction.cpp" />
+    <ClCompile Include="MovePtDeleteAction.cpp" />
+    <ClCompile Include="PartLayoutData.cpp" />
+    <ClCompile Include="RemnantCutlineAddAction.cpp" />
+    <ClCompile Include="RemnantCutlineAutoAction.cpp" />
+    <ClCompile Include="RemnantCutlineDeleteAction.cpp" />
+    <ClCompile Include="FlyCutSequenceAddAction.cpp" />
+    <ClCompile Include="ResetInstructionAddAction.cpp" />
+    <ClCompile Include="ResetInstructionDeleteAction.cpp" />
+    <ClCompile Include="SequenceData.cpp" />
+    <ClCompile Include="SequenceEditActionBase.cpp" />
+    <ClCompile Include="SequenceEditor.cpp" />
+    <ClCompile Include="SequenceHelper.cpp" />
+    <ClCompile Include="SequenceSortDlg.cpp" />
+    <ClCompile Include="SequenceTreeNodeData.cpp" />
+    <ClCompile Include="SequenceViewAction.cpp" />
+    <ClCompile Include="SheetReferencePointDlg.cpp" />
+    <ClCompile Include="StartBridgeNodeChangeAction.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clCutSequenceUI.def" />
+    <None Include="res\clCutSequenceUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplyPartActionBar.h" />
+    <ClInclude Include="BridgeSequenceAddAction.h" />
+    <ClInclude Include="BridgeSequenceBreakAction.h" />
+    <ClInclude Include="CanvasReferencePointDlg.h" />
+    <ClInclude Include="ChainCutSequenceAddAction.h" />
+    <ClInclude Include="ChainNodeDeleteAction.h" />
+    <ClInclude Include="ChainNodeInsertAction.h" />
+    <ClInclude Include="clCutSequenceUI.h" />
+    <ClInclude Include="clCutSequenceUICommon.h" />
+    <ClInclude Include="CutNodeSimulator.h" />
+    <ClInclude Include="CutNodeViewBar.h" />
+    <ClInclude Include="CutSequenceDeleteAction.h" />
+    <ClInclude Include="CutSequenceGrid.h" />
+    <ClInclude Include="CutSequenceOrderChangeActionA.h" />
+    <ClInclude Include="CutSequenceOrderChangeActionB.h" />
+    <ClInclude Include="CutSequencePane.h" />
+    <ClInclude Include="CutSequencePreSelectAction.h" />
+    <ClInclude Include="CutSequenceSelectAction.h" />
+    <ClInclude Include="CutSequenceTree.h" />
+    <ClInclude Include="GenerateRemCutLineActionBar.h" />
+    <ClInclude Include="GridCutSequenceAddAction.h" />
+    <ClInclude Include="HoleSequenceReplaceAction.h" />
+    <ClInclude Include="InsertPositionActionBar.h" />
+    <ClInclude Include="LoopSequenceAddAction.h" />
+    <ClInclude Include="LoopSequenceInsertAction.h" />
+    <ClInclude Include="MovePtAddAction.h" />
+    <ClInclude Include="MovePtDeleteAction.h" />
+    <ClInclude Include="PartLayoutData.h" />
+    <ClInclude Include="RemnantCutlineAddAction.h" />
+    <ClInclude Include="RemnantCutlineAutoAction.h" />
+    <ClInclude Include="RemnantCutlineDeleteAction.h" />
+    <ClInclude Include="FlyCutSequenceAddAction.h" />
+    <ClInclude Include="ResetInstructionAddAction.h" />
+    <ClInclude Include="ResetInstructionDeleteAction.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SequenceData.h" />
+    <ClInclude Include="SequenceEditActionBase.h" />
+    <ClInclude Include="SequenceEditor.h" />
+    <ClInclude Include="SequenceHelper.h" />
+    <ClInclude Include="SequenceSortDlg.h" />
+    <ClInclude Include="SequenceTreeNodeData.h" />
+    <ClInclude Include="SequenceViewAction.h" />
+    <ClInclude Include="SheetReferencePointDlg.h" />
+    <ClInclude Include="StartBridgeNodeChangeAction.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="clCutSequenceUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\basic\clBaseDataUI\clBaseDataUI.vcxproj">
+      <Project>{36681548-753e-497d-a612-01630c5b7f04}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clExpertLibUI\clExpertLibUI.vcxproj">
+      <Project>{cdc5dd0c-1af6-4cc1-9756-3e3314fdde99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clMachineLibUI\clMachineLibUI.vcxproj">
+      <Project>{d37ec670-70dc-4a7f-8c16-aa80e0a79668}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clMaterialLibUI\clMaterialLibUI.vcxproj">
+      <Project>{27a4e42a-4e9c-4771-881a-3f21f41f2f6c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\config\clOptionUI\clOptionUI.vcxproj">
+      <Project>{2b4b3d9f-c0cc-47f4-866c-06e05420d3b9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clCutFeatureUI\clCutFeatureUI.vcxproj">
+      <Project>{e79ef911-3a25-47ac-9899-9e147b89722c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clGeometryFeatureUI\clGeometryFeatureUI.vcxproj">
+      <Project>{0dae83d4-47ac-4a7b-9cc9-1dd7b2aab3fd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\part\clPartUI\clPartUI.vcxproj">
+      <Project>{d359cf86-e839-410a-9559-a7107a16d141}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\resource\clResource\clResource.vcxproj">
+      <Project>{58f2de9f-651d-4710-b337-73c84f0ba122}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\clCanvasGeometryUI\clCanvasGeometryUI.vcxproj">
+      <Project>{401e7347-e112-42ce-b44a-5f43696ab3d1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\clPartLayoutUI\clPartLayoutUI.vcxproj">
+      <Project>{17c359fc-7dbe-465f-bd53-c2d3b609a852}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
