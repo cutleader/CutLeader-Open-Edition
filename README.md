@@ -4,8 +4,8 @@
 CutLeader Open Edition, abbreviated as COE, is a C++ development platform which can help you develop a 2D-cutting CAD/CAM software rapidly, it can be used for sheet metal, 
 wood, steel structure, transportation, leather, clothing industries. It supports laser, plasma, flame, waterjet, foamcut, router machines.
 
-COE is based on CutLeader which is a successful CAD/CAM developed by TAOSoft, we built some CADCAM knowledge to dll files and you can use them by free, and all
-the other source code are available for free, we provide over 1000 source code files.
+COE is based on CutLeader which is a successful CAD/CAM developed by TAOSoft, we built some CAD/CAM knowledge to dll files which called COE core and you can use them by free,
+and all the other source code are available for free, we provide over 1000 source code files.
 
 ## How to Install COE
 step 1) Use VS2017 open clUICode.sln under src folder and rebuild it, the compiler will generate executive files to bin/release folder if the soluton is release mode, 
