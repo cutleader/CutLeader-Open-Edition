@@ -1,4 +1,4 @@
-![product_name_OpenEdition(1)](https://github.com/user-attachments/assets/830874f5-8bfc-44b5-9a9e-5aa39b4da520)
+![微信图片_20250102212742](https://github.com/user-attachments/assets/a3930b18-66f1-43f7-b504-365e2fa97606)
 
 ## Description
 CutLeader Open Edition, abbreviated as COE, is a C++ development platform which can help you develop a 2D-cutting CAD/CAM software rapidly, it can be used for sheet metal, 
