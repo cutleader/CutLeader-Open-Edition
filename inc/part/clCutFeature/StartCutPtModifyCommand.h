@@ -8,7 +8,7 @@ DECLARE_CUTLEADER_CLASS(LoopStartCutData)
 
 BEGIN_CUTLEADER_NAMESPACE()
 
-// Х©≥Д╦╙Е▒╫Д╩╓Ф┼┼Х╣╥Е┬┤Г┌╧Д╩▌Е⌡╬Е╫╒Д╦┼Г╖╩Е┬╟Е⌡╬Е╫╒Д╦┼Ц─┌
+// уБ╦ЖцЭаН╟яфПгп╣Ц╢см╪пниорф╣╫м╪пнио║ё
 class ClCutFeature_Export StartCutPtModifyCommand : public CommandBase
 {
 public:

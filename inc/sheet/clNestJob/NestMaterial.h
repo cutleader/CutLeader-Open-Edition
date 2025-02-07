@@ -7,7 +7,7 @@ DECLARE_CUTLEADER_CLASS(IMaterialSize)
 
 BEGIN_CUTLEADER_NAMESPACE()
 
-// Б─°Ф▌▓Г┴┬Ф²░Ф√≥Б─²Е╞╧Х╠║Ц─┌
+// ║╟ее╟Ф╡дао║╠╤тоС║ё
 class ClNestJob_Export NestMaterial : public ClData
 {
 public:
@@ -26,9 +26,9 @@ public: // set/get functions.
 private:
 	IMaterialSizePtr m_pMatSize;
 
-	// Ф≤╞Е░╕Х╕│Ф╠┌Ф╞▐Д╦╙Ф²░Ф√≥Д╦┼Г └Е╦┐Е╠─И┐╫Д╦─Ф═╥Ц─┌
-	// ФЁ╗О╪ 
-	//  1) Е╫⌠Ф²░Ф√≥Ф²╔Х┤╙Д╩╩Е┼║Д╦╜Г └Ф²©Ф²░О╪▄Е╧╤Д╦■Ф∙╟И┤▐Е╓╖Д╨▌Д╦─Ф≈╤О╪▄Е╟╠Х╕│Ф╠┌Ф╞▐Д╦╙Ф²©Е╜░Д╦┼Г └Е╦┐Е╠─Д╦─Ф═╥Ц─┌
+	// йг╥Яр╙гСц©╦Ж╡даоио╣д╡╪╬ж╤╪р╩яЫ║ё
+	// в╒ё╨
+	//  1) ╣╠╡даою╢втхннЯжп╣д╟Е╡дё╛╡╒грйЩа©╢Ссзр╩й╠ё╛╬мр╙гСц©╦Ж╟Евсио╣д╡╪╬жр╩яЫ║ё
 	bool m_bEachMaterialMustHasSameLayout;
 };
 

@@ -2,7 +2,7 @@
 <UserOption>
     <ProductParam>
         <DimUnit>1</DimUnit>
-        <Lang>0</Lang>
+        <Lang>1</Lang>
         <BackupLoc>c:\</BackupLoc>
         <DBBackupDay>7</DBBackupDay>
         <LogBackupSize>1</LogBackupSize>
