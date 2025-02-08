@@ -19,7 +19,7 @@ step 3) click clApp.exe under bin/release folder and CutLeader will be launched 
 ![preview](media/preview.png)
 
 ## Quick Demo
-<video src="https://github.com/m001-dev/CutLeader-Open-Edition/blob/main/media/quickdemo.mp4" controls></video>
+https://github.com/user-attachments/assets/66658543-f4de-4261-bfa0-4a03ee7b9b04
 
 
 
