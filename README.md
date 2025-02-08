@@ -1,4 +1,4 @@
-![微信图片_20250102212742](https://github.com/user-attachments/assets/a3930b18-66f1-43f7-b504-365e2fa97606)
+![banner](https://github.com/user-attachments/assets/a3930b18-66f1-43f7-b504-365e2fa97606)
 
 ## Description
 CutLeader Open Edition, abbreviated as COE, is a C++ development platform which can help you develop a 2D-cutting CAD/CAM software rapidly, it can be used for sheet metal, 
@@ -16,7 +16,12 @@ step 2) Copy folders under installStuff folder to bin/release folder.
 step 3) click clApp.exe under bin/release folder and CutLeader will be launched as following.  
 
 
-![屏幕截图 2025-01-02 202537](https://github.com/user-attachments/assets/2591516e-68c2-4026-bace-7720cf7b6fd8)
+![preview](https://github.com/user-attachments/assets/2591516e-68c2-4026-bace-7720cf7b6fd8)
+
+
+## Quick Demo
+https://github.com/user-attachments/assets/66658543-f4de-4261-bfa0-4a03ee7b9b04
+
 
 ## How to get help
 You can familiarize yourself with the system by reading the documents in the doc directory, and you can also contact support@cutleader.com to get help.
