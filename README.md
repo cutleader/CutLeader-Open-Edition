@@ -25,3 +25,9 @@ https://github.com/user-attachments/assets/66658543-f4de-4261-bfa0-4a03ee7b9b04
 
 ## How to get help
 You can familiarize yourself with the system by reading the documents in the doc directory, and you can also contact support@cutleader.com to get help.
+
+
+## Download
+Download the build and the runable program(clApp.exe) from here
+https://github.com/cutleader/CutLeader-Open-Edition/releases
+
