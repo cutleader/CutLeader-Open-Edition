@@ -28,6 +28,6 @@ You can familiarize yourself with the system by reading the documents in the doc
 
 
 ## Download
-Download the build and the runable program(clApp.exe) from here
+Download the build and the runable program(clApp.exe) from here:
 https://github.com/cutleader/CutLeader-Open-Edition/releases
 
